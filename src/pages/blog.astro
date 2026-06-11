@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<Layout
+  title="Blog — Ambtec Licenciamento Ambiental"
+  description="Artigos, guias e novidades sobre licenciamento ambiental, CAR, gestão sustentável e regularização ambiental."
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <section>
+    <div class="section-inner">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-16 text-gray-900">
+        Blog <span class="text-secondary-900">Ambiental</span>
+      </h1>
+
+      <SectionTitle
+        title="Conteúdo técnico para decisões inteligentes"
+        subtitle="Artigos sobre licenciamento, CAR, avaliação de impacto e gestão ambiental para empresas e propriedades rurais."
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="group block">
+            <article class="bg-white border border-gray-100 rounded-2xl p-10 lg:p-12 shadow-sm hover:shadow-lg transition-shadow duration-300 h-full">
+              <div class="text-sm font-semibold text-primary-600 mb-3">
+                {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary-900 transition-colors">{post.data.title}</h3>
+              <p class="text-gray-600 leading-relaxed">{post.data.description}</p>
+            </article>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

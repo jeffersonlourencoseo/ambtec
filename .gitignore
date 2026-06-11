@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+*.log
+
+# Build output
+dist/
+.astro/
+
+# Environment variables
+.env
+.env.production
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package manager lock files (escolha um: npm, yarn, pnpm)
+# se quiser usar apenas package-lock.json, comente os outros
+yarn.lock
+pnpm-lock.yaml
+
+# Test coverage
+coverage/
+
+# Misc
+*.tgz
+.cache/

@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout
+  title="Política de Privacidade — Ambtec"
+  description="Política de privacidade da Ambtec Consultoria Ambiental. Saiba como tratamos seus dados."
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <section>
+    <div class="section-inner">
+      <div class="max-w-4xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-16 text-gray-900">
+          Política de <span class="text-secondary-900">Privacidade</span>
+        </h1>
+
+        <div class="space-y-6 text-gray-600 leading-relaxed">
+          <p>
+            A Ambtec Consultoria Ambiental valoriza a privacidade dos seus visitantes e clientes. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Informações Coletadas</h2>
+          <p>
+            Podemos coletar informações pessoais como nome, e-mail, telefone e dados do empreendimento quando você preenche nosso formulário de contato ou solicita um orçamento.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Uso das Informações</h2>
+          <p>
+            As informações coletadas são utilizadas exclusivamente para:
+          </p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Entrar em contato sobre serviços de consultoria ambiental</li>
+            <li>Enviar propostas e orçamentos</li>
+            <li>Prestar atendimento ao cliente</li>
+            <li>Enviar comunicações técnicas relevantes (quando autorizado)</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Proteção de Dados</h2>
+          <p>
+            Adotamos medidas de segurança técnicas e administrativas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Compartilhamento</h2>
+          <p>
+            Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto quando necessário para cumprir obrigações legais ou prestar os serviços contratados.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Seus Direitos</h2>
+          <p>
+            Você tem o direito de solicitar acesso, correção ou exclusão dos seus dados pessoais a qualquer momento. Para exercer esses direitos, entre em contato pelo e-mail contato@ambtec.com.br.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Alterações nesta Política</h2>
+          <p>
+            Esta política pode ser atualizada periodicamente. Recomendamos que você a revise regularmente. A data da última atualização será sempre indicada no final desta página.
+          </p>
+
+          <p class="text-sm text-gray-500 mt-12">
+            Última atualização: 11 de junho de 2026.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

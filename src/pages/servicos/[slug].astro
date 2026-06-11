@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import CTABox from '../../components/CTABox.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const servicos = await getCollection('servicos');
+  return servicos.map((servico) => ({
+    params: { slug: servico.slug },
+    props: { servico },
+  }));
+}
+
+const { servico } = Astro.props;
+const { Content } = await servico.render();
+
+const beneficios = [
+  { title: 'Conformidade Legal Garantida', desc: 'Seu empreendimento 100% dentro das normas ambientais federais, estaduais e municipais.', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
+  { title: 'Prazos Curtos e Definidos', desc: 'Cronograma realista com acompanhamento semanal. Você sabe exatamente quando sua licença sai.', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
+  { title: 'Documentação Completa', desc: 'Entregamos todo o conjunto documental pronto para protocolo ou implementação.', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' },
+  { title: 'Suporte Pós-Licenciamento', desc: 'Acompanhamento contínuo para renovações, condicionantes e novas demandas ambientais.', icon: 'M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
+];
+---
+
+<Layout
+  title={`${servico.data.title} — Ambtec Serviços`}
+  description={servico.data.description}
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <!-- HERO DO SERVIÇO -->
+  <section class="relative">
+    <div class="section-inner">
+      <div class="inline-flex items-center px-4 py-2 mb-6 bg-primary-100 text-primary-700 font-semibold text-sm rounded-full">
+        Serviço Especializado
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight mb-8 text-gray-900 max-w-4xl">
+        {servico.data.title}
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl leading-relaxed">
+        {servico.data.description}
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO TÉCNICO -->
+  <section class="bg-gray-50">
+    <div class="section-inner">
+      <article class="prose prose-lg max-w-5xl mx-auto text-gray-600">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS / APLICAÇÕES -->
+  <section>
+    <div class="section-inner">
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Por que contratar este serviço?</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Benefícios reais que sua empresa ou propriedade vai perceber desde o primeiro dia.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+        {beneficios.map((b) => (
+          <div class="bg-white border border-gray-100 rounded-2xl p-10 lg:p-12 shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start gap-6">
+            <div class="shrink-0 w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d={b.icon} /></svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{b.title}</h3>
+              <p class="text-gray-600 leading-relaxed">{b.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DE FECHAMENTO -->
+  <section class="bg-gray-50">
+    <div class="section-inner">
+      <CTABox
+        title={`Quer contratar ${servico.data.title.toLowerCase()}?`}
+        subtitle="Fale com um especialista agora mesmo. Diagnóstico inicial gratuito e sem compromisso."
+      />
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

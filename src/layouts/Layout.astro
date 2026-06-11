@@ -1,0 +1,50 @@
+---
+import SEO from '../components/SEO.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import WhatsAppBtn from '../components/WhatsAppBtn.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  article?: {
+    publishedTime?: Date;
+    modifiedTime?: Date;
+    author?: string;
+    tags?: string[];
+  };
+}
+
+const props = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <SEO {...props} />
+  <SchemaLocalBusiness />
+</head>
+<body class="font-sans antialiased text-gray-600 bg-white">
+  <slot name="header" />
+  <main class="overflow-x-hidden">
+    <slot />
+  </main>
+  <slot name="footer" />
+  <WhatsAppBtn />
+</body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  main > section {
+    @apply py-24 md:py-32 px-6 lg:px-12;
+  }
+  main > section > .section-inner {
+    @apply container mx-auto max-w-6xl;
+  }
+</style>

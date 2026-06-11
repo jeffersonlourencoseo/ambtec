@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const servicos = await getCollection('servicos');
+---
+
+<Layout
+  title="Serviços — Ambtec Consultoria Ambiental"
+  description="Conheça todos os serviços de consultoria ambiental da Ambtec: licenciamento, EIA/RIMA, CAR, gestão e auditoria ambiental."
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <section>
+    <div class="section-inner">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-16 text-gray-900">
+        Nossos <span class="text-secondary-900">Serviços</span>
+      </h1>
+
+      <SectionTitle
+        title="Soluções completas em consultoria ambiental"
+        subtitle="Do licenciamento à regularização rural, oferecemos expertise técnica para cada etapa do seu empreendimento."
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+        {servicos.map((servico) => (
+          <a href={`/servicos/${servico.slug}`} class="group">
+            <Card
+              title={servico.data.title}
+              description={servico.data.description}
+              icon={servico.data.icon}
+            />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

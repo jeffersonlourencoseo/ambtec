@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout
+  title="Termos de Uso — Ambtec"
+  description="Termos de uso do site da Ambtec Consultoria Ambiental. Condições de acesso e utilização."
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <section>
+    <div class="section-inner">
+      <div class="max-w-4xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-16 text-gray-900">
+          Termos de <span class="text-secondary-900">Uso</span>
+        </h1>
+
+        <div class="space-y-6 text-gray-600 leading-relaxed">
+          <p>
+            Ao acessar e utilizar este site, você concorda com os seguintes termos e condições. Se não concordar com algum dos termos, recomendamos que não utilize nossos serviços online.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Objetivo do Site</h2>
+          <p>
+            Este site tem como finalidade apresentar os serviços de consultoria ambiental da Ambtec, compartilhar conteúdo técnico e facilitar o contato entre potenciais clientes e nossa equipe.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Propriedade Intelectual</h2>
+          <p>
+            Todo o conteúdo disponível neste site — textos, imagens, logotipos, ícones e materiais técnicos — é de propriedade exclusiva da Ambtec ou de seus respectivos titulares, e está protegido pelas leis de direitos autorais.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Uso Permitido</h2>
+          <p>
+            É permitido acessar, visualizar e imprimir o conteúdo deste site para uso pessoal e não comercial. É proibido:
+          </p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Reproduzir, distribuir ou modificar o conteúdo sem autorização</li>
+            <li>Utilizar o conteúdo para fins comerciais não autorizados</li>
+            <li>Copiar ou espelhar o site em qualquer outro servidor</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Limitação de Responsabilidade</h2>
+          <p>
+            As informações técnicas publicadas no blog e nas páginas de serviços têm caráter informativo e educativo. Para orientação específica sobre seu empreendimento, é necessário contratar nossos serviços de consultoria formalmente.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Formulários e Contato</h2>
+          <p>
+            Ao enviar informações através dos formulários do site, você declara que os dados são verdadeiros e autoriza a Ambtec a entrar em contato para fins de atendimento e orçamento.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Alterações nos Termos</h2>
+          <p>
+            A Ambtec reserva-se o direito de alterar estes termos a qualquer momento. As mudanças entrarão em vigor assim que publicadas nesta página.
+          </p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">7. Legislação Aplicável</h2>
+          <p>
+            Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de domicílio da Ambtec.
+          </p>
+
+          <p class="text-sm text-gray-500 mt-12">
+            Última atualização: 11 de junho de 2026.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

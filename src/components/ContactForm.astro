@@ -1,0 +1,86 @@
+<form class="bg-white border border-gray-100 rounded-2xl p-8 lg:p-10 shadow-sm space-y-6" action="#" method="POST">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">Nome completo</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all"
+        placeholder="Seu nome"
+      />
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all"
+        placeholder="seu@email.com"
+      />
+    </div>
+  </div>
+
+  <div>
+    <label for="telefone" class="block text-sm font-semibold text-gray-700 mb-2">Telefone / WhatsApp</label>
+    <input
+      type="tel"
+      id="telefone"
+      name="telefone"
+      required
+      class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all"
+      placeholder="(00) 00000-0000"
+    />
+  </div>
+
+  <div>
+    <label for="empresa" class="block text-sm font-semibold text-gray-700 mb-2">Empreendimento</label>
+    <input
+      type="text"
+      id="empresa"
+      name="empresa"
+      class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all"
+      placeholder="Nome da empresa ou propriedade"
+    />
+  </div>
+
+  <div>
+    <label for="servico" class="block text-sm font-semibold text-gray-700 mb-2">Serviço de interesse</label>
+    <select
+      id="servico"
+      name="servico"
+      class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all"
+    >
+      <option value="">Selecione um serviço</option>
+      <option value="licenciamento">Licenciamento Ambiental</option>
+      <option value="eia-rima">Avaliação de Impacto (EIA/RIMA)</option>
+      <option value="gestao">Gestão Ambiental</option>
+      <option value="car">Cadastro Ambiental Rural (CAR)</option>
+      <option value="reserva-legal">Compensação de Reserva Legal</option>
+      <option value="auditoria">Auditoria Ambiental</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="mensagem" class="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
+    <textarea
+      id="mensagem"
+      name="mensagem"
+      rows="4"
+      required
+      class="w-full p-6 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary-900 focus:border-transparent transition-all resize-none"
+      placeholder="Descreva sua necessidade ambiental..."
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full inline-flex items-center justify-center p-6 bg-secondary-900 text-white font-bold text-lg rounded-xl hover:bg-accent-900 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-secondary-900/20"
+  >
+    Solicitar Diagnóstico Gratuito
+  </button>
+</form>
