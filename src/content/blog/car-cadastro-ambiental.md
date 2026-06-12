@@ -2,7 +2,7 @@
 title: "CAR: Guia Completo do Cadastro Ambiental Rural"
 description: "Saiba o que é o CAR, como fazer o cadastro, quem é obrigado e como regularizar sua propriedade rural no Rio de Janeiro com gestão ambiental especializada."
 pubDate: 2026-06-05
-draft: false
+draft: true
 author: "Eng. Paula Ribeiro"
 authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
@@ -86,4 +86,4 @@ O custo do serviço de cadastro ambiental rural parte de R$ 2.500 para proprieda
 
 A regularização do CAR é uma etapa fundamental para qualquer produtor rural que deseja operar com segurança jurídica, acesso ao crédito e todos os benefícios legais. Não espere uma fiscalização ou uma negativa de financiamento para agir. Quanto antes o cadastro for feito, menores serão os riscos e maiores as oportunidades.
 
-Entre em contato com a Ambtec e solicite uma proposta técnica para o cadastro ambiental rural da sua propriedade. Oferecemos diagnóstico inicial gratuito em até 24 horas.
+Entre em contato com a Ambtec e solicite uma proposta técnica para o cadastro ambiental rural da sua propriedade.

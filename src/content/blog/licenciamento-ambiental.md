@@ -33,7 +33,7 @@ Além dessas, existem licenças específicas como a Licença de Operação Corre
 Toda empresa ou atividade que utilize recursos naturais, gere efluentes, emissões atmosféricas, resíduos sólidos ou cause qualquer forma de interferência no meio ambiente está sujeita ao licenciamento. Isso inclui:
 
 - Indústrias de todos os portes (alimentícia, têxtil, metalúrgica, química, petroquímica, siderúrgica)
-- Empreendimentos agropecuários e agroindustriais (granjas, frigoríficos, usinas de beneficiamento)
+- Empreendimentos agropecuários e agroindustriais (frigoríficos, usinas de beneficiamento, centrais de processamento)
 - Loteamentos urbanos, condomínios e empreendimentos imobiliários de médio e grande porte
 - Mineradoras, pedreiras, canteiros de obras e indústrias de extração
 - Usinas de energia, postos de combustível, terminais de cargas e distribuidoras
@@ -109,6 +109,6 @@ O primeiro passo para qualquer empresa é realizar um diagnóstico ambiental com
 
 O diagnóstico é rápido, geralmente concluído em 24 a 48 horas, e fornece um panorama claro do que precisa ser feito, em quanto tempo e com qual investimento. Com ele, o empresário pode tomar decisões estratégicas com base em dados técnicos, e não em suposições.
 
-Com mais de 200 processos de licenciamento ambiental no Rio de Janeiro conduzidos com sucesso, a Ambtec oferece segurança jurídica, agilidade nos trâmites e total transparência em cada etapa do processo. Seja para uma indústria de médio porte, um empreendimento imobiliário ou uma propriedade rural, nossa equipe multidisciplinar está preparada para conduzir seu projeto da primeira conversa até a licença aprovada.
+Com mais de 200 processos de licenciamento ambiental no Rio de Janeiro conduzidos com sucesso, a Ambtec oferece segurança jurídica, agilidade nos trâmites e total transparência em cada etapa do processo. Seja para uma indústria de médio porte, um empreendimento imobiliário ou uma infraestrutura de transporte, nossa equipe multidisciplinar está preparada para conduzir seu projeto da primeira conversa até a licença aprovada.
 
 Entre em contato conosco e solicite uma proposta técnica para o licenciamento ambiental da sua empresa. O investimento em regularização preventiva é sempre menor do que o custo de uma autuação.

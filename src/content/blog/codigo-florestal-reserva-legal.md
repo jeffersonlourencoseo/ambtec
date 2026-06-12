@@ -2,7 +2,7 @@
 title: "Código Florestal e Reserva Legal: O que Todo Proprietário Rural Precisa Saber"
 description: "Guia completo sobre o Novo Código Florestal, Reserva Legal, APPs, CAR e como regularizar sua propriedade rural no Rio de Janeiro sem riscos legais."
 pubDate: 2026-06-12
-draft: false
+draft: true
 author: "Eng. Paula Ribeiro"
 authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"

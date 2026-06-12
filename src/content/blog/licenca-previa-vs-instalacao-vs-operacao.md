@@ -10,7 +10,7 @@ tags: ["licenciamento ambiental", "licença prévia", "licença de instalação"
 updatedDate: 2026-06-13
 ---
 
-O licenciamento ambiental no Brasil é estruturado em três licenças sequenciais — Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO) — cada uma com objetivo, prazo, documentação e custo distintos. Entender a diferença entre elas é essencial para planejar o cronograma de qualquer empreendimento no Rio de Janeiro, seja uma indústria de médio porte, um loteamento urbano, uma granja ou uma propriedade rural.
+O licenciamento ambiental no Brasil é estruturado em três licenças sequenciais — Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO) — cada uma com objetivo, prazo, documentação e custo distintos. Entender a diferença entre elas é essencial para planejar o cronograma de qualquer empreendimento no Rio de Janeiro, seja uma indústria de médio porte, um loteamento urbano ou um empreendimento imobiliário.
 
 A confusão entre essas três licenças é uma das principais causas de atraso no licenciamento. Empreendedores frequentemente tentam protocolar a LI antes de ter a LP em mãos, ou acreditam que a LO dura para sempre. Outros subestimam a documentação exigida para cada fase e acabam tendo processos reprovados ou exigidos de complementação, o que aumenta prazos e custos de forma significativa. Neste artigo, vamos desmistificar cada uma dessas licenças e apresentar um guia prático para navegar entre elas com segurança.
 
@@ -43,7 +43,7 @@ A LP é a etapa mais estratégica do licenciamento. Nela, o órgão ambiental an
 
 O processo de LP envolve a apresentação de um formulário de caracterização do empreendimento, certidões negativas de débitos ambientais, Cadastro Técnico Federal (CTF) e, dependendo do porte, um Relatório Ambiental Simplificado (RAS) ou Estudo de Impacto Ambiental (EIA/RIMA). O órgão licenciador avalia a localização, a sensibilidade ambiental do entorno, a presença de áreas protegidas, a disponibilidade hídrica e a viabilidade de mitigação dos impactos.
 
-Se a LP for aprovada, o empreendedor recebe uma autorização com condicionantes que devem ser observadas nas etapas seguintes. Se for indeferida, o projeto não pode ser instalado naquele local, e o empreendedor deve buscar outro sítio ou reformular o projeto.
+Se a LP for aprovada, o empreendedor recebe uma autorização com condicionantes que devem ser observadas nas etapas seguintes. Se for indeferida, o projeto não pode ser instalado naquele local, e o empreendedor deve buscar outro local ou reformular o projeto.
 
 ## A Licença de Instalação (LI) em detalhe
 

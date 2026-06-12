@@ -2,7 +2,7 @@
 title: "CAR Ativo vs Inativo no Rio de Janeiro: O que Muda para o Produtor Rural?"
 description: "Entenda as diferenças práticas entre CAR ativo, inativo e pendente no RJ. Tabela comparativa com impactos no crédito rural, comercialização e risco fiscal."
 pubDate: 2026-06-14
-draft: false
+draft: true
 author: "Eng. Paula Ribeiro"
 authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
@@ -82,7 +82,7 @@ O CAR pendente é o mais incerto dos três status. O produtor protocolou o cadas
 
 O prazo médio de reativação ou retificação do CAR no RJ varia de 2 a 6 meses, dependendo da complexidade da irregularidade e da capacidade de resposta do INEA. Na Ambtec, o processo é estruturado em etapas que garantem agilidade e conformidade:
 
-1. **Diagnóstico da inativação** (gratuito em até 24h): Analisamos o motivo exato da inativação, consultamos o sistema do INEA e identificamos todas as irregularidades técnicas e documentais.
+1. **Diagnóstico da inativação:** Analisamos o motivo exato da inativação, consultamos o sistema do INEA e identificamos todas as irregularidades técnicas e documentais.
 2. **Correção do shapefile e georreferenciamento:** Refazemos a delimitação geoespacial da propriedade com equipamentos de alta precisão, corrigindo coordenadas, fechamento de polígonos e delimitação correta de APPs e Reserva Legal.
 3. **Ajuste de Reserva Legal e APPs:** Se a irregularidade for técnica, elaboramos projetos de recuperação de áreas degradadas (RAD) ou ajustamos a delimitação conforme a realidade do imóvel.
 4. **Atualização documental:** Reunimos e atualizamos toda a documentação cadastral, incluindo certidões, CPFs, comprovantes de endereço e, se necessário, atualização sucessória em caso de herança.

@@ -10,7 +10,7 @@ authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em li
 
 O Estudo de Impacto Ambiental (EIA) e o respectivo Relatório de Impacto sobre o Meio Ambiente (RIMA) representam um dos pilares mais importantes do licenciamento ambiental no Rio de Janeiro e em todo o Brasil. Instituído pela Resolução CONAMA 01/1986 e regulamentado por normas subsequentes, o EIA/RIMA é um instrumento técnico-científico obrigatório para empreendimentos considerados de potencial impacto significativo sobre o meio ambiente. No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros e a baía de Guanabara compõem um cenário ambiental de alta sensibilidade, a exigência desse estudo é particularmente rigorosa.
 
-Se você é um empreendedor, gestor de projetos ou proprietário rural no Rio de Janeiro e planeja instalar, ampliar ou modificar um empreendimento de grande porte, entender o EIA/RIMA não é apenas uma necessidade legal — é uma vantagem estratégica que pode definir o sucesso ou o fracasso do seu projeto. Empreendimentos que subestimam o EIA/RIMA frequentemente enfrentam reprovações, atrasos de meses ou anos, multas milionárias e danos irreversíveis à imagem corporativa.
+Se você é um empreendedor ou gestor de projetos no Rio de Janeiro e planeja instalar, ampliar ou modificar um empreendimento de grande porte, entender o EIA/RIMA não é apenas uma necessidade legal — é uma vantagem estratégica que pode definir o sucesso ou o fracasso do seu projeto. Empreendimentos que subestimam o EIA/RIMA frequentemente enfrentam reprovações, atrasos de meses ou anos, multas milionárias e danos irreversíveis à imagem corporativa.
 
 > **Dado relevante:** Conforme análise técnica da Ambtec com base em dados públicos do IBAMA e INEA (2022-2024), a taxa de reprovação ou exigência de complementação de EIA/RIMA elaborados sem assessoria técnica especializada chega a 35% na primeira submissão. Com consultoria especializada, esse índice cai para menos de 5%, reduzindo prazos em até 6 meses e economizando centenas de milhares de reais em retrabalho.
 
@@ -72,7 +72,7 @@ Planejamento de consultas públicas, audiências, divulgação de resultados e c
 
 ## O Processo de Elaboração na Ambtec
 
-Na Ambtec Consultoria Ambiental, o EIA/RIMA é conduzido por uma equipe multidisciplinar composta por biólogos, engenheiros ambientais, geógrafos, sociólogos e advogados ambientais. Nossa metodologia é estruturada em etapas que garantem qualidade técnica e conformidade legal:
+Na Ambtec Consultoria Ambiental, o EIA/RIMA é conduzido por uma equipe multidisciplinar composta por biólogos, engenheiros ambientais, geógrafos, sociólogos e técnicos em geoprocessamento. Nossa metodologia é estruturada em etapas que garantem qualidade técnica e conformidade legal:
 
 1. **Reunião de Alinhamento:** Entendemos as particularidades do projeto, prazos, orçamento e sensibilidades ambientais da região. Definimos o escopo, a equipe e o cronograma.
 

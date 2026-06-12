@@ -12,13 +12,13 @@ updatedDate: 2026-06-15
 
 Empreendedores frequentemente se perguntam se vale a pena contratar uma consultoria ambiental para o licenciamento ou se é possível — e mais barato — fazer o processo sozinho. A resposta depende do porte do empreendimento, da complexidade técnica, da sensibilidade ambiental da região e do risco que o empresário está disposto a assumir. Neste artigo, comparamos os dois caminhos com dados reais do mercado fluminense, analisamos cenários concretos e apresentamos uma metodologia para que você tome a decisão mais adequada ao seu projeto.
 
-A tentativa de reduzir custos no curto prazo, sem considerar o custo total de propriedade do processo de licenciamento, é uma armadilha comum. Empreendedores que optam pelo caminho solo frequentemente descobrem, meses depois, que o valor gasto com taxas de reprotocolo, correções técnicas, reprovações e atraso na entrada em operação supera em muito o investimento em uma consultoria especializada. Pior: alguns descobrem que o empreendimento é inviável ambientalmente apenas após meses de tentativas frustradas.
+A tentativa de reduzir custos no curto prazo, sem considerar o custo total do processo de licenciamento, é uma armadilha comum. Empreendedores que optam pelo caminho solo frequentemente descobrem, meses depois, que o valor gasto com taxas de reprotocolo, correções técnicas, reprovações e atraso na entrada em operação supera em muito o investimento em uma consultoria especializada. Pior: alguns descobrem que o empreendimento é inviável ambientalmente apenas após meses de tentativas frustradas.
 
 > **Dado relevante:** Segundo análise da Ambtec com base em dados públicos do INEA e IBAMA (2022-2024), empreendimentos que contrataram consultoria especializada tiveram 98% de aprovação na primeira submissão, enquanto aqueles que tentaram o processo sem assessoria técnica apresentaram taxa de reprovação ou exigência de complementação de 35%, aumentando o prazo médio em 6 a 12 meses adicionais. A multa média para infrações de grande porte no RJ supera R$ 2 milhões.
 
 ## Definição em 60 segundos
 
-- **Licenciamento com consultoria:** Processo conduzido por equipe técnica especializada (engenheiros, biólogos, advogados ambientais) que elabora estudos, protocola documentação e acompanha o processo junto aos órgãos licenciadores, garantindo conformidade técnica e agilidade.
+- **Licenciamento com consultoria:** Processo conduzido por equipe técnica especializada (engenheiros ambientais e biólogos) que elabora estudos, protocola documentação e acompanha o processo junto aos órgãos licenciadores, garantindo conformidade técnica e agilidade.
 - **Licenciamento sem consultoria:** Empreendedor tenta conduzir o processo sozinho, usando apenas informações da internet ou conhecimento interno limitado, sem assessoria técnica formal. Funciona em casos muito simples, mas é arriscado para a maioria dos projetos.
 
 ## Tabela Comparativa: Com vs Sem Consultoria
@@ -97,7 +97,7 @@ Essas irregularidades geram multas, processos administrativos e, em casos graves
 Se você decidiu contratar uma consultoria, considere os seguintes critérios na escolha:
 
 - **Experiência com o órgão licenciador:** A consultoria já protocolou processos no INEA, IBAMA ou na prefeitura do seu município? Tem relacionamento técnico com os analistas?
-- **Equipe multidisciplinar:** O time inclui engenheiros ambientais, biólogos, geógrafos e advogados ambientais? Licenciamento complexo exige múltiplas especialidades.
+- **Equipe multidisciplinar:** O time inclui engenheiros ambientais, biólogos e geógrafos? Licenciamento complexo exige múltiplas especialidades.
 - **Portfólio de cases:** A consultoria pode apresentar cases de sucesso em empreendimentos similares ao seu? Pede referências de clientes?
 - **Transparência no contrato:** O valor é fixo ou por hora? Há garantia de aprovação? O contrato inclui suporte pós-licenciamento?
 - **Agilidade no diagnóstico:** A consultoria consegue fazer um diagnóstico inicial em poucos dias? O primeiro atendimento é qualificado?

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'Quanto custa um licenciamento ambiental no RJ?',
-    answer: 'O investimento varia conforme o porte e o tipo de licença. Diagnóstico inicial é gratuito em 24h. Licença Prévia a partir de R$ 4.500, Licença de Instalação a partir de R$ 6.000 e Licença de Operação a partir de R$ 3.500. Pacotes completos (LP+LI+LO) começam em R$ 12.000. EIA/RIMA para empreendimentos de grande porte partem de R$ 25.000. Cada projeto recebe proposta técnica personalizada após diagnóstico.',
+    answer: 'O investimento varia conforme o porte e o tipo de licença. Licença Prévia a partir de R$ 4.500, Licença de Instalação a partir de R$ 6.000 e Licença de Operação a partir de R$ 3.500. Pacotes completos (LP+LI+LO) começam em R$ 12.000. EIA/RIMA para empreendimentos de grande porte partem de R$ 25.000. Cada projeto recebe proposta técnica personalizada após diagnóstico inicial.',
   },
   {
     question: 'O que acontece se uma empresa operar sem licença ambiental?',
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'Quem precisa fazer o Cadastro Ambiental Rural (CAR)?',
-    answer: 'Todo imóvel rural que possua reserva legal ou Área de Preservação Permanente (APP) é obrigado a ter o CAR ativo, conforme o Novo Código Florestal (Lei 12.651/2012). No Rio de Janeiro, onde a Mata Atlântica impõe exigências específicas, o CAR é essencial para acesso a crédito rural, comercialização segura e transação de terras. Propriedades sem CAR regularizado enfrentam restrições comerciais e risco de fiscalização do IBAMA e INEA.',
+    answer: 'O Cadastro Ambiental Rural (CAR) é obrigatório para imóveis que possuam reserva legal ou Área de Preservação Permanente (APP), conforme o Novo Código Florestal (Lei 12.651/2012). No Rio de Janeiro, o CAR é exigido pelo INEA e é condição para regularidade ambiental, acesso a financiamentos e transação de terras.',
   },
   {
     question: 'Qual a diferença entre Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO)?',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Como funciona o diagnóstico ambiental gratuito da Ambtec?',
-    answer: 'Após o primeiro contato (WhatsApp, e-mail ou formulário), nossa equipe técnica analisa em até 24h úteis as particularidades do seu empreendimento: porte, atividade, documentação existente, pendências e órgão licenciador competente. Você recebe uma proposta técnica personalizada com escopo detalhado, cronograma realista e investimento estimado. Não há compromisso de contratação.',
+    answer: 'Após o primeiro contato (WhatsApp, e-mail ou formulário), nossa equipe técnica analisa as particularidades do seu empreendimento: porte, atividade, documentação existente, pendências e órgão licenciador competente. Você recebe uma proposta técnica personalizada com escopo detalhado, cronograma realista e investimento estimado. Não há compromisso de contratação.',
   },
   {
     question: 'A Ambtec oferece suporte pós-licenciamento?',
@@ -118,7 +118,7 @@ const lastUpdated = new Date().toLocaleDateString('pt-BR', { day: 'numeric', mon
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-display font-bold text-charcoal mb-6">Ainda tem dúvidas?</h2>
         <p class="text-charcoal/50 max-w-xl mx-auto mb-10">
-          Cada empreendimento é único. Fale diretamente com um especialista e receba uma proposta técnica personalizada em até 24h.
+          Cada empreendimento é único. Fale diretamente com um especialista e receba uma proposta técnica personalizada.
         </p>
         <a
           href={whatsappUrl}

@@ -10,7 +10,7 @@ authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em li
 
 A regularização ambiental é um dos desafios mais complexos enfrentados por empresas no Rio de Janeiro. Com uma legislação ambiental robusta, órgãos fiscalizadores atuantes e uma geografia natural de alta sensibilidade ecológica — que inclui a Mata Atlântica, lagoas, baías, manguezais e serras — o estado exige dos empreendimentos um nível elevado de conformidade ambiental. Empresas que operam sem o licenciamento adequado estão sujeitas a sanções severas, incluindo multas que podem alcançar milhões de reais, interdição das atividades, embargos e até responsabilização criminal dos sócios e administradores.
 
-Neste guia completo de gestão ambiental, vamos percorrer cada etapa da regularização ambiental de empresas no Rio de Janeiro, desde o diagnóstico inicial até o cumprimento das condicionantes de licenciamento. Seja você um industrial de médio porte, um empresário do setor de construção civil, um produtor rural ou um gestor de uma startup que está começando a operar, este conteúdo foi elaborado para dar clareza e direção ao seu processo de conformidade.
+Neste guia completo de gestão ambiental, vamos percorrer cada etapa da regularização ambiental de empresas no Rio de Janeiro, desde o diagnóstico inicial até o cumprimento das condicionantes de licenciamento. Seja você um industrial de médio porte, um empresário do setor de construção civil ou um gestor de uma startup que está começando a operar, este conteúdo foi elaborado para dar clareza e direção ao seu processo de conformidade.
 
 > **Dado relevante:** Segundo o Relatório de Gestão do INEA (2023), o estado do Rio de Janeiro aplicou mais de R$ 180 milhões em multas ambientais, sendo que 42% delas recaíram sobre empreendimentos industriais e imobiliários que operavam sem licenciamento ambiental atualizado. Empresas que investiram em regularização preventiva economizaram, em média, 73% do custo total em comparação com aquelas que reagiram apenas após autuação.
 
@@ -36,14 +36,14 @@ O primeiro passo para regularizar qualquer empresa é conhecer, com precisão, a
 - **Uso de recursos naturais:** Há captação de água superficial ou subterrânea? Supressão vegetal? Ocupação de áreas protegidas? Existe outorga de uso de água?
 - **Histórico de autuações:** A empresa já foi multada, embargada ou notificada por irregularidades ambientais? Existe processo administrativo em andamento? Há Termo de Ajustamento de Conduta (TAC) ou Acordo de Compromisso de Recuperação (ACR)?
 
-Esse diagnóstico pode ser conduzido internamente (se a empresa possuir equipe técnica ambiental) ou por meio de uma consultoria especializada. Na Ambtec, realizamos diagnósticos completos em até 24 horas após a primeira visita técnica, entregando um relatório estruturado com todas as irregularidades encontradas, as normas violadas e um plano de ação prioritário.
+Esse diagnóstico pode ser conduzido internamente (se a empresa possuir equipe técnica ambiental) ou por meio de uma consultoria especializada. Na Ambtec, realizamos diagnósticos completos após a primeira visita técnica, entregando um relatório estruturado com todas as irregularidades encontradas, as normas violadas e um plano de ação prioritário.
 
 ## Passo 2: Classificação do Empreendimento
 
 Após o diagnóstico, é necessário classificar o empreendimento segundo a Resolução CONAMA 401/2008, que divide as atividades em diferentes portes e níveis de impacto ambiental:
 
 - **Porte 1 (Impacto Local):** Pequenas oficinas, comércios, microindústrias com impacto localizado e baixa geração de resíduos. Licenciamento geralmente municipal.
-- **Porte 2 (Impacto Regional):** Indústrias de médio porte, loteamentos, granjas médias, usinas de asfalto. Licenciamento estadual (INEA) na maioria dos casos.
+- **Porte 2 (Impacto Regional):** Indústrias de médio porte, loteamentos, usinas de asfalto, terminais de cargas. Licenciamento estadual (INEA) na maioria dos casos.
 - **Porte 3 (Impacto Nacional):** Grandes indústrias, siderúrgicas, mineradoras, usinas hidrelétricas, portos, rodovias. Licenciamento federal (IBAMA) ou estadual, dependendo da atividade.
 
 A classificação define o órgão licenciador competente (municipal, estadual ou federal), os estudos ambientais exigidos, o prazo médio de tramitação e a complexidade do processo. No Rio de Janeiro, o INEA é o órgão licenciador estadual para a maioria dos empreendimentos de porte 2 e 3 localizados no estado.
@@ -67,7 +67,7 @@ Conforme a classificação do empreendimento, diferentes estudos técnicos serã
 - **Plano de Gerenciamento de Resíduos Sólidos (PGRS):** Obrigatório para qualquer empresa que gere resíduos, conforme a Política Nacional de Resíduos Sólidos (Lei 12.305/2010).
 - **Plano de Controle Ambiental (PCA):** Documento que estabelece as medidas de controle de poluição, emissões e efluentes.
 - **Outorga de Uso de Água:** Autorização para captação de águas superficiais ou subterrâneas, emitida pelo INEA ou Agência Nacional de Águas (ANA).
-- **Cadastro Ambiental Rural (CAR):** Para propriedades rurais, conforme o Código Florestal.
+- **Cadastro Ambiental Rural (CAR):** Para empreendimentos que necessitem de cadastro ambiental junto ao INEA.
 - **Inventário Florestal e Faunístico:** Para empreendimentos em áreas de Mata Atlântica ou com supressão vegetal.
 
 Cada um desses documentos deve ser elaborado por profissional habilitado (engenheiro ambiental, biólogo, geólogo, entre outros) e acompanhado de ART (Anotação de Responsabilidade Técnica) no CREA.
