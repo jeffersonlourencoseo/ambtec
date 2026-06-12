@@ -10,9 +10,9 @@ authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em li
 
 O Código Florestal brasileiro, estabelecido pela Lei nº 12.651/2012, é a principal legislação que regula a proteção da vegetação nativa em território nacional. Para proprietários rurais, produtores agropecuários, investidores do setor rural e gestores de propriedades no Rio de Janeiro, o conhecimento aprofundado dessa lei não é uma opção — é uma necessidade imperativa para garantir a segurança jurídica do imóvel, o acesso ao crédito rural e a continuidade das atividades produtivas.
 
-Com a crescente fiscalização ambiental e o fortalecimento de instrumentos como o CAR (Cadastro Ambiental Rural), o SIGTAP e o SINAFLOR, propriedades rurais desregularizadas enfrentam restrições comerciais, dificuldades de financiamento e risco de sanções. Neste artigo, vamos desmistificar os conceitos fundamentais do Código Florestal e apresentar um roteiro prático de regularização para proprietários do estado do Rio de Janeiro.
+Com a crescente fiscalização ambiental e o fortalecimento de instrumentos como o CAR (Cadastro Ambiental Rural), o SIGTAP e o SINAFLOR, propriedades rurais desregularizadas enfrentam restrições comerciais, dificuldades de financiamento e risco de sanções. No Rio de Janeiro, onde a Mata Atlântica é bioma predominante e onde a densidade de propriedades rurais é alta nas regiões Serrana, Costa Verde, Norte Fluminense e Baixada, a regularização florestal é um desafio técnico e jurídico que exige assessoria especializada.
 
-> **Dado relevante:** De acordo com o Instituto Nacional de Pesquisas Espaciais (INPE, 2023), o estado do Rio de Janeiro perdeu cerca de 12.500 hectares de cobertura vegetal entre 2019 e 2023, com destaque para desmatamento em áreas de Mata Atlântica e APPs. A fiscalização por imagens de satélite do SINAFLOR identificou mais de 2.300 alertas de desmatamento no estado em 2023, gerando multas e embargos.
+> **Dado relevante:** De acordo com o Instituto Nacional de Pesquisas Espaciais (INPE, 2023), o estado do Rio de Janeiro perdeu cerca de 12.500 hectares de cobertura vegetal entre 2019 e 2023, com destaque para desmatamento em áreas de Mata Atlântica e APPs. A fiscalização por imagens de satélite do SINAFLOR identificou mais de 2.300 alertas de desmatamento no estado em 2023, gerando multas e embargos que afetaram centenas de propriedades rurais.
 
 ## O que é o Código Florestal (Lei 12.651/2012)?
 
@@ -22,8 +22,9 @@ A Lei nº 12.651/2012, conhecida como Novo Código Florestal, estabelece regras 
 - A Reserva Legal, que é a porcentagem mínima de vegetação nativa que cada propriedade rural deve manter preservada.
 - O Cadastro Ambiental Rural (CAR), instrumento de cadastro obrigatório para integrar e avaliar todas as propriedades rurais do país.
 - As possibilidades de reserva legal ex situ (fora do imóvel, em casos específicos) e a criação de Reservas Particulares do Patrimônio Natural (RPPNs).
+- O Programa de Regularização Ambiental (PRA), que estabelece prazos e regras para que proprietários regularizem situações de desmatamento anterior à lei.
 
-A lei também trata do Programa de Regularização Ambiental (PRA), que estabelece prazos e regras para que proprietários regularizem situações de desmatamento anterior à lei, com possibilidade de compensação e programas de recuperação de áreas degradadas.
+A lei também trata das possibilidades de manejo sustentável em florestas nativas, do Sistema Nacional de Unidades de Conservação e das sanções por infrações. Entender cada um desses institutos é essencial para navegar a regularização florestal no Rio de Janeiro.
 
 ## Reserva Legal: Percentuais por Bioma
 
@@ -35,7 +36,7 @@ A Reserva Legal é a fração do imóvel rural que o proprietário é obrigado a
 - **Caatinga:** 20% da área do imóvel.
 - **Pampa e Pantanal:** 20% e 80%, respectivamente, conforme a tipologia vegetal.
 
-No estado do Rio de Janeiro, a maioria das propriedades rurais está situada na Mata Atlântica, bioma que possui legislações complementares rigorosas. A Resolução CONAMA 01/2000 e as leis estaduais fluminenses impõem proteção especial aos remanescentes de floresta primária, o que pode elevar a exigência de preservação para até 80% da área do imóvel.
+No estado do Rio de Janeiro, a maioria das propriedades rurais está situada na Mata Atlântica, bioma que possui legislações complementares rigorosas. A Resolução CONAMA 01/2000 e as leis estaduais fluminenses impõem proteção especial aos remanescentes de floresta primária, o que pode elevar a exigência de preservação para até 80% da área do imóvel. Isso significa que muitos produtores descobrem, ao fazer o CAR, que possuem Reserva Legal deficitária e precisam adotar medidas de recomposição ou compensação.
 
 ## Áreas de Preservação Permanente (APPs)
 
@@ -49,7 +50,7 @@ As APPs são faixas de proteção integral ao redor de recursos naturais essenci
 - **Banhados, manguezais, dunas, restingas e lagoas costeiras:** Com dimensões específicas previstas na lei.
 - **Zonas de amortecimento de unidades de conservação:** Conforme decreto e plano de manejo.
 
-A supressão de vegetação nativa em APPs constitui crime ambiental, conforme o artigo 38 da Lei de Crimes Ambientais (Lei 9.605/98), punível com reclusão de um a quatro anos e multa.
+A supressão de vegetação nativa em APPs constitui crime ambiental, conforme o artigo 38 da Lei de Crimes Ambientais (Lei 9.605/98), punível com reclusão de um a quatro anos e multa. No Rio de Janeiro, onde a densidade de riachos, nascentes e áreas de relevo acidentado é alta, as APPs ocupam percentual significativo da área de muitas propriedades, o que exige cuidado especial na delimitação e preservação.
 
 ## Cadastro Ambiental Rural (CAR)
 
@@ -60,6 +61,7 @@ O CAR é um registro público eletrônico, obrigatório para todos os imóveis q
 - Facilitar a comercialização de produtos agropecuários
 - Garantir segurança jurídica na transação de terras
 - Acessar crédito rural (PRONAF, SAFRA, entre outros)
+- Participar de programas de assistência técnica e seguro rural
 
 Para fazer o CAR, o proprietário precisa reunir documentos pessoais, comprovantes do imóvel e a delimitação georreferenciada da propriedade (shapefile ou croqui com coordenadas). A Ambtec realiza todo o processo de georreferenciamento, delimitação das reservas e APPs, protocolo no INEA e acompanhamento até a ativação do cadastro.
 
@@ -73,11 +75,11 @@ O PRA é o instrumento previsto no artigo 59 da Lei 12.651/2012 que permite a re
 - Inscrição no CAR
 - Cumprimento de Termo de Ajustamento de Conduta (TAC) ou Acordo de Compromisso de Recuperação (ACR)
 
-No Rio de Janeiro, o PRA está regulamentado por decretos estaduais e exige acompanhamento técnico especializado para garantir que a regularização seja feita de forma correta e definitiva.
+No Rio de Janeiro, o PRA está regulamentado por decretos estaduais e exige acompanhamento técnico especializado para garantir que a regularização seja feita de forma correta e definitiva. A compensação ex situ, por exemplo, exige que o produtor adquira área equivalente em outra propriedade ou CRA, o que envolve transações imobiliárias e validação pelo INEA.
 
 ## Como Regularizar sua Propriedade Rural no RJ?
 
-A regularização ambiental de uma propriedade rural no Rio de Janeiro segue um roteiro técnico estruturado:
+A regularização ambiental de uma propriedade rural no Rio de Janeiro segue um roteiro técnico estruturado que não pode ser improvisado:
 
 ### 1. Diagnóstico da Situação Atual
 Engenheiro florestal ou biólogo credenciado realiza vistoria técnica no imóvel, identificando:
