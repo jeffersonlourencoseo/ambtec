@@ -1,0 +1,32 @@
+# Ambtec Consultoria Ambiental
+
+> Consultoria especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável no Rio de Janeiro. Mais de 200 empreendimentos regularizados desde 2010.
+
+## Serviços
+
+- Licenciamento Ambiental: /servicos/licenciamento-ambiental
+- Cadastro Ambiental Rural (CAR): /servicos/cadastro-ambiental-rural
+- EIA/RIMA: /servicos/eia-rima
+- Compensação Ambiental: /servicos/compensacao-ambiental
+- Reflorestamento: /servicos/reflorestamento
+- Podas e Supressão Vegetal: /servicos/podas-e-supressao-vegetal
+- Inventário Florestal e de Fauna: /servicos/inventario-florestal-e-fauna
+
+## Blog
+
+Artigos técnicos sobre licenciamento ambiental, CAR, código florestal e gestão sustentável: /blog
+
+## Contato
+
+- Telefone / WhatsApp: (21) 99835-1294
+- E-mail: contato@ambtec.com.br
+- Endereço: Estr. da Grota Funda, 479 — Guaratiba, Rio de Janeiro — RJ
+- Horário: Seg-Sex 08h-18h, Sáb 09h-13h
+
+## Links principais
+
+- Home: /
+- Sobre: /sobre
+- Serviços: /servicos
+- Blog: /blog
+- Contato: /contato

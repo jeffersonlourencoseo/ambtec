@@ -1,0 +1,51 @@
+---
+import { SITE_CONFIG } from '../data/config.ts';
+
+interface Props {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  provider?: string;
+}
+
+const { name, description, url, image, provider } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: name,
+  description: description,
+  url: url,
+  image: image || `${SITE_CONFIG.site}${SITE_CONFIG.seo.defaultImage}`,
+  provider: {
+    '@type': 'LocalBusiness',
+    name: SITE_CONFIG.company.name,
+    url: SITE_CONFIG.site,
+    telephone: SITE_CONFIG.company.phone,
+    email: SITE_CONFIG.company.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SITE_CONFIG.company.address.street,
+      addressLocality: SITE_CONFIG.company.address.city,
+      addressRegion: SITE_CONFIG.company.address.state,
+      postalCode: SITE_CONFIG.company.address.zipCode,
+      addressCountry: SITE_CONFIG.company.address.country,
+    },
+  },
+  areaServed: {
+    '@type': 'City',
+    name: 'Rio de Janeiro',
+    containedInPlace: {
+      '@type': 'State',
+      name: 'Rio de Janeiro',
+      containedInPlace: {
+        '@type': 'Country',
+        name: 'Brasil',
+      },
+    },
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -29,7 +29,8 @@ const beneficios = [
 ---
 
 <Layout
-  title={`${servico.data.title} — ${SITE_CONFIG.company.shortName} Serviços`}
+  type="service"
+  title={servico.data.title}
   description={servico.data.description}
 >
   <Fragment slot="header"><Header /></Fragment>

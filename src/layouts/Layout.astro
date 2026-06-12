@@ -4,14 +4,17 @@ import '@fontsource-variable/dm-sans';
 import '../styles/global.css';
 import SEO from '../components/SEO.astro';
 import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import SchemaArticle from '../components/SchemaArticle.astro';
+import SchemaService from '../components/SchemaService.astro';
 import WhatsAppBtn from '../components/WhatsAppBtn.astro';
+import { SITE_CONFIG } from '../data/config.ts';
 
 interface Props {
   title?: string;
   description?: string;
   image?: string;
   canonical?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'service';
   noindex?: boolean;
   article?: {
     publishedTime?: Date;
@@ -28,7 +31,27 @@ const props = Astro.props;
 <html lang="pt-BR">
 <head>
   <SEO {...props} />
-  <SchemaLocalBusiness />
+  {props.type === 'article' ? (
+    <SchemaArticle
+      title={props.title || SITE_CONFIG.seo.defaultTitle}
+      description={props.description || SITE_CONFIG.seo.defaultDescription}
+      url={`${SITE_CONFIG.site}${Astro.url.pathname}`}
+      image={props.image ? (props.image.startsWith('http') ? props.image : `${SITE_CONFIG.site}${props.image}`) : undefined}
+      publishedTime={props.article?.publishedTime || new Date()}
+      modifiedTime={props.article?.modifiedTime}
+      author={props.article?.author}
+      tags={props.article?.tags}
+    />
+  ) : props.type === 'service' ? (
+    <SchemaService
+      name={props.title || ''}
+      description={props.description || SITE_CONFIG.seo.defaultDescription}
+      url={`${SITE_CONFIG.site}${Astro.url.pathname}`}
+      image={props.image ? (props.image.startsWith('http') ? props.image : `${SITE_CONFIG.site}${props.image}`) : undefined}
+    />
+  ) : (
+    <SchemaLocalBusiness />
+  )}
 </head>
 <body class="font-body antialiased text-charcoal bg-paper">
   <slot name="header" />

@@ -3,6 +3,7 @@ title: "O que é Licenciamento Ambiental e por que sua empresa precisa"
 description: "Entenda as etapas do licenciamento ambiental no Rio de Janeiro, os tipos de licença e como a gestão ambiental protege seu negócio."
 pubDate: 2026-06-01
 draft: false
+author: "Ambtec"
 ---
 
 O licenciamento ambiental é o principal instrumento de controle e gestão ambiental do Brasil. Instituído pela Lei 6.938/81 (Política Nacional do Meio Ambiente) e regulamentado pelas resoluções do CONAMA, esse processo administrativo obriga empresas e empreendimentos que possam causar impacto ao meio ambiente a obter autorização prévia dos órgãos ambientais competentes antes de instalar, ampliar, modificar ou operar suas atividades.

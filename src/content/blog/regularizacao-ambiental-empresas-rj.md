@@ -3,6 +3,7 @@ title: "Regularização Ambiental de Empresas no Rio de Janeiro: Passo a Passo C
 description: "Guia prático de gestão ambiental para empresas de todos os portes no RJ. Como regularizar o licenciamento ambiental, evitar multas e operar dentro da conformidade legal."
 pubDate: 2026-06-10
 draft: false
+author: "Ambtec"
 ---
 
 A regularização ambiental é um dos desafios mais complexos enfrentados por empresas no Rio de Janeiro. Com uma legislação ambiental robusta, órgãos fiscalizadores atuantes e uma geografia natural de alta sensibilidade ecológica — que inclui a Mata Atlântica, lagoas, baías, manguezais e serras — o estado exige dos empreendimentos um nível elevado de conformidade ambiental. Empresas que operam sem o licenciamento adequado estão sujeitas a sanções severas, incluindo multas que podem alcançar milhões de reais, interdição das atividades, embargos e até responsabilização criminal dos sócios e administradores.

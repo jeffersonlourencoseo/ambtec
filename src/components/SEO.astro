@@ -6,7 +6,7 @@ interface Props {
   description?: string;
   image?: string;
   canonical?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'service';
   noindex?: boolean;
   article?: {
     publishedTime?: Date;
@@ -28,7 +28,7 @@ const {
 
 const siteUrl = SITE_CONFIG.site;
 const pageTitle = title
-  ? `${title} | ${SITE_CONFIG.company.shortName}`
+  ? (title === SITE_CONFIG.seo.defaultTitle ? title : `${title} | Ambtec`)
   : SITE_CONFIG.seo.defaultTitle;
 const pageDesc = description || SITE_CONFIG.seo.defaultDescription;
 const pageImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
@@ -65,7 +65,7 @@ const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
 <meta property="og:site_name" content={SITE_CONFIG.company.name} />
 <meta property="og:title" content={pageTitle} />
 <meta property="og:description" content={pageDesc} />
-<meta property="og:type" content={type} />
+<meta property="og:type" content={type === 'service' ? 'product' : type} />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:image" content={pageImage} />
 <meta property="og:image:width" content="1200" />

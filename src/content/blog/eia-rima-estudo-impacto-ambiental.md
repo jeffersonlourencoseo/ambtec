@@ -3,6 +3,7 @@ title: "EIA/RIMA: Guia Completo do Estudo de Impacto Ambiental no Rio de Janeiro
 description: "Entenda o que é o EIA/RIMA, quando é obrigatório, como é elaborado e por que ele é indispensável para o licenciamento ambiental no Rio de Janeiro."
 pubDate: 2026-06-08
 draft: false
+author: "Ambtec"
 ---
 
 O Estudo de Impacto Ambiental (EIA) e o respectivo Relatório de Impacto sobre o Meio Ambiente (RIMA) representam um dos pilares mais importantes do licenciamento ambiental no Rio de Janeiro e em todo o Brasil. Instituído pela Resolução CONAMA 01/1986 e regulamentado por normas subsequentes, o EIA/RIMA é um instrumento técnico-científico obrigatório para empreendimentos considerados de potencial impacto significativo sobre o meio ambiente. No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros e a baía de Guanabara compõem um cenário ambiental de alta sensibilidade, a exigência desse estudo é particularmente rigorosa.

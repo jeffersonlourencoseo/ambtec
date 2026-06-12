@@ -26,8 +26,15 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 ---
 
 <Layout
-  title={`${post.data.title} — Blog ${SITE_CONFIG.company.shortName}`}
+  type="article"
+  title={post.data.title}
   description={post.data.description}
+  article={{
+    publishedTime: post.data.pubDate,
+    modifiedTime: post.data.updatedDate,
+    author: post.data.author,
+    tags: post.data.tags,
+  }}
 >
   <Fragment slot="header"><Header /></Fragment>
 

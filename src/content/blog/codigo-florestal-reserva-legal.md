@@ -3,6 +3,7 @@ title: "Código Florestal e Reserva Legal: O que Todo Proprietário Rural Precis
 description: "Guia completo sobre o Novo Código Florestal, Reserva Legal, APPs, CAR e como regularizar sua propriedade rural no Rio de Janeiro sem riscos legais."
 pubDate: 2026-06-12
 draft: false
+author: "Ambtec"
 ---
 
 O Código Florestal brasileiro, estabelecido pela Lei nº 12.651/2012, é a principal legislação que regula a proteção da vegetação nativa em território nacional. Para proprietários rurais, produtores agropecuários, investidores do setor rural e gestores de propriedades no Rio de Janeiro, o conhecimento aprofundado dessa lei não é uma opção — é uma necessidade imperativa para garantir a segurança jurídica do imóvel, o acesso ao crédito rural e a continuidade das atividades produtivas.
