@@ -77,7 +77,8 @@
   }
   .btn-luxury:focus-visible,
   .btn-luxury-outline:focus-visible,
-  .btn-luxury-dark:focus-visible {
+  .btn-luxury-dark:focus-visible,
+  .btn-luxury-gold:focus-visible {
     outline: 2px solid #b8cab8;
     outline-offset: 3px;
   }
@@ -86,6 +87,9 @@
   }
   .btn-luxury-dark {
     @apply inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-full border border-white/20 hover:bg-white/20 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300;
+  }
+  .btn-luxury-gold {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-accent-gold text-brand-deep font-bold rounded-full shadow-glow hover:shadow-dramatic hover:bg-accent-gold-deep hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300;
   }
 
   /* Image overlay gradient */
