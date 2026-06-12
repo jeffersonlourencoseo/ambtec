@@ -23,7 +23,7 @@ const { Content } = await post.render();
 const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.title !== post.data.title);
 const relatedPosts = allPosts.slice(0, 3);
 
-const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
 <Layout

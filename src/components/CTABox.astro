@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 
 const isDark = variant === 'dark';
-const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
 <div class={`relative overflow-hidden rounded-[2.5rem] p-10 lg:p-20 ${isDark ? 'bg-deep-900 text-white' : 'bg-cream text-charcoal'}`}>
