@@ -56,35 +56,35 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     ]}
   />
 
-  <section class="section-luxury bg-paper">
+  <section class="section-luxury bg-neutral-paper">
     <div class="section-inner">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <!-- CONTEÚDO PRINCIPAL -->
           <div class="lg:col-span-8">
             <div class="flex items-center gap-3 mb-8">
-              <span class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full">
+              <span class="text-xs font-bold uppercase tracking-wider text-accent-gold-deep bg-accent-gold/10 px-3 py-1 rounded-full">
                 {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
               </span>
               {post.data.updatedDate && (
-                <span class="text-xs text-charcoal/40">
+                <span class="text-xs text-neutral-ink-muted/50">
                   Atualizado em {post.data.updatedDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </span>
               )}
             </div>
 
-            <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight leading-tight mb-16 text-charcoal">
+            <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight leading-tight mb-16 text-neutral-ink">
               {post.data.title}
             </h1>
 
-            <article class="prose prose-lg text-charcoal/70">
+            <article class="prose prose-lg text-neutral-ink-muted">
               <Content />
             </article>
 
-            <div class="mt-16 pt-10 border-t border-charcoal/10">
+            <div class="mt-16 pt-10 border-t border-neutral-ink/10">
               <a
                 href="/blog"
-                class="inline-flex items-center justify-center px-8 py-4 border border-charcoal/10 text-charcoal font-semibold rounded-full hover:border-deep-700 hover:text-deep-700 transition-colors"
+                class="inline-flex items-center justify-center px-8 py-4 border border-neutral-ink/10 text-neutral-ink font-semibold rounded-full hover:border-brand-mid hover:text-brand-mid transition-colors"
               >
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
                 Voltar para o Blog
@@ -94,7 +94,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
           <!-- SIDEBAR -->
           <aside class="lg:col-span-4 space-y-8">
-            <div class="relative overflow-hidden rounded-3xl p-8 bg-gradient-to-br from-deep-900 to-forest-800 text-white sticky top-28">
+            <div class="relative overflow-hidden rounded-2xl p-8 bg-gradient-to-br from-brand-deep to-brand-mid text-white sticky top-28">
               <div class="absolute inset-0 noise-overlay"></div>
               <div class="relative z-10">
                 <h3 class="text-xl font-display font-bold mb-3">Precisa de ajuda ambiental?</h3>
@@ -105,20 +105,20 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center p-5 bg-gold-500 text-deep-900 font-bold rounded-xl hover:bg-gold-400 transition-colors w-full"
+                  class="inline-flex items-center justify-center p-5 bg-accent-gold text-brand-deep font-bold rounded-xl hover:bg-accent-gold-deep transition-colors w-full"
                 >
                   Solicitar Orçamento
                 </a>
               </div>
             </div>
 
-            <div class="glass-card p-8 rounded-3xl">
-              <h3 class="text-lg font-display font-bold text-charcoal mb-5">Serviços Populares</h3>
+            <div class="card-surface p-8 rounded-2xl">
+              <h3 class="text-lg font-display font-bold text-neutral-ink mb-5">Serviços Populares</h3>
               <ul class="space-y-3">
-                <li><a href="/servicos/licenciamento-ambiental" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Licenciamento Ambiental</a></li>
-                <li><a href="/servicos/compensacao-ambiental" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Compensação Ambiental</a></li>
-                <li><a href="/servicos/reflorestamento" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Reflorestamento</a></li>
-                <li><a href="/servicos/podas-e-supressao-vegetal" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Podas e Supressão</a></li>
+                <li><a href="/servicos/licenciamento-ambiental" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Licenciamento Ambiental</a></li>
+                <li><a href="/servicos/compensacao-ambiental" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Compensação Ambiental</a></li>
+                <li><a href="/servicos/reflorestamento" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Reflorestamento</a></li>
+                <li><a href="/servicos/podas-e-supressao-vegetal" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Podas e Supressão</a></li>
               </ul>
             </div>
           </aside>
@@ -129,20 +129,20 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
   <!-- POSTS RELACIONADOS -->
   {relatedPosts.length > 0 && (
-    <section class="section-luxury bg-cream">
+    <section class="section-luxury bg-neutral-cream">
       <div class="section-inner">
         <div class="max-w-6xl mx-auto">
           <div class="deco-line mb-8"></div>
-          <h2 class="text-3xl font-display font-bold text-charcoal mb-12 tracking-tight">Outras dicas ambientais</h2>
+          <h2 class="text-3xl font-display font-bold text-neutral-ink mb-12 tracking-tight">Outras dicas ambientais</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedPosts.map((rp) => (
               <a href={`/blog/${rp.slug}`} class="group block">
-                <article class="glass-card p-8 rounded-3xl hover:shadow-lift transition-all duration-500 h-full">
-                  <div class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full inline-block mb-4">
+                <article class="card-surface p-8 rounded-2xl hover:shadow-lift transition-all duration-500 h-full">
+                  <div class="text-xs font-bold uppercase tracking-wider text-accent-gold-deep bg-accent-gold/10 px-3 py-1 rounded-full inline-block mb-4">
                     {rp.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
                   </div>
-                  <h3 class="text-xl font-display font-bold text-charcoal mb-3 group-hover:text-deep-700 transition-colors">{rp.data.title}</h3>
-                  <p class="text-charcoal/60 text-sm leading-relaxed">{rp.data.description}</p>
+                  <h3 class="text-xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">{rp.data.title}</h3>
+                  <p class="text-neutral-ink-muted/70 text-sm leading-relaxed">{rp.data.description}</p>
                 </article>
               </a>
             ))}

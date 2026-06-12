@@ -14,15 +14,15 @@ import { SITE_CONFIG } from '../data/config.ts';
   <Fragment slot="header"><Header /></Fragment>
 
   <!-- HERO SOBRE -->
-  <section class="relative bg-deep-900 overflow-hidden">
+  <section class="relative bg-brand-deep overflow-hidden">
     <div class="absolute inset-0 noise-overlay"></div>
-    <div class="absolute top-1/3 -left-32 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -left-32 w-96 h-96 bg-accent-gold/5 rounded-full blur-3xl"></div>
     <div class="section-luxury relative z-10">
       <div class="section-inner">
         <div class="max-w-4xl">
           <div class="deco-line mb-8"></div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight leading-[0.95] mb-8">
-            Sobre a <span class="text-gradient-gold">{SITE_CONFIG.company.shortName}</span>
+            Sobre a <span class="text-accent-gold">{SITE_CONFIG.company.shortName}</span>
           </h1>
           <p class="text-xl text-white/50 max-w-2xl leading-relaxed">
             Consultoria ambiental no Rio de Janeiro especializada em licenciamento junto ao INEA e Secretarias Municipais de Meio Ambiente. Mais de 15 anos regularizando indústrias, construtoras, empreendimentos imobiliários e comércios.
@@ -33,48 +33,48 @@ import { SITE_CONFIG } from '../data/config.ts';
   </section>
 
   <!-- HISTÓRIA -->
-  <section class="section-luxury bg-paper">
+  <section class="section-luxury bg-neutral-paper">
     <div class="section-inner">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        <div class="lg:col-span-7 space-y-6 text-lg text-charcoal/60 leading-relaxed">
-          <p class="text-2xl font-display font-medium text-charcoal leading-relaxed">
-            A {SITE_CONFIG.company.shortName} nasceu de uma constatação simples: <span class="text-deep-700 font-semibold">a burocracia ambiental estava matando bons empreendimentos</span>.
+        <div class="lg:col-span-7 space-y-6 text-lg text-neutral-ink-muted leading-relaxed">
+          <p class="text-2xl font-display font-medium text-neutral-ink leading-relaxed">
+            A {SITE_CONFIG.company.shortName} nasceu de uma constatação simples: <span class="text-brand-mid font-semibold">a burocracia ambiental estava matando bons empreendimentos</span>.
           </p>
           <p>
             Empresários e gestores de projetos perdiam meses — às vezes anos — tentando entender sozinhos um sistema que deveria ser acessível, mas era injustamente complexo. Fundada em 2010 por um grupo de engenheiros ambientais e biólogos especialistas, a {SITE_CONFIG.company.shortName} começou como uma pequena consultoria local.
           </p>
           <p>
-            Hoje, <strong class="text-charcoal">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado do Rio de Janeiro.
+            Hoje, <strong class="text-neutral-ink">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado do Rio de Janeiro.
           </p>
           <p>
-            Nosso diferencial nunca foi apenas o conhecimento técnico — embora tenhamos isso de sobra. O que nos destaca é o <strong class="text-charcoal">compromisso de traduzir a linguagem burocrática em ações claras</strong>, acompanhando cada cliente da primeira conversa até a licença aprovada.
+            Nosso diferencial nunca foi apenas o conhecimento técnico — embora tenhamos isso de sobra. O que nos destaca é o <strong class="text-neutral-ink">compromisso de traduzir a linguagem burocrática em ações claras</strong>, acompanhando cada cliente da primeira conversa até a licença aprovada.
           </p>
         </div>
 
         <div class="lg:col-span-5">
           <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] opacity-10 blur-2xl"></div>
-            <div class="relative bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] p-10 lg:p-12 text-white overflow-hidden">
+            <div class="absolute -inset-4 bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl opacity-10 blur-2xl"></div>
+            <div class="relative bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl p-10 lg:p-12 text-white overflow-hidden">
               <div class="absolute inset-0 noise-overlay"></div>
               <div class="relative z-10">
                 <h3 class="text-2xl font-display font-bold mb-8">Números que contam</h3>
                 <div class="space-y-6">
                   <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">200+</div>
+                    <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-lg shrink-0">200+</div>
                     <div>
                       <p class="font-bold text-white">Empreendimentos Regularizados</p>
                       <p class="text-white/50 text-sm">Desde 2010</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">98%</div>
+                    <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-lg shrink-0">98%</div>
                     <div>
                       <p class="font-bold text-white">Taxa de Aprovação</p>
                       <p class="text-white/50 text-sm">Na primeira submissão</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">15+</div>
+                    <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-lg shrink-0">15+</div>
                     <div>
                       <p class="font-bold text-white">Anos de Experiência</p>
                       <p class="text-white/50 text-sm">No mercado fluminense</p>
@@ -90,12 +90,12 @@ import { SITE_CONFIG } from '../data/config.ts';
   </section>
 
   <!-- MISSÃO, VISÃO E VALORES -->
-  <section class="section-luxury bg-cream">
+  <section class="section-luxury bg-neutral-cream">
     <div class="section-inner">
       <div class="text-center mb-20">
         <div class="deco-line mx-auto mb-8"></div>
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Missão, Visão e Valores</h2>
-        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">O que nos move todos os dias.</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Missão, Visão e Valores</h2>
+        <p class="text-lg text-neutral-ink-muted max-w-2xl mx-auto">O que nos move todos os dias.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -119,53 +119,53 @@ import { SITE_CONFIG } from '../data/config.ts';
   </section>
 
   <!-- COMPROMISSO COM A CONFORMIDADE -->
-  <section class="section-luxury bg-paper">
+  <section class="section-luxury bg-neutral-paper">
     <div class="section-inner">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div>
           <div class="deco-line mb-8"></div>
-          <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-8 tracking-tight">
-            Do licenciamento à <span class="text-deep-700">execução técnica</span>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-8 tracking-tight">
+            Do licenciamento à <span class="text-brand-mid">execução técnica</span>
           </h2>
-          <div class="space-y-5 text-lg text-charcoal/60 leading-relaxed">
+          <div class="space-y-5 text-lg text-neutral-ink-muted leading-relaxed">
             <p>
-              O <strong class="text-charcoal">licenciamento ambiental</strong> é o ponto de partida, mas raramente é o único serviço necessário. Para aprovar uma licença no INEA ou na Secretaria Municipal de Meio Ambiente, seu empreendimento pode precisar realizar <strong class="text-charcoal">compensação ambiental</strong>, fazer um <strong class="text-charcoal">inventário florestal e de fauna</strong>, executar <strong class="text-charcoal">podas e supressão vegetal legalizada</strong>, ou implantar um projeto de <strong class="text-charcoal">reflorestamento e recuperação de áreas degradadas</strong>.
+              O <strong class="text-neutral-ink">licenciamento ambiental</strong> é o ponto de partida, mas raramente é o único serviço necessário. Para aprovar uma licença no INEA ou na Secretaria Municipal de Meio Ambiente, seu empreendimento pode precisar realizar <strong class="text-neutral-ink">compensação ambiental</strong>, fazer um <strong class="text-neutral-ink">inventário florestal e de fauna</strong>, executar <strong class="text-neutral-ink">podas e supressão vegetal legalizada</strong>, ou implantar um projeto de <strong class="text-neutral-ink">reflorestamento e recuperação de áreas degradadas</strong>.
             </p>
             <p>
-              Na Ambtec, esses serviços não são isolados. Eles se interligam. Nossa equipe técnica — <strong class="text-charcoal">engenheiros ambientais, biólogos e geoprocessadores</strong> — trabalha de forma integrada para que cada etapa, do estudo ao plantio, do laudo ao protocolo, converse com a próxima. Isso elimina retrabalho, reduz prazos e garante que a documentação entregue aos órgãos ambientais tenha <strong class="text-charcoal">coerência técnica e legal</strong>.
+              Na Ambtec, esses serviços não são isolados. Eles se interligam. Nossa equipe técnica — <strong class="text-neutral-ink">engenheiros ambientais, biólogos e geoprocessadores</strong> — trabalha de forma integrada para que cada etapa, do estudo ao plantio, do laudo ao protocolo, converse com a próxima. Isso elimina retrabalho, reduz prazos e garante que a documentação entregue aos órgãos ambientais tenha <strong class="text-neutral-ink">coerência técnica e legal</strong>.
             </p>
             <p>
-              Atuamos com <strong class="text-charcoal">indústrias, construtoras, empreendimentos imobiliários, comércios, hotéis, loteamentos, shoppings e infraestrutura</strong> em todo o estado do Rio de Janeiro, oferecendo uma consultoria que vai muito além da burocracia: entregamos soluções práticas, executadas no terreno e aprovadas nos órgãos.
+              Atuamos com <strong class="text-neutral-ink">indústrias, construtoras, empreendimentos imobiliários, comércios, hotéis, loteamentos, shoppings e infraestrutura</strong> em todo o estado do Rio de Janeiro, oferecendo uma consultoria que vai muito além da burocracia: entregamos soluções práticas, executadas no terreno e aprovadas nos órgãos.
             </p>
           </div>
         </div>
 
-        <div class="glass-card p-10 lg:p-12 rounded-[2.5rem]">
-          <h3 class="text-xl font-display font-bold text-charcoal mb-8">Tudo para licenciar em um só lugar</h3>
+        <div class="card-surface p-10 lg:p-12 rounded-2xl">
+          <h3 class="text-xl font-display font-bold text-neutral-ink mb-8">Tudo para licenciar em um só lugar</h3>
           <ul class="space-y-5">
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70"><strong>Licenciamento Ambiental</strong> — LP, LI e LO no INEA e Secretarias Municipais</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted"><strong>Licenciamento Ambiental</strong> — LP, LI e LO no INEA e Secretarias Municipais</span>
             </li>
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70"><strong>Compensação Ambiental</strong> — planejamento, execução e regularização junto aos órgãos</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted"><strong>Compensação Ambiental</strong> — planejamento, execução e regularização junto aos órgãos</span>
             </li>
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70"><strong>Inventário Florestal e de Fauna</strong> — levantamento científico para licenciamento</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted"><strong>Inventário Florestal e de Fauna</strong> — levantamento científico para licenciamento</span>
             </li>
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70"><strong>Podas e Supressão Vegetal</strong> — laudo técnico, autorização e execução legalizada</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted"><strong>Podas e Supressão Vegetal</strong> — laudo técnico, autorização e execução legalizada</span>
             </li>
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70"><strong>Reflorestamento e Recuperação</strong> — plantio de espécies nativas e monitoramento</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted"><strong>Reflorestamento e Recuperação</strong> — plantio de espécies nativas e monitoramento</span>
             </li>
             <li class="flex items-start gap-4">
-              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
-              <span class="text-charcoal/70">EIA/RIMA, renovação de licenças e defesa técnica em processos administrativos</span>
+              <span class="w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-neutral-ink-muted">EIA/RIMA, renovação de licenças e defesa técnica em processos administrativos</span>
             </li>
           </ul>
         </div>
@@ -174,43 +174,43 @@ import { SITE_CONFIG } from '../data/config.ts';
   </section>
 
   <!-- SETORES QUE ATENDEMOS -->
-  <section class="section-luxury bg-cream">
+  <section class="section-luxury bg-neutral-cream">
     <div class="section-inner">
       <div class="text-center mb-20">
         <div class="deco-line mx-auto mb-8"></div>
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Empreendimentos que Regularizamos</h2>
-        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Indústrias, construtoras, empreendimentos imobiliários, comércios e infraestrutura. Se você constrói, expande ou muda de atividade no RJ, precisa estar regularizado.</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Empreendimentos que Regularizamos</h2>
+        <p class="text-lg text-neutral-ink-muted max-w-2xl mx-auto">Indústrias, construtoras, empreendimentos imobiliários, comércios e infraestrutura. Se você constrói, expande ou muda de atividade no RJ, precisa estar regularizado.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">🏭 Indústria e Galpões</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Indústrias de pequeno, médio e grande porte, galpões logísticos, usinas de asfalto e centrais de processamento. Licenciamento ambiental no INEA ou municipal conforme a atividade.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">🏭 Indústria e Galpões</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Indústrias de pequeno, médio e grande porte, galpões logísticos, usinas de asfalto e centrais de processamento. Licenciamento ambiental no INEA ou municipal conforme a atividade.</p>
         </div>
 
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">🏗️ Construção Civil e Loteamentos</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Construtoras, incorporadoras, loteamentos urbanos, condomínios residenciais e comerciais. Regularização junto à Secretaria Municipal de Meio Ambiente e INEA.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">🏗️ Construção Civil e Loteamentos</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Construtoras, incorporadoras, loteamentos urbanos, condomínios residenciais e comerciais. Regularização junto à Secretaria Municipal de Meio Ambiente e INEA.</p>
         </div>
 
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">🏨 Hotéis e Turismo</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Hotéis, pousadas, resorts, marinas e empreendimentos turísticos em áreas costeiras e de Mata Atlântica. Licenciamento específico para uso em áreas sensíveis.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">🏨 Hotéis e Turismo</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Hotéis, pousadas, resorts, marinas e empreendimentos turísticos em áreas costeiras e de Mata Atlântica. Licenciamento específico para uso em áreas sensíveis.</p>
         </div>
 
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">🛒 Comércio e Shoppings</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Grandes superfícies comerciais, shoppings centers, hipermercados, postos de combustível e centros de distribuição. Alvará ambiental e licença de operação.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">🛒 Comércio e Shoppings</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Grandes superfícies comerciais, shoppings centers, hipermercados, postos de combustível e centros de distribuição. Alvará ambiental e licença de operação.</p>
         </div>
 
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">🚧 Infraestrutura e Obras</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Rodovias, túneis, sistemas de drenagem, obras de saneamento, dragagem e recuperação de áreas degradadas. EIA/RIMA e licenças junto ao INEA.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">🚧 Infraestrutura e Obras</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Rodovias, túneis, sistemas de drenagem, obras de saneamento, dragagem e recuperação de áreas degradadas. EIA/RIMA e licenças junto ao INEA.</p>
         </div>
 
-        <div class="glass-card p-8 rounded-3xl">
-          <h3 class="text-lg font-display font-bold text-charcoal mb-3">⚡ Energia e Telecom</h3>
-          <p class="text-charcoal/60 text-sm leading-relaxed">Subestações, linhas de transmissão, torres de telecomunicações, usinas de energia solar e eólica. Estudos ambientais e licenciamento junto ao INEA e órgãos municipais.</p>
+        <div class="card-surface p-8 rounded-xl">
+          <h3 class="text-lg font-display font-bold text-neutral-ink mb-3">⚡ Energia e Telecom</h3>
+          <p class="text-neutral-ink-muted text-sm leading-relaxed">Subestações, linhas de transmissão, torres de telecomunicações, usinas de energia solar e eólica. Estudos ambientais e licenciamento junto ao INEA e órgãos municipais.</p>
         </div>
       </div>
     </div>

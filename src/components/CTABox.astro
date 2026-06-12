@@ -17,17 +17,17 @@ const isDark = variant === 'dark';
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
-<div class={`relative overflow-hidden rounded-[2.5rem] p-10 lg:p-20 ${isDark ? 'bg-deep-900 text-white' : 'bg-cream text-charcoal'}`}>
+<div class={`relative overflow-hidden rounded-2xl p-10 lg:p-20 ${isDark ? 'bg-brand-deep text-white' : 'bg-neutral-cream text-neutral-ink'}`}>
   <div class="absolute inset-0 noise-overlay"></div>
-  <div class={`absolute -top-32 -right-32 w-96 h-96 rounded-full ${isDark ? 'bg-gold-400/5' : 'bg-deep-900/5'} blur-3xl`}></div>
-  <div class={`absolute -bottom-32 -left-32 w-96 h-96 rounded-full ${isDark ? 'bg-forest-800/20' : 'bg-forest-800/5'} blur-3xl`}></div>
+  <div class={`absolute -top-32 -right-32 w-96 h-96 rounded-full ${isDark ? 'bg-accent-gold/5' : 'bg-brand-deep/5'} blur-3xl`}></div>
+  <div class={`absolute -bottom-32 -left-32 w-96 h-96 rounded-full ${isDark ? 'bg-brand-mid/20' : 'bg-brand-mid/5'} blur-3xl`}></div>
 
   <div class="relative z-10 max-w-3xl mx-auto text-center">
     <div class="deco-line mx-auto mb-8"></div>
     <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-tight tracking-tight">
       {title}
     </h2>
-    <p class={`text-lg mb-12 leading-relaxed max-w-2xl mx-auto ${isDark ? 'text-white/60' : 'text-charcoal/60'}`}>
+    <p class={`text-lg mb-12 leading-relaxed max-w-2xl mx-auto ${isDark ? 'text-white/60' : 'text-neutral-ink-muted'}`}>
       {subtitle}
     </p>
     <div class="flex flex-wrap justify-center gap-4">
@@ -42,7 +42,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
       </a>
       <a
         href={`tel:${SITE_CONFIG.company.phone}`}
-        class={`btn-luxury-outline ${isDark ? 'border-white/20 text-white hover:bg-white hover:text-deep-900' : ''}`}
+        class={`btn-luxury-outline ${isDark ? 'border-white/20 text-white hover:bg-white hover:text-brand-deep' : ''}`}
       >
         Falar por Telefone
       </a>

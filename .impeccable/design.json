@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-12T00:00:00.000Z",
+  "title": "Design System: Ambtec",
+  "extensions": {
+    "colorMeta": {
+      "brand-deep": {
+        "role": "primary",
+        "displayName": "Mata Profunda",
+        "canonical": "oklch(20% 0.05 145)",
+        "tonalRamp": [
+          "oklch(15% 0.03 145)",
+          "oklch(20% 0.05 145)",
+          "oklch(25% 0.06 145)",
+          "oklch(32% 0.07 145)",
+          "oklch(40% 0.08 145)",
+          "oklch(50% 0.09 145)",
+          "oklch(60% 0.08 145)",
+          "oklch(80% 0.05 145)"
+        ]
+      },
+      "brand-mid": {
+        "role": "primary",
+        "displayName": "Mata Média",
+        "canonical": "oklch(50% 0.09 145)",
+        "tonalRamp": []
+      },
+      "brand-light": {
+        "role": "primary",
+        "displayName": "Mata Suave",
+        "canonical": "oklch(80% 0.05 145)",
+        "tonalRamp": []
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel Frio",
+        "canonical": "oklch(98% 0.005 145)",
+        "tonalRamp": [
+          "oklch(98% 0.005 145)",
+          "oklch(95% 0.01 145)",
+          "oklch(90% 0.02 145)",
+          "oklch(80% 0.03 145)",
+          "oklch(70% 0.04 145)",
+          "oklch(60% 0.05 145)",
+          "oklch(50% 0.05 145)",
+          "oklch(40% 0.04 145)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Creme Mata",
+        "canonical": "oklch(95% 0.01 145)",
+        "tonalRamp": []
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "oklch(20% 0.02 145)",
+        "tonalRamp": []
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "canonical": "oklch(50% 0.03 145)",
+        "tonalRamp": []
+      },
+      "gold": {
+        "role": "accent",
+        "displayName": "Ouro Restrito",
+        "canonical": "oklch(75% 0.12 85)",
+        "tonalRamp": [
+          "oklch(60% 0.12 85)",
+          "oklch(65% 0.13 85)",
+          "oklch(70% 0.14 85)",
+          "oklch(75% 0.12 85)",
+          "oklch(80% 0.10 85)",
+          "oklch(85% 0.08 85)",
+          "oklch(90% 0.05 85)",
+          "oklch(95% 0.03 85)"
+        ]
+      },
+      "gold-deep": {
+        "role": "accent",
+        "displayName": "Ouro Profundo",
+        "canonical": "oklch(60% 0.12 85)",
+        "tonalRamp": []
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headlines e títulos de seção. Apenas um por viewport."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Subtítulos e nomes de seção."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Títulos de cards e componentes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido. Máximo 70ch por parágrafo."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navegação, botões, metadados. Uppercase com tracking amplo."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-low",
+        "value": "0 4px 20px -4px rgba(20, 40, 30, 0.08)",
+        "purpose": "Cards e containers em repouso. Quase invisível."
+      },
+      {
+        "name": "ambient-raised",
+        "value": "0 12px 40px -8px rgba(20, 40, 30, 0.15)",
+        "purpose": "Estado hover de cards e botões secundários."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Transições padrão de estado."
+      },
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Reveals de scroll e animações de entrada."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal. Pill completo, fundo verde profundo, texto claro.",
+      "html": "<button class=\"ds-btn-primary\">SOLICITAR ORÇAMENTO</button>",
+      "css": ".ds-btn-primary { background: #0d2b21; color: #faf8f3; padding: 16px 40px; font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 9999px; cursor: pointer; transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background: #4d7561; transform: translateY(-2px); box-shadow: 0 12px 40px -8px rgba(20, 40, 30, 0.15); } .ds-btn-primary:active { transform: translateY(0) scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid #b8cab8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação secundária. Pill com borda, fundo transparente.",
+      "html": "<button class=\"ds-btn-secondary\">CONHECER SERVIÇOS</button>",
+      "css": ".ds-btn-secondary { background: transparent; color: #0d2b21; padding: 16px 40px; font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid #0d2b21; border-radius: 9999px; cursor: pointer; transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { background: #0d2b21; color: #faf8f3; transform: translateY(-2px); box-shadow: 0 12px 40px -8px rgba(20, 40, 30, 0.15); } .ds-btn-secondary:active { transform: translateY(0) scale(0.98); } .ds-btn-secondary:focus-visible { outline: 2px solid #b8cab8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Container de conteúdo. Fundo papel, cantos suaves, sombra sutil.",
+      "html": "<div class=\"ds-card\"><h3 class=\"ds-card-title\">Título do Card</h3><p class=\"ds-card-body\">Descrição breve do conteúdo em tom editorial.</p></div>",
+      "css": ".ds-card { background: #faf8f3; border-radius: 12px; padding: 32px; box-shadow: 0 4px 20px -4px rgba(20, 40, 30, 0.08); transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-card:hover { box-shadow: 0 12px 40px -8px rgba(20, 40, 30, 0.15); transform: translateY(-4px); } .ds-card-title { font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 1.25rem; font-weight: 600; color: #1a1a1a; margin: 0 0 12px 0; line-height: 1.2; } .ds-card-body { font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 400; color: #6b7a6e; margin: 0; line-height: 1.65; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Navegação fixa ao topo. Fundo transparente que escurece no scroll.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-logo\">AMBTEC</a><div class=\"ds-nav-links\"><a href=\"#\" class=\"ds-nav-link\">Início</a><a href=\"#\" class=\"ds-nav-link\">Sobre</a><a href=\"#\" class=\"ds-nav-link\">Serviços</a><a href=\"#\" class=\"ds-nav-cta\">Orçamento</a></div></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 80px; background: rgba(13, 43, 33, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; } .ds-nav-logo { font-family: 'Playfair Display', Georgia, Cambria, serif; font-size: 1.5rem; font-weight: 700; color: #faf8f3; text-decoration: none; letter-spacing: -0.02em; } .ds-nav-logo span { color: #d4af37; } .ds-nav-links { display: flex; align-items: center; gap: 40px; } .ds-nav-link { color: rgba(250, 248, 243, 0.7); text-decoration: none; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; position: relative; transition: color 0.3s; } .ds-nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #d4af37; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-link:hover { color: #faf8f3; } .ds-nav-link:hover::after { width: 100%; } .ds-nav-cta { background: rgba(212, 175, 55, 0.9); color: #0d2b21; padding: 10px 24px; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 9999px; text-decoration: none; transition: background 0.3s, transform 0.3s; } .ds-nav-cta:hover { background: #d4af37; transform: scale(1.05); }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo de texto padrão. Borda sutil, foco em verde médio.",
+      "html": "<input type=\"text\" class=\"ds-input\" placeholder=\"Seu nome\" />",
+      "css": ".ds-input { width: 100%; padding: 14px 18px; font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 1rem; color: #1a1a1a; background: #faf8f3; border: 1px solid rgba(107, 122, 110, 0.2); border-radius: 8px; outline: none; transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-input::placeholder { color: #6b7a6e; } .ds-input:focus { border-color: #4d7561; box-shadow: 0 0 0 3px rgba(77, 117, 97, 0.15); }"
+    },
+    {
+      "name": "Hero Badge",
+      "kind": "custom",
+      "refersTo": "hero-badge",
+      "description": "Pill de destaque usado no hero. Fundo escuro com borda dourada sutil.",
+      "html": "<div class=\"ds-hero-badge\"><span class=\"ds-hero-badge-dot\"></span><span>Referência em Consultoria Ambiental no Rio</span></div>",
+      "css": ".ds-hero-badge { display: inline-flex; align-items: center; gap: 12px; padding: 10px 20px; background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 9999px; backdrop-filter: blur(8px); font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; color: #ecc95b; letter-spacing: 0.02em; } .ds-hero-badge-dot { width: 8px; height: 8px; background: #d4af37; border-radius: 50%; animation: pulse 2s infinite; } @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Mata Sob o Lápis",
+    "overview": "A Ambtec não vende sustentabilidade como quem vende promessa. Vende experiência de campo: quem protocola é quem pisa na lama. O design traduz essa integração técnica em uma linguagem visual de autoridade silenciosa — verde profundo, papel frio, ouro quase escondido. Não é um site de ONG; é um relatório técnico que sabe se vestir para decisores ocupados.",
+    "keyCharacteristics": [
+      "Autoridade silenciosa: a cor mais forte é a mais escura; não há gritos",
+      "Superfície como papel técnico: fundos quase brancos, com micro tonalidade verde",
+      "Ouro como rareza: dourado em <5% da superfície, sempre como detalhe",
+      "Edição única por viewport: um display headline por seção"
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "A cor de marca (verde profundo) aparece em ≤30% de qualquer tela. O resto é neutro. Sua contenção é o que a torna premium.", "section": "colors" },
+      { "name": "The One Display Rule", "body": "Apenas um elemento display por viewport/seção. Dois headlines grandes competem; um comanda.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Superfícies são planas em repouso. Sombras aparecem apenas como resposta a estado (hover, foco, elevação).", "section": "elevation" }
+    ],
+    "dos": [
+      "Do manter o verde profundo como voz principal. Sua profundidade transmite experiência de campo.",
+      "Do usar Papel Frio como fundo universal. Clareza antes de personalidade.",
+      "Do reservar o ouro para números de destaque e micro-interações. Sua escassez é o luxo.",
+      "Do testar headings em breakpoints mobile antes de implementar.",
+      "Do respeitar prefers-reduced-motion: reveals de scroll devem ter fallback instantâneo."
+    ],
+    "donts": [
+      "Don't usar gradient text (background-clip: text). Proibido.",
+      "Don't repetir tiny uppercase tracked eyebrow em cada seção. Um kicker intencional é voz; um em cada seção é scaffolding de IA.",
+      "Don't usar bordas laterais coloridas (border-left ou border-right > 1px) como acento em cards.",
+      "Don't usar verde-claro vivo (#4CAF50, #2E7D32). Qualquer verde deve ser profundo ou musgo; folha nova é clichê de ONG.",
+      "Don't usar glassmorphism como padrão. Backdrop-blur é raro e proposital.",
+      "Don't usar border-radius > 16px em cards ou seções. Topo em 12–16px; pill apenas para botões e tags.",
+      "Don't usar sombras com blur ≥ 16px em conjunto com bordas de 1px no mesmo elemento. Escolha um.",
+      "Don't usar o template hero-metric (big number + small label + supporting stats + gradient accent). É clichê SaaS."
+    ]
+  }
+}

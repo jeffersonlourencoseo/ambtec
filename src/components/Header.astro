@@ -9,7 +9,7 @@ const navLinks = [
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="main-header">
-  <div class="absolute inset-0 bg-deep-900/80 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-0" id="header-bg"></div>
+  <div class="absolute inset-0 bg-brand-deep/80 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-0" id="header-bg"></div>
 
   <div class="container mx-auto px-6 lg:px-12 relative">
     <div class="flex items-center justify-between h-20 lg:h-24">
@@ -18,7 +18,7 @@ const navLinks = [
         href="/"
         class="text-2xl lg:text-3xl font-display font-bold text-white tracking-tight hover:scale-105 active:scale-95 transition-transform duration-300"
       >
-        <span class="text-gold-400">AMB</span>TEC
+        <span class="text-accent-gold">AMB</span>TEC
       </a>
 
       <!-- Desktop Nav -->
@@ -29,12 +29,12 @@ const navLinks = [
             class="text-sm font-medium text-white/70 hover:text-white tracking-wide uppercase transition-colors duration-300 relative group"
           >
             {link.label}
-            <span class="absolute -bottom-1 left-0 w-0 h-px bg-gold-400 group-hover:w-full transition-all duration-300"></span>
+            <span class="absolute -bottom-1 left-0 w-0 h-px bg-accent-gold group-hover:w-full transition-all duration-300"></span>
           </a>
         ))}
         <a
           href="/contato"
-          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-gold-500/90 text-deep-900 text-sm font-bold uppercase tracking-wider rounded-full hover:bg-gold-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow"
+          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-accent-gold/90 text-brand-deep text-sm font-bold uppercase tracking-wider rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow"
         >
           Orçamento
         </a>
@@ -61,7 +61,7 @@ const navLinks = [
   class="fixed inset-0 z-[999] hidden"
   aria-hidden="true"
 >
-  <div id="mobile-backdrop" class="absolute inset-0 bg-deep-900/98 backdrop-blur-2xl"></div>
+  <div id="mobile-backdrop" class="absolute inset-0 bg-brand-deep/98 backdrop-blur-2xl"></div>
 
   <div class="relative z-10 flex flex-col items-center justify-center h-full px-8">
     <button
@@ -78,14 +78,14 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="text-2xl font-display font-medium text-white/80 hover:text-gold-400 transition-colors duration-300"
+          class="text-2xl font-display font-medium text-white/80 hover:text-accent-gold transition-colors duration-300"
         >
           {link.label}
         </a>
       ))}
       <a
         href="/contato"
-        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-gold-500 text-deep-900 font-bold rounded-full hover:bg-gold-400 hover:scale-105 active:scale-95 transition-all shadow-glow"
+        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-accent-gold text-brand-deep font-bold rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all shadow-glow"
       >
         Solicitar Orçamento
       </a>

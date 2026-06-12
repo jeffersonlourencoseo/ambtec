@@ -9,12 +9,12 @@ const { title, description, icon } = Astro.props;
 ---
 
 <div class="group relative text-center">
-  <div class="inline-flex items-center justify-center w-20 h-20 mb-8 rounded-full bg-gradient-to-br from-deep-900 to-forest-800 text-gold-400 shadow-dramatic group-hover:shadow-glow group-hover:scale-110 transition-all duration-500">
+  <div class="inline-flex items-center justify-center w-20 h-20 mb-8 rounded-full bg-gradient-to-br from-brand-deep to-brand-mid text-accent-gold shadow-dramatic group-hover:shadow-glow group-hover:scale-110 transition-all duration-500">
     <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
     </svg>
   </div>
 
-  <h3 class="text-xl font-display font-bold text-charcoal mb-4 tracking-tight">{title}</h3>
-  <p class="text-charcoal/60 leading-relaxed max-w-xs mx-auto">{description}</p>
+  <h3 class="text-xl font-display font-bold text-neutral-ink mb-4 tracking-tight">{title}</h3>
+  <p class="text-neutral-ink-muted leading-relaxed max-w-xs mx-auto">{description}</p>
 </div>
