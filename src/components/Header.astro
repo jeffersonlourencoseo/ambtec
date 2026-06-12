@@ -26,7 +26,7 @@ const navLinks = [
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class="text-sm font-medium text-white/70 hover:text-white tracking-wide uppercase transition-colors duration-300 relative group"
+            class="text-sm font-medium text-white/70 hover:text-white tracking-wide uppercase transition-colors duration-300 relative group focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
           >
             {link.label}
             <span class="absolute -bottom-1 left-0 w-0 h-px bg-accent-gold group-hover:w-full transition-all duration-300"></span>
@@ -34,7 +34,7 @@ const navLinks = [
         ))}
         <a
           href="/contato"
-          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-accent-gold/90 text-brand-deep text-sm font-bold uppercase tracking-wider rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow"
+          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-accent-gold/90 text-brand-deep text-sm font-bold uppercase tracking-wider rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
         >
           Orçamento
         </a>
@@ -78,14 +78,14 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="text-2xl font-display font-medium text-white/80 hover:text-accent-gold transition-colors duration-300"
+          class="text-2xl font-display font-medium text-white/80 hover:text-accent-gold transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
         >
           {link.label}
         </a>
       ))}
       <a
         href="/contato"
-        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-accent-gold text-brand-deep font-bold rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all shadow-glow"
+        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-accent-gold text-brand-deep font-bold rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
       >
         Solicitar Orçamento
       </a>

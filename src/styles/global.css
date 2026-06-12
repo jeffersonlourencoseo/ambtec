@@ -14,6 +14,13 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p, li {
+    text-wrap: pretty;
+    max-width: 70ch;
+  }
 }
 
 @layer components {
@@ -61,6 +68,12 @@
   /* Button primary luxury */
   .btn-luxury {
     @apply inline-flex items-center justify-center px-8 py-4 bg-brand-deep text-neutral-paper font-bold rounded-full shadow-lift hover:shadow-dramatic hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300;
+  }
+  .btn-luxury:focus-visible,
+  .btn-luxury-outline:focus-visible,
+  .btn-luxury-dark:focus-visible {
+    outline: 2px solid #b8cab8;
+    outline-offset: 3px;
   }
   .btn-luxury-outline {
     @apply inline-flex items-center justify-center px-8 py-4 border border-brand-deep/20 text-brand-deep font-bold rounded-full hover:bg-brand-deep hover:text-neutral-paper hover:border-brand-deep hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300;
