@@ -6,7 +6,6 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
 import CTABox from '../components/CTABox.astro';
 import SchemaReview from '../components/SchemaReview.astro';
-import DecoRings from '../components/DecoRings.astro';
 import { SITE_CONFIG } from '../data/config.ts';
 
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
@@ -42,58 +41,72 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     ]}
   />
 
-  <!-- HERO TIPOGRÁFICO -->
-  <section class="relative min-h-screen flex items-end bg-brand-deep overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-deep via-brand-deep to-brand-mid/60"></div>
-    <div class="absolute top-0 right-0 w-[50vw] h-[50vw] text-brand-light opacity-40 -translate-y-1/4 translate-x-1/4 pointer-events-none">
-      <DecoRings class="w-full h-full" />
-    </div>
+  <!-- HERO -->
+  <section class="relative min-h-[90vh] flex items-center bg-brand-deep overflow-hidden">
+    <div class="absolute inset-0 noise-overlay"></div>
+    <img
+      src="/images/hero-ambiental.webp"
+      alt="Vista aérea de floresta tropical e vegetação nativa no Rio de Janeiro"
+      fetchpriority="high"
+      decoding="async"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    />
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-deep/90 via-brand-deep/80 to-brand-mid/70"></div>
 
-    <div class="section-luxury relative z-10 w-full pb-8">
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-accent-gold/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-brand-mid/20 rounded-full blur-3xl"></div>
+
+    <div class="section-luxury relative z-10 w-full">
       <div class="section-inner">
-        <div class="max-w-5xl">
-          <div class="inline-flex items-center gap-3 px-4 py-2 mb-10 rounded-full border border-accent-gold/30 bg-accent-gold/10">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent-gold"></span>
-            <span class="text-accent-gold text-xs font-medium tracking-[0.15em] uppercase">Consultoria Ambiental — Rio de Janeiro</span>
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-3 px-5 py-2.5 mb-10 rounded-full border border-accent-gold/20 bg-accent-gold/5 backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-accent-gold animate-pulse"></span>
+            <span class="text-accent-gold text-sm font-medium tracking-wide uppercase">Referência em Consultoria Ambiental no Rio</span>
           </div>
 
-          <h1 class="text-[clamp(3rem,10vw,8.5rem)] font-display font-bold text-white tracking-[-0.04em] leading-[0.88] mb-12">
-            Regularize
+          <h1 class="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-white tracking-tight leading-[0.95] mb-8">
+            Regularize seu
             <br />
-            seu empreendimento
-            <span class="text-accent-gold">.</span>
+            <span class="text-accent-gold">Empreendimento</span>
           </h1>
 
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-            <div class="lg:col-span-7">
-              <p class="text-lg md:text-xl text-white/40 leading-relaxed max-w-xl">
-                Licenciamento junto ao INEA e Secretarias Municipais.
-                <span class="text-white/70">Quando necessário, executamos no terreno:</span> compensação, inventário florestal, podas e reflorestamento. Uma equipe, um cronograma, uma responsabilidade.
-              </p>
-            </div>
+            <p class="text-lg md:text-xl text-white/50 max-w-xl mb-12 leading-relaxed font-light">
+            <strong class="text-white/80">Licenciamento ambiental</strong> junto ao INEA e Secretarias Municipais de Meio Ambiente. E, quando necessário, executamos no terreno: <span class="text-white/80">compensação ambiental, inventário florestal, podas legalizadas e reflorestamento</span>. Tudo em um só lugar.
+          </p>
 
-            <div class="lg:col-span-5 flex flex-wrap gap-4">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="btn-luxury">
-                Solicitar Orçamento
-              </a>
-              <a href="/servicos" class="btn-luxury-dark">
-                Conhecer Serviços
-              </a>
-            </div>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-luxury"
+            >
+              Solicitar Orçamento
+            </a>
+            <a
+              href="/servicos"
+              class="btn-luxury-dark"
+            >
+              Conhecer Serviços
+            </a>
           </div>
 
-          <div class="mt-24 pt-8 border-t border-white/10 flex flex-wrap gap-x-12 gap-y-4">
-            <div class="flex items-baseline gap-2">
-              <span class="text-3xl md:text-4xl font-display font-bold text-accent-gold">200+</span>
-              <span class="text-sm text-white/30">Empreendimentos</span>
+          <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-10">
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-accent-gold mb-1">200+</div>
+              <div class="text-sm text-white/40">Empreendimentos Regularizados</div>
             </div>
-            <div class="flex items-baseline gap-2">
-              <span class="text-3xl md:text-4xl font-display font-bold text-accent-gold">98%</span>
-              <span class="text-sm text-white/30">Aprovação</span>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-accent-gold mb-1">98%</div>
+              <div class="text-sm text-white/40">Taxa de Aprovação</div>
             </div>
-            <div class="flex items-baseline gap-2">
-              <span class="text-3xl md:text-4xl font-display font-bold text-accent-gold">15+</span>
-              <span class="text-sm text-white/30">Anos</span>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-accent-gold mb-1">15+</div>
+              <div class="text-sm text-white/40">Anos de Experiência</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-accent-gold mb-1">5</div>
+              <div class="text-sm text-white/40">Especialidades Técnicas</div>
             </div>
           </div>
         </div>
@@ -137,11 +150,10 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- SOBRE NÓS — EDITORIAL SEGURO -->
+  <!-- SOBRE NÓS (RESUMO) -->
   <section class="section-luxury bg-neutral-cream">
     <div class="section-inner">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <!-- Texto -->
         <div class="lg:col-span-7">
           <div class="deco-line mb-8"></div>
           <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-8 tracking-tight">
@@ -152,21 +164,24 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
               A {SITE_CONFIG.company.shortName} é uma consultoria ambiental sediada no Rio de Janeiro. Há mais de 15 anos, auxiliamos empresas de diversos setores — indústria, construção civil, comércio, hotéis e infraestrutura — a <strong class="text-neutral-ink">licenciarem, compensarem, inventariarem e recuperarem áreas ambientais</strong>. Não somos apenas despachantes de processo. Somos técnicos que executam.
             </p>
             <p>
-              Nosso diferencial é a <strong class="text-neutral-ink">integração</strong>: a mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal é capaz de realizar o inventário florestal, executar a compensação ambiental, autorizar podas de árvores e implantar reflorestamento. Isso elimina retrabalho, reduz prazos e garante coerência técnica em cada documento.
+              Nosso diferencial é a <strong class="text-neutral-ink">integração</strong>: a mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal é capaz de realizar o inventário florestal, executar a compensação ambiental, autorizar podas de árvores e implantar reflorestamento. Isso elimina retrabalho, reduz prazos e garante que cada documento entregue ao órgão ambiental tenha coerência técnica.
             </p>
           </div>
           <div class="mt-10">
-            <a href="/sobre" class="btn-luxury-outline">
+            <a
+              href="/sobre"
+              class="btn-luxury-outline"
+            >
               Conheça Nossa Trajetória
               <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
             </a>
           </div>
         </div>
 
-        <!-- Painel escuro -->
         <div class="lg:col-span-5">
           <div class="relative">
-            <div class="bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl p-10 lg:p-12 text-white overflow-hidden">
+            <div class="absolute -inset-4 bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl opacity-10 blur-2xl"></div>
+            <div class="relative bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl p-10 lg:p-14 text-white overflow-hidden">
               <div class="absolute inset-0 noise-overlay"></div>
               <div class="relative z-10 space-y-8">
                 <div class="flex items-center gap-5">
@@ -198,113 +213,95 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- SERVIÇOS — LISTA EDITORIAL -->
+  <!-- CADEIA DE SERVIÇOS -->
   <section class="section-luxury bg-neutral-paper">
     <div class="section-inner">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-        <!-- Cabeçalho fixo à esquerda -->
-        <div class="lg:col-span-4">
-          <div class="lg:sticky lg:top-32">
-            <div class="deco-line mb-8"></div>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">
-              Do Licenciamento à Execução
-            </h2>
-            <p class="text-lg text-neutral-ink-muted leading-relaxed mb-10">
-              Para aprovar uma licença, seu empreendimento pode precisar de muito mais que papelada. A Ambtec oferece <strong class="text-neutral-ink">5 especialidades interligadas</strong> — do estudo ao plantio, do laudo ao protocolo.
-            </p>
-            <a href="/servicos" class="btn-luxury-outline">
-              Ver Todos os Serviços
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-            </a>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Do Licenciamento à Execução Técnica</h2>
+        <p class="text-lg text-neutral-ink-muted max-w-3xl mx-auto">
+          Para aprovar uma licença ambiental, seu empreendimento pode precisar de muito mais que papelada. A Ambtec oferece <strong class="text-neutral-ink">5 especialidades técnicas interligadas</strong> — do estudo ao plantio, do laudo ao protocolo — para que você não precise contratar fornecedores separados.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="/servicos/licenciamento-ambiental" class="group">
+          <div class="card-surface p-8 text-center group-hover:border-accent-gold/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">Licenciamento Ambiental</h3>
+            <p class="text-sm text-neutral-ink-muted">LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras.</p>
           </div>
-        </div>
-
-        <!-- Lista de serviços -->
-        <div class="lg:col-span-8">
-          <div class="space-y-0 divide-y divide-neutral-ink/10">
-            <a href="/servicos/licenciamento-ambiental" class="group block py-10 transition-colors hover:bg-neutral-cream -mx-6 px-6 rounded-xl">
-              <div class="flex items-start gap-8">
-                <span class="text-5xl md:text-6xl font-display font-bold text-neutral-ink/10 group-hover:text-accent-gold/30 transition-colors">01</span>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">Licenciamento Ambiental</h3>
-                  <p class="text-neutral-ink-muted leading-relaxed max-w-lg">LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras. Da viabilidade à operação.</p>
-                </div>
-                <svg class="w-6 h-6 text-neutral-ink/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all shrink-0 mt-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </div>
-            </a>
-
-            <a href="/servicos/compensacao-ambiental" class="group block py-10 transition-colors hover:bg-neutral-cream -mx-6 px-6 rounded-xl">
-              <div class="flex items-start gap-8">
-                <span class="text-5xl md:text-6xl font-display font-bold text-neutral-ink/10 group-hover:text-accent-gold/30 transition-colors">02</span>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">Compensação Ambiental</h3>
-                  <p class="text-neutral-ink-muted leading-relaxed max-w-lg">Plano, cálculo e execução de ações compensatórias exigidas na licença. RPPN, restauração e CRAs.</p>
-                </div>
-                <svg class="w-6 h-6 text-neutral-ink/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all shrink-0 mt-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </div>
-            </a>
-
-            <a href="/servicos/inventario-florestal-e-fauna" class="group block py-10 transition-colors hover:bg-neutral-cream -mx-6 px-6 rounded-xl">
-              <div class="flex items-start gap-8">
-                <span class="text-5xl md:text-6xl font-display font-bold text-neutral-ink/10 group-hover:text-accent-gold/30 transition-colors">03</span>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">Inventário Florestal e Fauna</h3>
-                  <p class="text-neutral-ink-muted leading-relaxed max-w-lg">Levantamento científico que subsidia o licenciamento e a compensação. Relatórios para protocolo e publicação.</p>
-                </div>
-                <svg class="w-6 h-6 text-neutral-ink/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all shrink-0 mt-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </div>
-            </a>
-
-            <a href="/servicos/podas-e-supressao-vegetal" class="group block py-10 transition-colors hover:bg-neutral-cream -mx-6 px-6 rounded-xl">
-              <div class="flex items-start gap-8">
-                <span class="text-5xl md:text-6xl font-display font-bold text-neutral-ink/10 group-hover:text-accent-gold/30 transition-colors">04</span>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">Podas e Supressão Vegetal</h3>
-                  <p class="text-neutral-ink-muted leading-relaxed max-w-lg">Laudo técnico, autorização do INEA ou prefeitura, e execução com equipe treinada e EPIs adequados.</p>
-                </div>
-                <svg class="w-6 h-6 text-neutral-ink/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all shrink-0 mt-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </div>
-            </a>
-
-            <a href="/servicos/reflorestamento" class="group block py-10 transition-colors hover:bg-neutral-cream -mx-6 px-6 rounded-xl">
-              <div class="flex items-start gap-8">
-                <span class="text-5xl md:text-6xl font-display font-bold text-neutral-ink/10 group-hover:text-accent-gold/30 transition-colors">05</span>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">Reflorestamento e Recuperação</h3>
-                  <p class="text-neutral-ink-muted leading-relaxed max-w-lg">Plantio de espécies nativas, monitoramento de sobrevivência e relatórios técnicos para órgãos ambientais.</p>
-                </div>
-                <svg class="w-6 h-6 text-neutral-ink/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all shrink-0 mt-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </div>
-            </a>
+        </a>
+        <a href="/servicos/compensacao-ambiental" class="group">
+          <div class="card-surface p-8 text-center group-hover:border-accent-gold/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">Compensação Ambiental</h3>
+            <p class="text-sm text-neutral-ink-muted">Plano, cálculo e execução de ações compensatórias exigidas na licença.</p>
           </div>
-        </div>
+        </a>
+        <a href="/servicos/inventario-florestal-e-fauna" class="group">
+          <div class="card-surface p-8 text-center group-hover:border-accent-gold/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">Inventário Florestal e Fauna</h3>
+            <p class="text-sm text-neutral-ink-muted">Levantamento científico que subsidia o licenciamento e a compensação.</p>
+          </div>
+        </a>
+        <a href="/servicos/podas-e-supressao-vegetal" class="group">
+          <div class="card-surface p-8 text-center group-hover:border-accent-gold/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">Podas e Supressão Vegetal</h3>
+            <p class="text-sm text-neutral-ink-muted">Laudo, autorização e execução de cortes legais para obras licenciadas.</p>
+          </div>
+        </a>
+        <a href="/servicos/reflorestamento" class="group">
+          <div class="card-surface p-8 text-center group-hover:border-accent-gold/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7h-4v-7h-6v7h-4l7 7z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">Reflorestamento e Recuperação</h3>
+            <p class="text-sm text-neutral-ink-muted">Plantio de espécies nativas e monitoramento de áreas recuperadas.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-neutral-ink-muted max-w-2xl mx-auto mb-8">
+          Na prática, isso significa que você contrata uma única equipe que já sabe como cada serviço se encaixa no processo de licenciamento do seu empreendimento. <strong class="text-neutral-ink">Sem retrabalho, sem descasamento técnico, sem atrasos causados por múltiplos fornecedores.</strong>
+        </p>
+        <a href="/servicos" class="btn-luxury-outline">
+          Conhecer Todos os Serviços
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CLIENTES — LISTA EDITORIAL -->
+  <!-- CLIENTES -->
   <section class="section-luxury bg-neutral-cream">
     <div class="section-inner">
-      <div class="max-w-4xl mb-16">
-        <div class="deco-line mb-8"></div>
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">
-          Empresas que confiam na {SITE_CONFIG.company.shortName}
-        </h2>
-        <p class="text-lg text-neutral-ink-muted leading-relaxed">
-          Atuamos junto a grandes indústrias, construtoras, redes varejistas, concessionárias e empreendimentos hoteleiros no Rio de Janeiro.
-        </p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Empresas que confiam na {SITE_CONFIG.company.shortName}</h2>
+        <p class="text-lg text-neutral-ink-muted max-w-2xl mx-auto">Atuamos junto a grandes indústrias, construtoras, redes varejistas, concessionárias e empreendimentos hoteleiros no Rio de Janeiro.</p>
       </div>
 
-      <div class="flex flex-wrap gap-x-10 gap-y-6 items-baseline">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center">
         {[
           'Honda', 'BMW', 'Chevrolet', 'Cedae', 'Atacadão', 'Megafor',
-          'Royalty Barra', 'Construtora Vitale', 'Camil', 'GE Celma',
+          'Royalty Barra Hotel', 'Construtora Vitale', 'Camil', 'GE Celma',
           'Atel Imóveis', 'Tecnosol', 'BRT'
-        ].map((cliente, i) => (
-          <span class="text-xl md:text-2xl font-display text-neutral-ink/30 hover:text-neutral-ink transition-colors duration-500 cursor-default">
-            {cliente}
-            {i < 12 && <span class="text-neutral-ink/10 ml-10">·</span>}
-          </span>
+        ].map((cliente) => (
+          <div class="card-surface p-6 text-center">
+            <p class="font-display font-bold text-neutral-ink text-sm md:text-base">{cliente}</p>
+          </div>
         ))}
       </div>
     </div>
