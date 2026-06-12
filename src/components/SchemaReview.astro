@@ -11,29 +11,34 @@ interface Props {
 
 const { itemReviewed, reviews } = Astro.props;
 
-const schema = {
+const schemas = reviews.map((r) => ({
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: itemReviewed,
-  review: reviews.map((r) => ({
-    '@type': 'Review',
-    author: {
-      '@type': 'Person',
-      name: r.author,
-    },
-    datePublished: r.datePublished,
-    reviewBody: r.reviewBody,
-    ...(r.reviewRating
-      ? {
-          reviewRating: {
-            '@type': 'Rating',
-            ratingValue: r.reviewRating,
-            bestRating: 5,
-          },
-        }
-      : {}),
-  })),
-};
+  '@type': 'Review',
+  author: {
+    '@type': 'Person',
+    name: r.author,
+  },
+  datePublished: r.datePublished,
+  reviewBody: r.reviewBody,
+  itemReviewed: {
+    '@type': 'Organization',
+    name: itemReviewed,
+    url: 'https://ambtec.bio.br',
+  },
+  ...(r.reviewRating
+    ? {
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: r.reviewRating,
+          bestRating: 5,
+        },
+      }
+    : {}),
+}));
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<>
+  {schemas.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+</>

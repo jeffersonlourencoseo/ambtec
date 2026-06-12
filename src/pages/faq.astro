@@ -103,9 +103,9 @@ const lastUpdated = new Date().toLocaleDateString('pt-BR', { day: 'numeric', mon
           {faqs.map((faq, index) => (
             <details class="glass-card p-6 lg:p-8 rounded-3xl group" open={index < 3}>
               <summary class="flex items-start justify-between cursor-pointer list-none">
-                <h2 class="text-lg lg:text-xl font-display font-bold text-charcoal pr-4">
+                <h3 class="text-lg lg:text-xl font-display font-bold text-charcoal pr-4">
                   {faq.question}
-                </h2>
+                </h3>
                 <span class="shrink-0 w-8 h-8 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-sm font-bold group-open:rotate-45 transition-transform duration-300">
                   +
                 </span>
