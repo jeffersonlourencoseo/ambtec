@@ -137,11 +137,12 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- SOBRE NÓS — QUEBRA DE GRID -->
-  <section class="section-luxury bg-neutral-cream overflow-hidden">
+  <!-- SOBRE NÓS — EDITORIAL SEGURO -->
+  <section class="section-luxury bg-neutral-cream">
     <div class="section-inner">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <div class="lg:col-span-6">
+        <!-- Texto -->
+        <div class="lg:col-span-7">
           <div class="deco-line mb-8"></div>
           <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-8 tracking-tight">
             Quem é a <span class="text-brand-mid">{SITE_CONFIG.company.shortName}</span>
@@ -151,7 +152,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
               A {SITE_CONFIG.company.shortName} é uma consultoria ambiental sediada no Rio de Janeiro. Há mais de 15 anos, auxiliamos empresas de diversos setores — indústria, construção civil, comércio, hotéis e infraestrutura — a <strong class="text-neutral-ink">licenciarem, compensarem, inventariarem e recuperarem áreas ambientais</strong>. Não somos apenas despachantes de processo. Somos técnicos que executam.
             </p>
             <p>
-              Nosso diferencial é a <strong class="text-neutral-ink">integração</strong>: a mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal é capaz de realizar o inventário florestal, executar a compensação ambiental, autorizar podas de árvores e implantar reflorestamento. Isso elimina retrabalho, reduz prazos e garante que cada documento entregue ao órgão ambiental tenha coerência técnica.
+              Nosso diferencial é a <strong class="text-neutral-ink">integração</strong>: a mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal é capaz de realizar o inventário florestal, executar a compensação ambiental, autorizar podas de árvores e implantar reflorestamento. Isso elimina retrabalho, reduz prazos e garante coerência técnica em cada documento.
             </p>
           </div>
           <div class="mt-10">
@@ -161,33 +162,35 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
             </a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Painel escuro vazando para fora do container -->
-    <div class="mt-16 lg:mt-0 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 lg:w-[45%] xl:w-[40%] relative">
-      <div class="bg-gradient-to-br from-brand-deep to-brand-mid p-10 lg:p-14 text-white overflow-hidden lg:rounded-l-2xl">
-        <div class="absolute inset-0 noise-overlay"></div>
-        <div class="relative z-10 space-y-8 max-w-md ml-auto">
-          <div class="flex items-center gap-5">
-            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">200+</div>
-            <div>
-              <p class="font-bold text-white">Empreendimentos Regularizados</p>
-              <p class="text-white/50 text-sm">Desde 2010</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-5">
-            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">98%</div>
-            <div>
-              <p class="font-bold text-white">Taxa de Aprovação</p>
-              <p class="text-white/50 text-sm">Na primeira submissão</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-5">
-            <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">15+</div>
-            <div>
-              <p class="font-bold text-white">Anos de Experiência</p>
-              <p class="text-white/50 text-sm">No mercado fluminense</p>
+        <!-- Painel escuro -->
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="bg-gradient-to-br from-brand-deep to-brand-mid rounded-2xl p-10 lg:p-12 text-white overflow-hidden">
+              <div class="absolute inset-0 noise-overlay"></div>
+              <div class="relative z-10 space-y-8">
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">200+</div>
+                  <div>
+                    <p class="font-bold text-white">Empreendimentos Regularizados</p>
+                    <p class="text-white/50 text-sm">Desde 2010</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">98%</div>
+                  <div>
+                    <p class="font-bold text-white">Taxa de Aprovação</p>
+                    <p class="text-white/50 text-sm">Na primeira submissão</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl shrink-0">15+</div>
+                  <div>
+                    <p class="font-bold text-white">Anos de Experiência</p>
+                    <p class="text-white/50 text-sm">No mercado fluminense</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
