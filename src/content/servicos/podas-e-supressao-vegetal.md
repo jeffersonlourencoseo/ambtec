@@ -6,7 +6,7 @@ icon: "M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.9
 
 A poda e a supressão vegetal (corte e poda de árvore) são atividades sujeitas a rigoroso controle ambiental no Brasil, especialmente quando se trata de podas de árvores no Rio de Janeiro. Conforme as normas ecológicas federais, estaduais e municipais, nenhuma árvore pode ser cortada ou podada sem a devida autorização dos órgãos ambientais competentes. O descumprimento dessa exigência configura infração ambiental sujeita a multas, embargos e até processos criminais.
 
-O trabalho de poda ou supressão deve ser realizado exclusivamente por profissionais legalmente habilitados: Biólogos, Engenheiros Florestaes ou Agrônomos, registrados em seus respectivos conselhos de classe (CRBio, CREA ou CRA). Por isso, contratar uma empresa de poda de árvores credenciada é essencial para garantir a legalidade do serviço. Além disso, a empresa contratada deve possuir Alvará de Funcionamento, Cadastro Técnico Federal (CTF) do IBAMA e todas as certificações exigidas para operação em áreas urbanas ou rurais.
+O trabalho de poda ou supressão deve ser realizado exclusivamente por profissionais legalmente habilitados: Biólogos, Engenheiros Florestaes ou Agrônomos, registrados em seus respectivos conselhos de classe (CRBio, CREA ou CRA). Por isso, contratar uma empresa de poda de árvores credenciada é essencial para garantir a legalidade do serviço. A empresa contratada deve possuir Alvará de Funcionamento e todas as certificações exigidas para operação em áreas urbanas.
 
 ## Quando a Supressão ou Poda é Permitida?
 
@@ -16,7 +16,7 @@ A legislação permite a supressão de árvores somente em situações específi
 - **Doenças ou pragas irreversíveis:** Espécies afetadas por doenças que comprometam sua sobrevivência e representem risco de disseminação.
 - **Interferência em infraestrutura:** Obstrução de redes de energia, saneamento, telecomunicações ou obras públicas devidamente autorizadas.
 - **Obras e empreendimentos licenciados:** Supressão autorizada dentro de projetos de licenciamento ambiental aprovados, desde que compensada quando exigido.
-- **Manutenção de sistemas produtivos:** Em propriedades rurais, podas de formação e manejo de espécies produtivas, respeitando as normas técnicas.
+- **Manutenção de áreas verdes urbanas:** Podas de formação e manejo de espécies em condomínios, praças, shoppings e empreendimentos imobiliários, respeitando as normas técnicas.
 
 Importante: a simples "inconveniência" (sombra, queda de folhas, frutos ou raízes) não é motivo legal para supressão total de uma árvore. Nesses casos, a poda técnica de manutenção é a solução adequada.
 
@@ -26,7 +26,7 @@ Nossa equipe técnica conduz todo o processo de forma legal, segura e documentad
 
 1. **Vistoria Técnica In Loco:** Engenheiro florestal ou biólogo credenciado visita o local para avaliar a saúde das árvores, riscos associados, espécies presentes, porte, diâmetro a altura do peito (DAP) e localização em relação a edificações e infraestruturas.
 
-2. **Identificação Botânica e Avaliação:** Catalogamos todas as espécies arbóreas, verificamos se há exemplares raras, ameaçadas de extinção ou protegidas por legislação específica (como a lista oficial de espécies ameaçadas do IBAMA e ICMBio), o que exige cuidados especiais ou a impossibilidade de corte.
+2. **Identificação Botânica e Avaliação:** Catalogamos todas as espécies arbóreas, verificamos se há exemplares raras, ameaçadas de extinção ou protegidas por legislação específica, o que exige cuidados especiais ou a impossibilidade de corte.
 
 3. **Elaboração do Laudo Técnico:** Preparamos um laudo detalhado com justificativa técnica para cada poda ou supressão proposta, fotos, identificação das espécies, DAP, altura, estado fitossanitário e recomendações técnicas de manejo.
 

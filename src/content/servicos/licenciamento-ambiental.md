@@ -28,7 +28,7 @@ Nossa metodologia é estruturada para minimizar prazos, reduzir riscos de reprov
 
 2. **Elaboração de Estudos Ambientais:** Preparamos Estudo de Impacto Ambiental (EIA), Relatório de Impacto sobre o Meio Ambiente (RIMA), Relatório Ambiental Simplificado (RAS) ou outros estudos exigidos conforme o porte e a tipologia do empreendimento.
 
-3. **Protocolo e Acompanhamento:** Submetemos a documentação aos órgãos ambientais competentes — IBAMA, INEA (Instituto Estadual do Ambiente do Rio de Janeiro) ou órgãos municipais — e acompanhamos tecnicamente o processo até a emissão da licença.
+3. **Protocolo e Acompanhamento:** Submetemos a documentação aos órgãos ambientais competentes — INEA (Instituto Estadual do Ambiente do Rio de Janeiro), Secretarias Municipais de Meio Ambiente ou órgãos federais quando aplicável — e acompanhamos tecnicamente o processo até a emissão da licença.
 
 4. **Condições e Acompanhamento Pós-Licenciamento:** Após a emissão da licença, auxiliamos o cliente no cumprimento das condicionantes ambientais, elaboração de relatórios de monitoramento e renovações de licenças.
 

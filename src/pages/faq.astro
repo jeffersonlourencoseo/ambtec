@@ -11,7 +11,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 const faqs = [
   {
     question: 'Quanto tempo leva o licenciamento ambiental no Rio de Janeiro?',
-    answer: 'O prazo médio varia de 3 a 12 meses, dependendo do porte do empreendimento, do órgão licenciador (INEA, IBAMA ou municipal) e da complexidade dos estudos ambientais exigidos. Empreendimentos de porte 1 (menor impacto) costumam levar 3 a 6 meses, enquanto portes 2 e 3 podem ultrapassar 12 meses devido à exigência de EIA/RIMA. A Ambtec reduz prazos em até 30% com protocolo técnico completo e acompanhamento semanal.',
+    answer: 'O prazo médio varia de 3 a 12 meses, dependendo do porte do empreendimento, do órgão licenciador (INEA ou Secretaria Municipal de Meio Ambiente) e da complexidade dos estudos ambientais exigidos. Empreendimentos de porte 1 (menor impacto) costumam levar 3 a 6 meses, enquanto portes 2 e 3 podem ultrapassar 12 meses devido à exigência de EIA/RIMA. A Ambtec reduz prazos em até 30% com protocolo técnico completo e acompanhamento semanal junto aos órgãos fluminenses.',
   },
   {
     question: 'Quanto custa um licenciamento ambiental no RJ?',
@@ -22,20 +22,20 @@ const faqs = [
     answer: 'Empresas sem licenciamento adequado estão sujeitas a multas que podem alcançar milhões de reais, interdição imediata das atividades, embargo e responsabilização criminal dos administradores e sócios (Lei 9.605/98). Além disso, perdem credibilidade com investidores, clientes e acesso a financiamentos. A regularização ambiental é pré-requisito para certificações ESG e linhas de crédito.',
   },
   {
-    question: 'Quem precisa fazer o Cadastro Ambiental Rural (CAR)?',
-    answer: 'O Cadastro Ambiental Rural (CAR) é obrigatório para imóveis que possuam reserva legal ou Área de Preservação Permanente (APP), conforme o Novo Código Florestal (Lei 12.651/2012). No Rio de Janeiro, o CAR é exigido pelo INEA e é condição para regularidade ambiental, acesso a financiamentos e transação de terras.',
+    question: 'Empreendimentos urbanos também precisam de licenciamento ambiental?',
+    answer: 'Sim. No Rio de Janeiro, construtoras, loteamentos, shoppings, hotéis, indústrias, galpões logísticos e comércios de grande porte geralmente precisam de licença ambiental junto à Secretaria Municipal de Meio Ambiente do município onde estão localizados ou junto ao INEA, dependendo do porte e do impacto. A não realização do licenciamento gera embargo, multa e impedimento de emissão do Alvará de Funcionamento e do Habite-se.'
   },
   {
     question: 'Qual a diferença entre Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO)?',
     answer: 'A Licença Prévia (LP) é concedida na fase de planejamento e analisa a viabilidade ambiental e compatibilidade do projeto com o zoneamento. A Licença de Instalação (LI) autoriza a construção e detalha os sistemas de controle de impactos. A Licença de Operação (LO) permite o início das atividades produtivas após verificação do cumprimento de todas as condicionantes da LI. Cada fase é obrigatória e sequencial: sem LP não há LI, sem LI não há LO.',
   },
   {
-    question: 'Quando é obrigatório fazer EIA/RIMA?',
-    answer: 'O Estudo de Impacto Ambiental (EIA) e o Relatório de Impacto sobre o Meio Ambiente (RIMA) são obrigatórios para empreendimentos de potencial impacto significativo, conforme a Resolução CONAMA 01/1986. Usinas hidrelétricas, mineradoras, grandes indústrias, portos, rodovias e empreendimentos imobiliários de grande porte geralmente exigem EIA/RIMA. A classificação do porte segue a Resolução CONAMA 401/2008.',
+    question: 'Quando é obrigatório fazer EIA/RIMA no RJ?',
+    answer: 'O EIA/RIMA é obrigatório para empreendimentos de potencial impacto significativo no Rio de Janeiro, conforme a Resolução CONAMA 01/1986 e as normas do INEA. Grandes indústrias, usinas, portos, loteamentos de grande porte, empreendimentos imobiliários massivos e obras de infraestrutura geralmente exigem o estudo. A classificação do porte ambiental no RJ segue a Resolução CONAMA 401/2008 e as deliberações específicas do INEA.'
   },
   {
     question: 'A Ambtec atende em que regiões do Rio de Janeiro?',
-    answer: 'A Ambtec atua em todo o estado do Rio de Janeiro, incluindo a capital, Baixada Fluminense, Região dos Lagos, Serra, Norte e Noroeste fluminense. Nossa equipe realiza atendimento presencial e remoto, com deslocamento técnico para vistorias, coleta de dados e reuniões com órgãos ambientais locais.',
+    answer: 'A Ambtec atua em todo o estado do Rio de Janeiro, incluindo a capital, Baixada Fluminense, Região dos Lagos, Serra, Norte e Noroeste fluminense. Realizamos atendimento presencial e remoto, com deslocamento técnico para vistorias e reuniões junto ao INEA e às Secretarias Municipais de Meio Ambente dos municípios onde nossos clientes estão instalados.'
   },
   {
     question: 'Como funciona o diagnóstico ambiental gratuito da Ambtec?',
@@ -46,8 +46,8 @@ const faqs = [
     answer: 'Sim. Oferecemos acompanhamento contínuo para cumprimento de condicionantes ambientais, elaboração de relatórios de monitoramento, renovações de licenças, alterações de projeto e novas demandas regulatórias. Nosso objetivo é manter seu empreendimento 100% regularizado ao longo de todo o ciclo de vida.',
   },
   {
-    question: 'Quais legislações a Ambtec domina?',
-    answer: 'Nossa equipe trabalha em estrita aderência à Lei 6.938/81 (Política Nacional do Meio Ambiente), resoluções CONAMA (401, 463, 492 e outras), Lei 12.651/2012 (Novo Código Florestal), normas estaduais e municipais do Rio de Janeiro, e normas ISO 14001 de gestão ambiental. Participamos continuamente de capacitações técnicas para manter o conhecimento atualizado.',
+    question: 'A Ambtec conhece as regras do INEA e das prefeituras?',
+    answer: 'Sim. Nosso trabalho diário é protocolar e acompanhar processos junto ao INEA — Instituto Estadual do Ambiente — e às Secretarias Municipais de Meio Ambiente dos municípios fluminenses. Dominamos as resoluções estaduais, os procedimentos de cada prefeitura, os formulários específicos e as exigências técnicas dos analistas, o que reduz erros de protocolo e retrabalho. O conhecimento da burocracia local é nosso principal diferencial.'
   },
 ];
 
