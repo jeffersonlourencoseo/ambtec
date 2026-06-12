@@ -6,6 +6,7 @@ draft: false
 author: "Eng. Paula Ribeiro"
 authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+updatedDate: 2026-06-01
 ---
 
 > **Resumo:** O licenciamento ambiental é obrigatório para empresas que instalam, ampliam ou operam atividades impactantes no Rio de Janeiro. O INEA e as Secretarias Municipais exigem Licença Prévia, Instalação e Operação para garantir conformidade legal e proteção ambiental. Empreendimentos imobiliários, indústrias, hotéis e shoppings devem regularizar-se antes de iniciar as obras.

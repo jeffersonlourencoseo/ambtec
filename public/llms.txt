@@ -1,47 +1,33 @@
 # Ambtec Consultoria Ambiental
 
-> Consultoria ambiental no Rio de Janeiro que integra licenciamento junto ao INEA e Secretarias Municipais de Meio Ambiente com execução técnica no terreno. Mais de 200 empreendimentos regularizados desde 2010. Diagnóstico inicial gratuito.
+## Sobre
+A Ambtec é uma consultoria ambiental sediada no Rio de Janeiro, com mais de 15 anos de experiência em licenciamento ambiental junto ao INEA e Secretarias Municipais de Meio Ambiente. A empresa integra licenciamento, compensação ambiental, inventário florestal, podas de árvores legalizadas e reflorestamento em um único fluxo técnico — do estudo ao protocolo, do laudo à execução no terreno.
 
-## Diferencial
+## Serviços principais
+- Licenciamento Ambiental (LP, LI, LO, EIA/RIMA)
+- Compensação Ambiental (RPPN, CRA, restauração florestal)
+- Inventário Florestal e Faunístico
+- Podas e Supressão Vegetal Legalizada
+- Reflorestamento e Recuperação de Áreas Degradadas
+- Cadastro Ambiental Rural (CAR)
+- Regularização Ambiental de Empresas
 
-A Ambtec não é apenas uma despachante de processos. A mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal de Meio Ambiente também executa compensação ambiental, inventário florestal, podas de árvores autorizadas e reflorestamento. Isso elimina retrabalho, reduz prazos e garante que cada documento entregue ao órgão ambiental tenha coerência técnica.
-
-## Serviços
-
-- **Licenciamento Ambiental:** /servicos/licenciamento-ambiental — LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras do Rio de Janeiro.
-- **Compensação Ambiental:** /servicos/compensacao-ambiental — Plano, cálculo e execução de ações compensatórias exigidas como condicionante de licenciamento.
-- **Inventário Florestal e de Fauna:** /servicos/inventario-florestal-e-fauna — Levantamento científico que subsidia o licenciamento e a compensação ambiental.
-- **Podas e Supressão Vegetal:** /servicos/podas-e-supressao-vegetal — Laudo técnico, autorização e execução de cortes legais para obras licenciadas.
-- **Reflorestamento e Recuperação:** /servicos/reflorestamento — Plantio de espécies nativas e monitoramento de áreas recuperadas como condicionante de licença.
-
-## Clientes
-
-Atuou junto a Honda, BMW, Chevrolet, Cedae, Atacadão, Megafor, Royalty Barra Hotel, Construtora Vitale, Camil, GE Celma, Atel Imóveis, Tecnosol e BRT.
-
-## Blog
-
-Artigos técnicos sobre licenciamento ambiental, EIA/RIMA, compensação, podas legalizadas e regularização de empresas no RJ: /blog
-
-## Perguntas Frequentes
-
-Respostas técnicas sobre prazos, custos, legislação e processos ambientais no RJ: /faq
-
-## Preços
-
-Faixas de investimento orientativas por tipo de serviço: /pricing.md
+## Área de atuação
+Estado do Rio de Janeiro — capital, Baixada Fluminense, Região dos Lagos, Serra, Norte e Noroeste fluminense.
 
 ## Contato
-
-- Telefone / WhatsApp: (21) 99835-1294
+- WhatsApp: (21) 99835-1294
 - E-mail: contato@ambtec.com.br
 - Endereço: Estr. da Grota Funda, 479 — Guaratiba, Rio de Janeiro — RJ
-- Horário: Seg-Sex 08h-18h, Sáb 09h-13h
+- Site: https://licenciamentoambientalrio.com.br
 
-## Links principais
-
+## Páginas principais
 - Home: /
-- Sobre: /sobre
 - Serviços: /servicos
 - Blog: /blog
 - FAQ: /faq
 - Contato: /contato
+- Sobre: /sobre
+
+## Documentação técnica
+A empresa publica guias técnicos sobre licenciamento ambiental, CAR, EIA/RIMA, Código Florestal e regularização de empresas no Rio de Janeiro.
