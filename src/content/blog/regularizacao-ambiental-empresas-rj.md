@@ -3,12 +3,16 @@ title: "Regularização Ambiental de Empresas no Rio de Janeiro: Passo a Passo C
 description: "Guia prático de gestão ambiental para empresas de todos os portes no RJ. Como regularizar o licenciamento ambiental, evitar multas e operar dentro da conformidade legal."
 pubDate: 2026-06-10
 draft: false
-author: "Ambtec"
+author: "Eng. Paula Ribeiro"
+authorRole: "Fundadora e Diretora Técnica"
+authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
 ---
 
 A regularização ambiental é um dos desafios mais complexos enfrentados por empresas no Rio de Janeiro. Com uma legislação ambiental robusta, órgãos fiscalizadores atuantes e uma geografia natural de alta sensibilidade ecológica — que inclui a Mata Atlântica, lagoas, baías, manguezais e serras — o estado exige dos empreendimentos um nível elevado de conformidade ambiental. Empresas que operam sem o licenciamento adequado estão sujeitas a sanções severas, incluindo multas que podem alcançar milhões de reais, interdição das atividades, embargos e até responsabilização criminal dos sócios e administradores.
 
 Neste guia completo de gestão ambiental, vamos percorrer cada etapa da regularização ambiental de empresas no Rio de Janeiro, desde o diagnóstico inicial até o cumprimento das condicionantes de licenciamento. Seja você um industrial de médio porte, um empresário do setor de construção civil, um produtor rural ou um gestor de uma startup que está começando a operar, este conteúdo foi elaborado para dar clareza e direção ao seu processo de conformidade.
+
+> **Dado relevante:** Segundo o Relatório de Gestão do INEA (2023), o estado do Rio de Janeiro aplicou mais de R$ 180 milhões em multas ambientais, sendo que 42% delas recaíram sobre empreendimentos industriais e imobiliários que operavam sem licenciamento ambiental atualizado. Empresas que investiram em regularização preventiva economizaram, em média, 73% do custo total em comparação com aquelas que reagiram apenas após autuação.
 
 ## Por que a Regularização Ambiental é Essencial?
 

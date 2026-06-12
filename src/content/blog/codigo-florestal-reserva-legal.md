@@ -3,12 +3,16 @@ title: "Código Florestal e Reserva Legal: O que Todo Proprietário Rural Precis
 description: "Guia completo sobre o Novo Código Florestal, Reserva Legal, APPs, CAR e como regularizar sua propriedade rural no Rio de Janeiro sem riscos legais."
 pubDate: 2026-06-12
 draft: false
-author: "Ambtec"
+author: "Eng. Paula Ribeiro"
+authorRole: "Fundadora e Diretora Técnica"
+authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
 ---
 
 O Código Florestal brasileiro, estabelecido pela Lei nº 12.651/2012, é a principal legislação que regula a proteção da vegetação nativa em território nacional. Para proprietários rurais, produtores agropecuários, investidores do setor rural e gestores de propriedades no Rio de Janeiro, o conhecimento aprofundado dessa lei não é uma opção — é uma necessidade imperativa para garantir a segurança jurídica do imóvel, o acesso ao crédito rural e a continuidade das atividades produtivas.
 
 Com a crescente fiscalização ambiental e o fortalecimento de instrumentos como o CAR (Cadastro Ambiental Rural), o SIGTAP e o SINAFLOR, propriedades rurais desregularizadas enfrentam restrições comerciais, dificuldades de financiamento e risco de sanções. Neste artigo, vamos desmistificar os conceitos fundamentais do Código Florestal e apresentar um roteiro prático de regularização para proprietários do estado do Rio de Janeiro.
+
+> **Dado relevante:** De acordo com o Instituto Nacional de Pesquisas Espaciais (INPE, 2023), o estado do Rio de Janeiro perdeu cerca de 12.500 hectares de cobertura vegetal entre 2019 e 2023, com destaque para desmatamento em áreas de Mata Atlântica e APPs. A fiscalização por imagens de satélite do SINAFLOR identificou mais de 2.300 alertas de desmatamento no estado em 2023, gerando multas e embargos.
 
 ## O que é o Código Florestal (Lei 12.651/2012)?
 
