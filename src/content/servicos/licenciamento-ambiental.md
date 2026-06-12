@@ -6,7 +6,7 @@ icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 
 O licenciamento ambiental é o processo administrativo obrigatório pelo qual um empreendimento obtém autorização dos órgãos ambientais competentes para instalar, expandir, alterar ou operar atividades que possam causar degradação ao meio ambiente. Instituído pela Lei 6.938/81 (Política Nacional do Meio Ambiente) e regulamentado pelas resoluções do CONAMA, esse instrumento visa garantir que o desenvolvimento econômico ocorra de forma compatível com a preservação ambiental e a qualidade de vida da população.
 
-Toda empresa ou atividade que utilize recursos naturais, gere efluentes, emissões atmosféricas, resíduos sólidos ou cause qualquer forma de interferência no meio ambiente está sujeita ao licenciamento. Isso inclui indústrias de todos os portes, empreendimentos agropecuários, loteamentos, mineradoras, usinas de energia, portos, rodovias e empreendimentos imobiliários.
+Toda empresa ou atividade que utilize recursos naturais, gere efluentes, emissões atmosféricas, resíduos sólidos ou cause qualquer forma de interferência no meio ambiente está sujeita ao licenciamento. Isso inclui indústrias de todos os portes, galpões logísticos, loteamentos, mineradoras, usinas de energia, portos, rodovias, shoppings, hotéis e empreendimentos imobiliários.
 
 ## Tipos de Licença Ambiental
 
@@ -30,6 +30,8 @@ Nossa metodologia é estruturada para minimizar prazos, reduzir riscos de reprov
 
 3. **Protocolo e Acompanhamento:** Submetemos a documentação aos órgãos ambientais competentes — INEA (Instituto Estadual do Ambiente do Rio de Janeiro), Secretarias Municipais de Meio Ambiente ou órgãos federais quando aplicável — e acompanhamos tecnicamente o processo até a emissão da licença.
 
-4. **Condições e Acompanhamento Pós-Licenciamento:** Após a emissão da licença, auxiliamos o cliente no cumprimento das condicionantes ambientais, elaboração de relatórios de monitoramento e renovações de licenças.
+4. **Execução Técnica Integrada:** Quando o licenciamento exige compensação ambiental, inventário florestal, podas de árvores autorizadas ou reflorestamento, nossa própria equipe técnica executa esses serviços — não terceirizamos para fornecedores externos. Isso garante coerência entre o projeto aprovado e a execução no terreno.
 
-Com mais de 200 processos de licenciamento conduzidos com sucesso, a Ambtec oferece segurança jurídica, agilidade nos trâmites e total transparência em cada etapa do processo.
+5. **Condições e Acompanhamento Pós-Licenciamento:** Após a emissão da licença, auxiliamos o cliente no cumprimento das condicionantes ambientais, elaboração de relatórios de monitoramento e renovações de licenças.
+
+Com mais de 200 processos de licenciamento conduzidos com sucesso, a Ambtec oferece segurança jurídica, agilidade nos trâmites e total transparência. Nosso diferencial é a integração: a mesma equipe que protocola sua licença também executa, quando necessário, os serviços técnicos de campo exigidos na condicionante. Tudo em um só lugar.

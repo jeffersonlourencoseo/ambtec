@@ -17,7 +17,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
 <Layout
   title={SITE_CONFIG.seo.defaultTitle}
-  description={SITE_CONFIG.seo.defaultDescription}
+  description="Consultoria ambiental no Rio de Janeiro. Licenciamento junto ao INEA e Secretarias Municipais, mais compensação ambiental, inventário florestal, podas legalizadas e reflorestamento. Tudo em um só lugar."
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -75,7 +75,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
           </h1>
 
             <p class="text-lg md:text-xl text-white/50 max-w-xl mb-12 leading-relaxed font-light">
-            Licenciamento ambiental no Rio de Janeiro junto ao <span class="text-white/80 font-medium">INEA e Secretarias Municipais de Meio Ambiente</span>. Regularizamos indústrias, construção civil, comércios e empreendimentos imobiliários.
+            <strong class="text-white/80">Licenciamento ambiental</strong> junto ao INEA e Secretarias Municipais de Meio Ambiente. E, quando necessário, executamos no terreno: <span class="text-white/80">compensação ambiental, inventário florestal, podas legalizadas e reflorestamento</span>. Tudo em um só lugar.
           </p>
 
           <div class="flex flex-wrap gap-4">
@@ -126,7 +126,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
         <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">
           Por que empresas confiam na {SITE_CONFIG.company.shortName}?
         </h2>
-        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Técnica, experiência e compromisso com prazos e conformidade legal em cada projeto.</p>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Técnica integrada que vai do licenciamento à execução prática no terreno. Uma equipe, um cronograma, uma responsabilidade.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -141,8 +141,8 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
           icon="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12.375 6.898a8.963 8.963 0 01-.031-2.533C12.446 2.018 13.88 0 15.5 0c.921 0 1.743.488 2.348 1.268.605.78.914 1.78.868 2.88a8.966 8.966 0 01-2.31 5.98M12.375 6.898a8.963 8.963 0 012.533-.031c1.843.046 3.276 1.064 3.897 2.365.605 1.26.692 2.74.232 4.088M12.375 6.898l-.097.281c-.261.768-.66 1.468-1.177 2.063"
         />
         <DiferencialCard
-          title="Relacionamento com INEA e Prefeituras"
-          description="Protocolamos e acompanhamos processos junto ao INEA e às Secretarias Municipais de Meio Ambiente do Rio de Janeiro, conhecendo a burocracia local."
+          title="Tudo para Licenciar em um Só Lugar"
+          description="Do laudo ao plantio, do inventário à compensação. Nossa equipe integra licenciamento, estudos técnicos e execução prática — sem atrasos causados por fornecedores separados."
           icon="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.031-.057-2.062-.168-3.063M12 2.25c.912.913 1.919 1.713 3.002 2.381"
         />
         <DiferencialCard
@@ -165,10 +165,10 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
           </h2>
           <div class="space-y-5 text-lg text-charcoal/60 leading-relaxed">
             <p>
-              A {SITE_CONFIG.company.shortName} é uma consultoria ambiental sediada no Rio de Janeiro, com atuação em todo o estado. Há mais de 15 anos, auxiliamos empresas de diversos setores — indústria, construção civil, comércio, hotéis e infraestrutura — a navegarem pela burocracia ambiental municipal e estadual com eficiência.
+              A {SITE_CONFIG.company.shortName} é uma consultoria ambiental sediada no Rio de Janeiro. Há mais de 15 anos, auxiliamos empresas de diversos setores — indústria, construção civil, comércio, hotéis e infraestrutura — a <strong class="text-charcoal">licenciarem, compensarem, inventariarem e recuperarem áreas ambientais</strong>. Não somos apenas despachantes de processo. Somos técnicos que executam.
             </p>
             <p>
-              Nosso foco não é decorar artigos de lei federal. É <strong class="text-charcoal">protocolar e acompanhar processos junto ao INEA e às Secretarias Municipais de Meio Ambiente</strong>, resolver exigências técnicas, antecipar gargalos e garantir que a documentação do seu empreendimento seja aprovada no menor prazo possível.
+              Nosso diferencial é a <strong class="text-charcoal">integração</strong>: a mesma equipe que protocola sua licença no INEA ou na Secretaria Municipal é capaz de realizar o inventário florestal, executar a compensação ambiental, autorizar podas de árvores e implantar reflorestamento. Isso elimina retrabalho, reduz prazos e garante que cada documento entregue ao órgão ambiental tenha coerência técnica.
             </p>
           </div>
           <div class="mt-10">
@@ -217,13 +217,74 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
+  <!-- CADEIA DE SERVIÇOS -->
   <section class="section-luxury bg-paper">
     <div class="section-inner">
       <div class="text-center mb-20">
         <div class="deco-line mx-auto mb-8"></div>
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Nossos Serviços</h2>
-        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Soluções ambientais completas para cada etapa da regularização do seu negócio.</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Do Licenciamento à Execução Técnica</h2>
+        <p class="text-lg text-charcoal/50 max-w-3xl mx-auto">
+          Para aprovar uma licença ambiental, seu empreendimento pode precisar de muito mais que papelada. A Ambtec oferece <strong class="text-charcoal">5 especialidades técnicas interligadas</strong> — do estudo ao plantio, do laudo ao protocolo — para que você não precise contratar fornecedores separados.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-base font-display font-bold text-charcoal mb-2">1. Licenciamento Ambiental</h3>
+          <p class="text-sm text-charcoal/60">LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras.</p>
+        </div>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10"/></svg>
+          </div>
+          <h3 class="text-base font-display font-bold text-charcoal mb-2">2. Compensação Ambiental</h3>
+          <p class="text-sm text-charcoal/60">Plano, cálculo e execução de ações compensatórias exigidas na licença.</p>
+        </div>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h3 class="text-base font-display font-bold text-charcoal mb-2">3. Inventário Florestal e Fauna</h3>
+          <p class="text-sm text-charcoal/60">Levantamento científico que subsidia o licenciamento e a compensação.</p>
+        </div>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"/></svg>
+          </div>
+          <h3 class="text-base font-display font-bold text-charcoal mb-2">4. Podas e Supressão Vegetal</h3>
+          <p class="text-sm text-charcoal/60">Laudo, autorização e execução de cortes legais para obras licenciadas.</p>
+        </div>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7h-4v-7h-6v7h-4l7 7z"/></svg>
+          </div>
+          <h3 class="text-base font-display font-bold text-charcoal mb-2">5. Reflorestamento e Recuperação</h3>
+          <p class="text-sm text-charcoal/60">Plantio de espécies nativas e monitoramento de áreas recuperadas.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-charcoal/60 max-w-2xl mx-auto mb-8">
+          Na prática, isso significa que você contrata uma única equipe que já sabe como cada serviço se encaixa no processo de licenciamento do seu empreendimento. <strong class="text-charcoal">Sem retrabalho, sem descasamento técnico, sem atrasos causados por múltiplos fornecedores.</strong>
+        </p>
+        <a href="/servicos" class="btn-luxury-outline">
+          Conhecer Todos os Serviços
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section-luxury bg-cream">
+    <div class="section-inner">
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Nossos Serviços em Detalhe</h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Clique em cada serviço para entender como ele se encaixa no processo de regularização do seu empreendimento.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -6,7 +6,7 @@ icon: "M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10m-9-11v10"
 
 A compensação ambiental é um instrumento jurídico-ambiental institucionalizado para equilibrar danos ecológicos antecipados ou existentes resultantes da instalação, operação ou desativação de empreendimentos. Regulamentada pelo artigo 36 da Lei 6.938/81 e pelas Resoluções CONAMA 253/98 e subsequentes, essa ferramenta funciona como reparação pelo desgaste ambiental causado, inserindo despesas de natureza social e ecológica no orçamento total do empreendimento.
 
-O instrumento se aplica principalmente a empreendimentos de grande porte e impacto significativo, como usinas hidrelétricas, mineradoras, loteamentos de grande extensão, rodovias, ferrovias, portos e grandes indústrias. O objetivo é neutralizar, mitigar ou reparar os prejuízos ambientais causados, promovendo a sustentabilidade e a conservação dos ecossistemas afetados.
+O instrumento se aplica principalmente como condicionante de licenciamento ambiental para empreendimentos de grande porte e impacto significativo: usinas, mineradoras, loteamentos de grande extensão, rodovias, portos, grandes indústrias, shoppings e empreendimentos imobiliários massivos. Na Ambtec, a compensação ambiental é planejada e executada como uma etapa integrada ao processo de licenciamento, não como um serviço isolado.
 
 ## Quando a Compensação Ambiental é Exigida?
 

@@ -7,12 +7,16 @@ import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config.ts';
 
-const servicos = await getCollection('servicos');
+const todosServicos = await getCollection('servicos');
+const servicos = [
+  todosServicos.find(s => s.slug === 'licenciamento-ambiental'),
+  ...todosServicos.filter(s => s.slug !== 'licenciamento-ambiental')
+].filter(Boolean);
 ---
 
 <Layout
   title={`Serviços — ${SITE_CONFIG.company.name}`}
-  description={`Conheça todos os serviços de consultoria ambiental da ${SITE_CONFIG.company.shortName}: licenciamento, EIA/RIMA, CAR, gestão e auditoria ambiental.`}
+  description={`Conheça os serviços da ${SITE_CONFIG.company.shortName}: licenciamento ambiental, compensação, inventário florestal, podas e reflorestamento — tudo interligado para regularizar seu empreendimento no RJ.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -28,7 +32,7 @@ const servicos = await getCollection('servicos');
             Nossos <span class="text-gradient-gold">Serviços</span>
           </h1>
           <p class="text-xl text-white/50 max-w-2xl leading-relaxed">
-            Do licenciamento ambiental à regularização junto ao INEA e Secretarias Municipais, oferecemos expertise técnica para indústria, construção, comércio e empreendimentos imobiliários.
+            O <strong class="text-white/80">licenciamento ambiental</strong> é o núcleo da regularização. Para licenciar, seu empreendimento pode precisar de compensação ambiental, inventário florestal, poda de árvores autorizada ou reflorestamento. Na Ambtec, tudo isso está em um só lugar — técnica, burocracia e execução prática interligadas.
           </p>
         </div>
       </div>

@@ -36,4 +36,4 @@ Nossa equipe técnica conduz todo o processo de forma legal, segura e documentad
 
 6. **Relatório de Execução:** Após a conclusão, entregamos relatório fotográfico final e documentação comprobatória do cumprimento da autorização.
 
-Com a Ambtec, empresa de poda de árvores no Rio de Janeiro com equipe técnica credenciada, você elimina riscos legais e garante que toda poda de árvores RJ seja conduzida por quem entende da legislação e da biologia das árvores.
+Na Ambtec, as podas e supressões vegetais não são um serviço isolado: elas se integram ao processo de licenciamento ambiental do seu empreendimento. Quando a supressão é exigida como condicionante de licença, nossa equipe já conhece o projeto aprovado e garante que a autorização, o corte e a eventual compensação ambiental estejam perfeitamente alinhados. Com a Ambtec, você elimina riscos legais e garante que toda poda de árvores RJ seja conduzida por quem entende da legislação, da biologia das árvores e do licenciamento ambiental.

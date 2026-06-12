@@ -4,9 +4,9 @@ description: "Inventário florestal e de fauna no Rio de Janeiro. Mapeamento té
 icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
 ---
 
-O inventário florestal e de fauna é um levantamento técnico-científico sistemático que coleta, identifica e quantifica as espécies vegetais e animais presentes em uma determinada área, em um período específico. Esse estudo é fundamental para caracterizar a biodiversidade local, avaliar o estado de conservação do ecossistema e subsidiar decisões de gestão ambiental, licenciamento, regularização de propriedades rurais e planos de manejo.
+O inventário florestal e de fauna é um levantamento técnico-científico sistemático que coleta, identifica e quantifica as espécies vegetais e animais presentes em uma determinada área, em um período específico. Esse estudo é fundamental para caracterizar a biodiversidade local, avaliar o estado de conservação do ecossistema e subsidiar decisões de gestão ambiental, licenciamento de empreendimentos, compensação ambiental e planos de manejo.
 
-No contexto do licenciamento ambiental, o inventário florestal e de fauna é exigido em diversas situações: implantação de empreendimentos em áreas de vegetação nativa, supressão vegetal autorizada, regularização de Reserva Legal, compensação ambiental, criação de unidades de conservação e projetos de carbono florestal. Além disso, produtores rurais e gestores de terras utilizam esses dados para planejar o uso sustentável dos recursos naturais.
+No contexto do licenciamento ambiental, o inventário florestal e de fauna é exigido em diversas situações: implantação de empreendimentos em áreas de vegetação nativa, supressão vegetal autorizada, regularização de Reserva Legal, compensação ambiental, criação de unidades de conservação e projetos de carbono florestal. Além disso, construtoras, incorporadoras e gestores de empreendimentos utilizam esses dados para planejar o uso sustentável dos recursos naturais e cumprir exigências de licenciamento.
 
 ## Componentes do Inventário Florestal
 
@@ -40,4 +40,4 @@ Nossos inventários seguem protocolos científicos reconhecidos e normas técnic
 
 5. **Elaboração de Relatórios Técnicos:** Produzimos relatórios completos com descrição metodológica, resultados, discussão, conclusões e recomendações técnicas. A documentação está pronta para protocolo em licenciamentos, regularizações e publicações científicas.
 
-As informações obtidas em nossos inventários servem como insumo fundamental para decisões estratégicas sobre gestão de terras, conservação da biodiversidade, regularização ambiental e atendimento às exigências legais de licenciamento.
+As informações obtidas em nossos inventários servem como insumo fundamental para o licenciamento ambiental, compensação de áreas impactadas, conservação da biodiversidade e atendimento às exigências legais dos órgãos ambientais.

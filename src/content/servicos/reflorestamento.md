@@ -6,16 +6,16 @@ icon: "M12 19l7-7h-4v-7h-6v7h-4l7 7z"
 
 O reflorestamento e a recuperação de áreas degradadas (RAD) são práticas ecológicas fundamentais para a restauração de ecossistemas onde a cobertura vegetal original foi removida ou comprometida. Essas intervenções podem ser necessárias devido a desmatamento para expansão de atividades produtivas, incêndios, erosão, mineração, construção civil ou qualquer outra atividade antrópica que degrade o solo e a biodiversidade local.
 
-No contexto da legislação ambiental brasileira, o reflorestamento é frequentemente exigido como medida mitigadora ou compensatória em processos de licenciamento ambiental, regularização de Reserva Legal, recomposição de Áreas de Preservação Permanente (APPs) e cumprimento do Código Florestal (Lei 12.651/2012). A recuperação adequada dessas áreas não apenas restaura o equilíbrio ecológico, mas também garante ao proprietário a regularização ambiental e a segurança jurídica do imóvel.
+No contexto da legislação ambiental brasileira, o reflorestamento é frequentemente exigido como medida mitigadora ou compensatória em processos de licenciamento ambiental, compensação de áreas impactadas, recomposição de Áreas de Preservação Permanente (APPs) e cumprimento de condicionantes do INEA ou de Secretarias Municipais de Meio Ambiente. Na Ambtec, o reflorestamento é executado pela mesma equipe que conduz o licenciamento, garantindo que o projeto de recuperação esteja alinhado com a documentação aprovada nos órgãos ambientais.
 
 ## Tipos de Reflorestamento e Recuperação
 
 Existem diferentes modalidades de restauração florestal, cada uma adequada a um cenário específico:
 
-- **Recomposição de Reserva Legal:** Restauração obrigatória da porcentual mínima de vegetação nativa exigida pelo Código Florestal para cada bioma (20% na Amazônia, 35% no Cerrado, 20% na Mata Atlântica, entre outros).
+- **Recomposição de APP e Áreas Degradadas:** Restauração de áreas de proteção permanente — margens de rios, nascentes, encostas — exigidas como condicionante de licenciamento ou compensação ambiental.
 - **Recomposição de APP:** Recuperação das áreas de proteção permanente ao redor de rios, lagos, nascentes, encostas e topos de morro, conforme determina o artigo 12 da Lei 12.651/2012.
 - **Compensação Ambiental:** Plantio de áreas equivalentes para compensar supressão autorizada em outros locais, como exigido em licenciamentos de grande porte.
-- **Restauração Ecológica Voluntária:** Projetos de recuperação ambiental promovidos por empresas e proprietários que desejam recompor áreas degradadas voluntariamente, muitas vezes para geração de créditos de carbono ou certificações socioambientais.
+- **Restauração Ecológica para Certificações:** Projetos de recuperação ambiental promovidos por empresas que desejam recompor áreas degradadas voluntariamente, para geração de créditos de carbono, certificações ESG ou compensação de emissões.
 
 ## Processo Técnico da Ambtec
 
