@@ -7,6 +7,7 @@ import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
 import SchemaArticle from '../components/SchemaArticle.astro';
 import SchemaService from '../components/SchemaService.astro';
 import WhatsAppBtn from '../components/WhatsAppBtn.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config.ts';
 
 interface Props {
@@ -25,6 +26,36 @@ interface Props {
 }
 
 const props = Astro.props;
+
+// BreadcrumbList logic
+const pathname = Astro.url.pathname;
+const breadcrumbNames: Record<string, string> = {
+  blog: 'Blog',
+  servicos: 'Serviços',
+  sobre: 'Sobre',
+  contato: 'Contato',
+  faq: 'FAQ',
+  privacidade: 'Privacidade',
+  termos: 'Termos',
+};
+
+let breadcrumbItems: { name: string; url: string }[] = [];
+if (pathname !== '/' && pathname !== '') {
+  breadcrumbItems = [{ name: 'Início', url: SITE_CONFIG.site }];
+  const segments = pathname.split('/').filter(Boolean);
+  let currentPath = '';
+  segments.forEach((segment, index) => {
+    currentPath += `/${segment}`;
+    const name =
+      index === segments.length - 1 && props.title
+        ? props.title.replace(/\s*\|\s*Ambtec$/, '').replace(/\s*—\s*.+$/, '')
+        : (breadcrumbNames[segment] || segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' '));
+    breadcrumbItems.push({
+      name,
+      url: `${SITE_CONFIG.site}${currentPath}`,
+    });
+  });
+}
 ---
 
 <!DOCTYPE html>
@@ -51,6 +82,9 @@ const props = Astro.props;
     />
   ) : (
     <SchemaLocalBusiness />
+  )}
+  {breadcrumbItems.length > 0 && (
+    <SchemaBreadcrumb items={breadcrumbItems} />
   )}
 </head>
 <body class="font-body antialiased text-charcoal bg-paper">

@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import SchemaFAQ from '../components/SchemaFAQ.astro';
+import { SITE_CONFIG } from '../data/config.ts';
+
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
+
+const faqs = [
+  {
+    question: 'Quanto tempo leva o licenciamento ambiental no Rio de Janeiro?',
+    answer: 'O prazo médio varia de 3 a 12 meses, dependendo do porte do empreendimento, do órgão licenciador (INEA, IBAMA ou municipal) e da complexidade dos estudos ambientais exigidos. Empreendimentos de porte 1 (menor impacto) costumam levar 3 a 6 meses, enquanto portes 2 e 3 podem ultrapassar 12 meses devido à exigência de EIA/RIMA. A Ambtec reduz prazos em até 30% com protocolo técnico completo e acompanhamento semanal.',
+  },
+  {
+    question: 'Quanto custa um licenciamento ambiental no RJ?',
+    answer: 'O investimento varia conforme o porte e o tipo de licença. Diagnóstico inicial é gratuito em 24h. Licença Prévia a partir de R$ 4.500, Licença de Instalação a partir de R$ 6.000 e Licença de Operação a partir de R$ 3.500. Pacotes completos (LP+LI+LO) começam em R$ 12.000. EIA/RIMA para empreendimentos de grande porte partem de R$ 25.000. Cada projeto recebe proposta técnica personalizada após diagnóstico.',
+  },
+  {
+    question: 'O que acontece se uma empresa operar sem licença ambiental?',
+    answer: 'Empresas sem licenciamento adequado estão sujeitas a multas que podem alcançar milhões de reais, interdição imediata das atividades, embargo e responsabilização criminal dos administradores e sócios (Lei 9.605/98). Além disso, perdem credibilidade com investidores, clientes e acesso a financiamentos. A regularização ambiental é pré-requisito para certificações ESG e linhas de crédito.',
+  },
+  {
+    question: 'Quem precisa fazer o Cadastro Ambiental Rural (CAR)?',
+    answer: 'Todo imóvel rural que possua reserva legal ou Área de Preservação Permanente (APP) é obrigado a ter o CAR ativo, conforme o Novo Código Florestal (Lei 12.651/2012). No Rio de Janeiro, onde a Mata Atlântica impõe exigências específicas, o CAR é essencial para acesso a crédito rural, comercialização segura e transação de terras. Propriedades sem CAR regularizado enfrentam restrições comerciais e risco de fiscalização do IBAMA e INEA.',
+  },
+  {
+    question: 'Qual a diferença entre Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO)?',
+    answer: 'A Licença Prévia (LP) é concedida na fase de planejamento e analisa a viabilidade ambiental e compatibilidade do projeto com o zoneamento. A Licença de Instalação (LI) autoriza a construção e detalha os sistemas de controle de impactos. A Licença de Operação (LO) permite o início das atividades produtivas após verificação do cumprimento de todas as condicionantes da LI. Cada fase é obrigatória e sequencial: sem LP não há LI, sem LI não há LO.',
+  },
+  {
+    question: 'Quando é obrigatório fazer EIA/RIMA?',
+    answer: 'O Estudo de Impacto Ambiental (EIA) e o Relatório de Impacto sobre o Meio Ambiente (RIMA) são obrigatórios para empreendimentos de potencial impacto significativo, conforme a Resolução CONAMA 01/1986. Usinas hidrelétricas, mineradoras, grandes indústrias, portos, rodovias e empreendimentos imobiliários de grande porte geralmente exigem EIA/RIMA. A classificação do porte segue a Resolução CONAMA 401/2008.',
+  },
+  {
+    question: 'A Ambtec atende em que regiões do Rio de Janeiro?',
+    answer: 'A Ambtec atua em todo o estado do Rio de Janeiro, incluindo a capital, Baixada Fluminense, Região dos Lagos, Serra, Norte e Noroeste fluminense. Nossa equipe realiza atendimento presencial e remoto, com deslocamento técnico para vistorias, coleta de dados e reuniões com órgãos ambientais locais.',
+  },
+  {
+    question: 'Como funciona o diagnóstico ambiental gratuito da Ambtec?',
+    answer: 'Após o primeiro contato (WhatsApp, e-mail ou formulário), nossa equipe técnica analisa em até 24h úteis as particularidades do seu empreendimento: porte, atividade, documentação existente, pendências e órgão licenciador competente. Você recebe uma proposta técnica personalizada com escopo detalhado, cronograma realista e investimento estimado. Não há compromisso de contratação.',
+  },
+  {
+    question: 'A Ambtec oferece suporte pós-licenciamento?',
+    answer: 'Sim. Oferecemos acompanhamento contínuo para cumprimento de condicionantes ambientais, elaboração de relatórios de monitoramento, renovações de licenças, alterações de projeto e novas demandas regulatórias. Nosso objetivo é manter seu empreendimento 100% regularizado ao longo de todo o ciclo de vida.',
+  },
+  {
+    question: 'Quais legislações a Ambtec domina?',
+    answer: 'Nossa equipe trabalha em estrita aderência à Lei 6.938/81 (Política Nacional do Meio Ambiente), resoluções CONAMA (401, 463, 492 e outras), Lei 12.651/2012 (Novo Código Florestal), normas estaduais e municipais do Rio de Janeiro, e normas ISO 14001 de gestão ambiental. Participamos continuamente de capacitações técnicas para manter o conhecimento atualizado.',
+  },
+];
+
+const lastUpdated = new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Layout
+  title="Perguntas Frequentes sobre Licenciamento Ambiental no RJ"
+  description="Respostas técnicas sobre licenciamento ambiental, CAR, EIA/RIMA, custos e prazos no Rio de Janeiro. Tire suas dúvidas com a Ambtec."
+>
+  <Fragment slot="header"><Header /></Fragment>
+
+  <SchemaFAQ questions={faqs} />
+
+  <!-- HERO -->
+  <section class="relative bg-deep-900 overflow-hidden">
+    <div class="absolute inset-0 noise-overlay"></div>
+    <div class="absolute bottom-1/3 -left-32 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl"></div>
+    <div class="section-luxury relative z-10">
+      <div class="section-inner">
+        <div class="max-w-4xl">
+          <div class="deco-line mb-8"></div>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight leading-[0.95] mb-8">
+            Perguntas <span class="text-gradient-gold">Frequentes</span>
+          </h1>
+          <p class="text-xl text-white/50 max-w-2xl leading-relaxed">
+            Respostas claras e técnicas sobre licenciamento ambiental, CAR, compensação e regularização no Rio de Janeiro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ LIST -->
+  <section class="section-luxury bg-paper">
+    <div class="section-inner">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full">
+            Atualizado em {lastUpdated}
+          </span>
+        </div>
+
+        <div class="space-y-6">
+          {faqs.map((faq, index) => (
+            <details class="glass-card p-6 lg:p-8 rounded-3xl group" open={index < 3}>
+              <summary class="flex items-start justify-between cursor-pointer list-none">
+                <h2 class="text-lg lg:text-xl font-display font-bold text-charcoal pr-4">
+                  {faq.question}
+                </h2>
+                <span class="shrink-0 w-8 h-8 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-sm font-bold group-open:rotate-45 transition-transform duration-300">
+                  +
+                </span>
+              </summary>
+              <p class="mt-4 text-charcoal/70 leading-relaxed">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-luxury bg-cream">
+    <div class="section-inner">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-charcoal mb-6">Ainda tem dúvidas?</h2>
+        <p class="text-charcoal/50 max-w-xl mx-auto mb-10">
+          Cada empreendimento é único. Fale diretamente com um especialista e receba uma proposta técnica personalizada em até 24h.
+        </p>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-luxury"
+        >
+          Falar com Especialista
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
+
+<WhatsAppButton />

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import SchemaFAQ from '../../components/SchemaFAQ.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config.ts';
 
@@ -38,6 +39,23 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 >
   <Fragment slot="header"><Header /></Fragment>
 
+  <SchemaFAQ
+    questions={[
+      {
+        question: 'Esse processo é obrigatório no Rio de Janeiro?',
+        answer: 'Sim. Conforme a legislação ambiental brasileira (Lei 6.938/81, CONAMA, Código Florestal), empresas e propriedades rurais que causem impacto ambiental devem estar regularizadas. No Rio de Janeiro, o INEA e o IBAMA são os principais órgãos fiscalizadores.',
+      },
+      {
+        question: 'Quanto tempo leva esse processo no RJ?',
+        answer: 'O prazo médio varia de 3 a 12 meses, dependendo do porte do empreendimento, da complexidade dos estudos técnicos exigidos e do órgão licenciador. Empreendimentos de menor impacto costumam levar 3 a 6 meses, enquanto os de grande porte podem ultrapassar 12 meses.',
+      },
+      {
+        question: 'Quanto custa esse serviço no Rio de Janeiro?',
+        answer: 'Cada projeto recebe proposta técnica personalizada após diagnóstico gratuito em até 24h. O investimento varia conforme o porte do empreendimento, a quantidade de estudos exigidos e o prazo desejado. Solicite uma proposta sem compromisso.',
+      },
+    ]}
+  />
+
   <section class="section-luxury bg-paper">
     <div class="section-inner">
       <div class="max-w-6xl mx-auto">
@@ -48,6 +66,11 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
               <span class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full">
                 {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
               </span>
+              {post.data.updatedDate && (
+                <span class="text-xs text-charcoal/40">
+                  Atualizado em {post.data.updatedDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                </span>
+              )}
             </div>
 
             <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight leading-tight mb-16 text-charcoal">

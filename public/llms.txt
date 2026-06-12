@@ -1,20 +1,28 @@
 # Ambtec Consultoria Ambiental
 
-> Consultoria especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável no Rio de Janeiro. Mais de 200 empreendimentos regularizados desde 2010.
+> Consultoria especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável no Rio de Janeiro. Mais de 200 empreendimentos regularizados desde 2010. Diagnóstico gratuito em até 24h.
 
 ## Serviços
 
-- Licenciamento Ambiental: /servicos/licenciamento-ambiental
-- Cadastro Ambiental Rural (CAR): /servicos/cadastro-ambiental-rural
-- EIA/RIMA: /servicos/eia-rima
-- Compensação Ambiental: /servicos/compensacao-ambiental
-- Reflorestamento: /servicos/reflorestamento
-- Podas e Supressão Vegetal: /servicos/podas-e-supressao-vegetal
-- Inventário Florestal e de Fauna: /servicos/inventario-florestal-e-fauna
+- **Licenciamento Ambiental:** /servicos/licenciamento-ambiental — Licenciamento LP, LI e LO para empresas de todos os portes no Rio de Janeiro. Diagnóstico gratuito, elaboração de estudos ambientais, protocolo nos órgãos (INEA, IBAMA, municipal) e acompanhamento até aprovação.
+- **Cadastro Ambiental Rural (CAR):** /servicos/cadastro-ambiental-rural — Cadastro, ativação, retificação e regularização completa do CAR no Rio de Janeiro. Inclui mapeamento georreferenciado, análise de reserva legal e APPs conforme o Novo Código Florestal.
+- **EIA/RIMA:** /servicos/eia-rima — Estudo de Impacto Ambiental e Relatório de Impacto sobre o Meio Ambiente para empreendimentos de grande porte no RJ. Elaboração técnico-científica conforme Resolução CONAMA 01/1986.
+- **Compensação Ambiental:** /servicos/compensacao-ambiental — Planos de compensação para empreendimentos que impactam Unidades de Conservação, APPs e áreas de reserva legal. Cálculo técnico, aquisição de áreas, RPPN, CRAs e monitoramento.
+- **Reflorestamento:** /servicos/reflorestamento — Projetos de recuperação de áreas degradadas, restauração florestal e recomposição de Reserva Legal e APPs no estado do Rio de Janeiro.
+- **Podas e Supressão Vegetal:** /servicos/podas-e-supressao-vegetal — Projetos técnicos para supressão e poda de vegetação nativa conforme legislação ambiental, incluindo laudos fitossanitários e compensação quando necessário.
+- **Inventário Florestal e de Fauna:** /servicos/inventario-florestal-e-fauna — Levantamento fitossociológico, inventário de fauna (mastofauna, avifauna, herpetofauna, ictiofauna) e diagnóstico ambiental para licenciamento no RJ.
 
 ## Blog
 
-Artigos técnicos sobre licenciamento ambiental, CAR, código florestal e gestão sustentável: /blog
+Artigos técnicos sobre licenciamento ambiental, CAR, código florestal, EIA/RIMA e gestão sustentável: /blog
+
+## Perguntas Frequentes
+
+Respostas técnicas sobre prazos, custos, legislação e processos ambientais no RJ: /faq
+
+## Preços
+
+Faixas de investimento orientativas por tipo de serviço: /pricing.md
 
 ## Contato
 
@@ -29,4 +37,5 @@ Artigos técnicos sobre licenciamento ambiental, CAR, código florestal e gestã
 - Sobre: /sobre
 - Serviços: /servicos
 - Blog: /blog
+- FAQ: /faq
 - Contato: /contato

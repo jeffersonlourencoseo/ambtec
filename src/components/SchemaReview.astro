@@ -1,0 +1,39 @@
+---
+interface Props {
+  itemReviewed: string;
+  reviews: {
+    author: string;
+    datePublished: string;
+    reviewBody: string;
+    reviewRating?: number;
+  }[];
+}
+
+const { itemReviewed, reviews } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: itemReviewed,
+  review: reviews.map((r) => ({
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: r.author,
+    },
+    datePublished: r.datePublished,
+    reviewBody: r.reviewBody,
+    ...(r.reviewRating
+      ? {
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: r.reviewRating,
+            bestRating: 5,
+          },
+        }
+      : {}),
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

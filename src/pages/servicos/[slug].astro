@@ -4,6 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CTABox from '../../components/CTABox.astro';
+import SchemaFAQ from '../../components/SchemaFAQ.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config.ts';
 
@@ -35,6 +36,23 @@ const beneficios = [
 >
   <Fragment slot="header"><Header /></Fragment>
 
+  <SchemaFAQ
+    questions={[
+      {
+        question: `Quanto tempo leva ${servico.data.title.toLowerCase()}?`,
+        answer: 'O prazo médio varia conforme o porte do empreendimento e a complexidade técnica. Após diagnóstico gratuito, apresentamos cronograma realista com acompanhamento semanal.',
+      },
+      {
+        question: `Quanto custa ${servico.data.title.toLowerCase()} no Rio de Janeiro?`,
+        answer: 'Cada projeto recebe proposta técnica personalizada após diagnóstico gratuito em até 24h. Os valores variam conforme porte, complexidade e escopo. Consulte nossa tabela de preços orientativas ou solicite uma proposta.',
+      },
+      {
+        question: 'Como começar o processo com a Ambtec?',
+        answer: 'Solicite o diagnóstico gratuito via WhatsApp (21) 99835-1294 ou formulário em /contato. Nossa equipe técnica analisa seu empreendimento em até 24h e apresenta proposta detalhada com cronograma e investimento.',
+      },
+    ]}
+  />
+
   <!-- HERO -->
   <section class="relative bg-deep-900 overflow-hidden">
     <div class="absolute inset-0 noise-overlay"></div>
@@ -59,6 +77,11 @@ const beneficios = [
   <!-- CONTEÚDO -->
   <section class="section-luxury bg-cream">
     <div class="section-inner">
+      <div class="max-w-4xl mx-auto mb-8">
+        <span class="text-xs text-charcoal/40">
+          Última atualização: {new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+        </span>
+      </div>
       <article class="prose prose-lg max-w-4xl mx-auto text-charcoal/70">
         <Content />
       </article>

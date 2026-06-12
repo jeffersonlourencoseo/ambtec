@@ -7,6 +7,7 @@ import Card from '../components/Card.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
 import DepoimentoCard from '../components/DepoimentoCard.astro';
 import CTABox from '../components/CTABox.astro';
+import SchemaReview from '../components/SchemaReview.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config.ts';
 
@@ -19,6 +20,30 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
   description={SITE_CONFIG.seo.defaultDescription}
 >
   <Fragment slot="header"><Header /></Fragment>
+
+  <SchemaReview
+    itemReviewed={SITE_CONFIG.company.name}
+    reviews={[
+      {
+        author: 'Roberto Mendes',
+        datePublished: '2026-06-01',
+        reviewBody: 'A Ambtec conduziu todo o processo de licenciamento da nossa indústria com extrema competência. Conseguimos a liberação em tempo recorde e sem dor de cabeça.',
+        reviewRating: 5,
+      },
+      {
+        author: 'Luciana Costa',
+        datePublished: '2026-06-01',
+        reviewBody: 'Profissionalismo e transparência em cada etapa. O CAR da nossa propriedade foi resolvido sem complicações e hoje temos acesso a todo o crédito rural.',
+        reviewRating: 5,
+      },
+      {
+        author: 'Fernando Oliveira',
+        datePublished: '2026-06-01',
+        reviewBody: 'Contratamos para o EIA/RIMA de um grande empreendimento. O rigor técnico impressionou até os órgãos ambientais. Resultado: aprovação na primeira submissão.',
+        reviewRating: 5,
+      },
+    ]}
+  />
 
   <!-- HERO -->
   <section class="relative min-h-[90vh] flex items-center bg-deep-900 overflow-hidden">
