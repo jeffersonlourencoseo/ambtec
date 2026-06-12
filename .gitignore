@@ -34,3 +34,5 @@ coverage/
 
 # Vercel build output
 .vercel/
+
+.vercel

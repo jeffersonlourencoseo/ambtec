@@ -8,4 +8,7 @@ export default defineConfig({
   site: 'https://licenciamentoambientalrio.com.br',
   output: 'static',
   integrations: [tailwind(), mdx(), sitemap()],
+  build: {
+    inlineStylesheets: 'auto',
+  },
 });
