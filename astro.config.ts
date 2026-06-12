@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ambtec.bio.br',
+  site: 'https://licenciamentoambientalrio.com.br',
   output: 'static',
   integrations: [tailwind(), mdx(), sitemap()],
   build: {

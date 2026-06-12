@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   // Domínio
-  site: 'https://ambtec.bio.br',
+  site: 'https://licenciamentoambientalrio.com.br',
 
   // Empresa (NAP)
   company: {

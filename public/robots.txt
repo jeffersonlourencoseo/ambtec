@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://ambtec.bio.br/sitemap-index.xml
+Sitemap: https://licenciamentoambientalrio.com.br/sitemap-index.xml
 
 # AI Search Bots — permitir citação
 User-agent: GPTBot
