@@ -19,7 +19,6 @@
   }
   p, li {
     text-wrap: pretty;
-    max-width: 70ch;
   }
 }
 
