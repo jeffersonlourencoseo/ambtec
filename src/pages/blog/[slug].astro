@@ -31,58 +31,64 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 >
   <Fragment slot="header"><Header /></Fragment>
 
-  <section>
+  <section class="section-luxury bg-paper">
     <div class="section-inner">
       <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <!-- CONTEÚDO PRINCIPAL -->
           <div class="lg:col-span-8">
-            <div class="text-sm font-semibold text-primary-600 mb-4">
-              {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+            <div class="flex items-center gap-3 mb-8">
+              <span class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full">
+                {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </span>
             </div>
 
-            <h1 class="text-4xl md:text-5xl font-black tracking-tighter leading-tight mb-16 text-gray-900">
+            <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight leading-tight mb-16 text-charcoal">
               {post.data.title}
             </h1>
 
-            <article class="prose prose-lg text-gray-600">
+            <article class="prose prose-lg text-charcoal/70">
               <Content />
             </article>
 
-            <div class="mt-16 pt-10 border-t border-gray-100">
+            <div class="mt-16 pt-10 border-t border-charcoal/10">
               <a
                 href="/blog"
-                class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-200 text-gray-700 font-semibold rounded-lg hover:border-secondary-900 hover:text-secondary-900 transition-colors"
+                class="inline-flex items-center justify-center px-8 py-4 border border-charcoal/10 text-charcoal font-semibold rounded-full hover:border-deep-700 hover:text-deep-700 transition-colors"
               >
-                ← Voltar para o Blog
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
+                Voltar para o Blog
               </a>
             </div>
           </div>
 
           <!-- SIDEBAR -->
           <aside class="lg:col-span-4 space-y-8">
-            <div class="bg-secondary-900 rounded-2xl p-10 text-white sticky top-28">
-              <h3 class="text-xl font-bold mb-4">Precisa de ajuda ambiental?</h3>
-              <p class="text-gray-100 mb-6 leading-relaxed">
-                Nossa equipe oferece diagnóstico gratuito. Descubra o caminho mais rápido para regularizar seu empreendimento.
-              </p>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center p-5 bg-primary-500 text-secondary-900 font-bold rounded-xl hover:bg-primary-400 transition-colors w-full"
-              >
-                Solicitar Orçamento
-              </a>
+            <div class="relative overflow-hidden rounded-3xl p-8 bg-gradient-to-br from-deep-900 to-forest-800 text-white sticky top-28">
+              <div class="absolute inset-0 noise-overlay"></div>
+              <div class="relative z-10">
+                <h3 class="text-xl font-display font-bold mb-3">Precisa de ajuda ambiental?</h3>
+                <p class="text-white/50 mb-6 text-sm leading-relaxed">
+                  Nossa equipe oferece proposta técnica personalizada. Descubra o caminho mais rápido para regularizar seu empreendimento.
+                </p>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center p-5 bg-gold-500 text-deep-900 font-bold rounded-xl hover:bg-gold-400 transition-colors w-full"
+                >
+                  Solicitar Orçamento
+                </a>
+              </div>
             </div>
 
-            <div class="bg-gray-50 rounded-2xl p-10">
-              <h3 class="text-lg font-bold text-gray-900 mb-4">Serviços Populares</h3>
+            <div class="glass-card p-8 rounded-3xl">
+              <h3 class="text-lg font-display font-bold text-charcoal mb-5">Serviços Populares</h3>
               <ul class="space-y-3">
-                <li><a href="/servicos" class="text-gray-600 hover:text-secondary-900 transition-colors">Licenciamento Ambiental</a></li>
-                <li><a href="/servicos" class="text-gray-600 hover:text-secondary-900 transition-colors">CAR — Cadastro Ambiental Rural</a></li>
-                <li><a href="/servicos" class="text-gray-600 hover:text-secondary-900 transition-colors">EIA / RIMA</a></li>
-                <li><a href="/servicos" class="text-gray-600 hover:text-secondary-900 transition-colors">Auditoria Ambiental</a></li>
+                <li><a href="/servicos/licenciamento-ambiental" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Licenciamento Ambiental</a></li>
+                <li><a href="/servicos/compensacao-ambiental" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Compensação Ambiental</a></li>
+                <li><a href="/servicos/reflorestamento" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Reflorestamento</a></li>
+                <li><a href="/servicos/podas-e-supressao-vegetal" class="text-charcoal/60 hover:text-deep-700 transition-colors text-sm">Podas e Supressão</a></li>
               </ul>
             </div>
           </aside>
@@ -93,19 +99,20 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
   <!-- POSTS RELACIONADOS -->
   {relatedPosts.length > 0 && (
-    <section class="bg-gray-50">
+    <section class="section-luxury bg-cream">
       <div class="section-inner">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-8">Outras dicas ambientais</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-3xl font-display font-bold text-charcoal mb-12 tracking-tight">Outras dicas ambientais</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedPosts.map((rp) => (
               <a href={`/blog/${rp.slug}`} class="group block">
-                <article class="bg-white border border-gray-100 rounded-2xl p-10 shadow-sm hover:shadow-lg transition-shadow duration-300 h-full">
-                  <div class="text-sm font-semibold text-primary-600 mb-3">
+                <article class="glass-card p-8 rounded-3xl hover:shadow-lift transition-all duration-500 h-full">
+                  <div class="text-xs font-bold uppercase tracking-wider text-gold-600 bg-gold-400/10 px-3 py-1 rounded-full inline-block mb-4">
                     {rp.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
                   </div>
-                  <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-secondary-900 transition-colors">{rp.data.title}</h3>
-                  <p class="text-gray-600 leading-relaxed">{rp.data.description}</p>
+                  <h3 class="text-xl font-display font-bold text-charcoal mb-3 group-hover:text-deep-700 transition-colors">{rp.data.title}</h3>
+                  <p class="text-charcoal/60 text-sm leading-relaxed">{rp.data.description}</p>
                 </article>
               </a>
             ))}

@@ -8,14 +8,24 @@ interface Props {
 const { title, description, icon } = Astro.props;
 ---
 
-<div class="bg-white border border-gray-100 rounded-2xl p-10 lg:p-12 shadow-sm hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+<div class="group relative glass-card p-8 lg:p-10 rounded-3xl hover:shadow-lift hover:-translate-y-1 active:scale-[0.98] transition-all duration-500">
+  <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-gold-400/0 to-gold-400/0 group-hover:from-gold-400/5 group-hover:to-gold-400/0 transition-all duration-500"></div>
+
   {icon && (
-    <div class="mb-6 text-primary-500">
-      <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <div class="relative mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-deep-900/5 text-deep-700 group-hover:bg-gold-400/10 group-hover:text-gold-600 transition-all duration-300">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
       </svg>
     </div>
   )}
-  <h3 class="text-xl font-bold text-gray-900 mb-4 tracking-tight">{title}</h3>
-  <p class="text-gray-600 leading-relaxed">{description}</p>
+
+  <h3 class="relative text-lg font-display font-bold text-charcoal mb-3 tracking-tight">{title}</h3>
+  <p class="relative text-sm text-charcoal/60 leading-relaxed">{description}</p>
+
+  <div class="relative mt-6 flex items-center gap-2 text-sm font-semibold text-deep-700 group-hover:text-gold-600 transition-colors duration-300">
+    <span>Saiba mais</span>
+    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+    </svg>
+  </div>
 </div>

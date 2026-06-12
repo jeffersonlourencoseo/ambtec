@@ -21,83 +21,118 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
   <Fragment slot="header"><Header /></Fragment>
 
   <!-- HERO -->
-  <section class="relative">
-    <div class="section-inner">
-      <div class="inline-flex items-center px-4 py-2 mb-8 bg-primary-100 text-primary-700 font-semibold text-sm rounded-full">
-        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        Referência em Consultoria Ambiental no Rio de Janeiro
-      </div>
+  <section class="relative min-h-[90vh] flex items-center bg-deep-900 overflow-hidden">
+    <div class="absolute inset-0 noise-overlay"></div>
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2560&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-deep-900/90 via-deep-900/80 to-forest-900/70"></div>
 
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight mb-8 text-gray-900 max-w-4xl">
-        Regularize seu Empreendimento com Quem Entende de <span class="text-secondary-900">Ambiente</span>
-      </h1>
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-forest-800/20 rounded-full blur-3xl"></div>
 
-      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed">
-        Há mais de 15 anos, a {SITE_CONFIG.company.shortName} auxilia empresas e propriedades rurais a navegarem pela legislação ambiental com segurança, precisão e conformidade legal. Licenciamento, compensação ambiental, reflorestamento e supressão vegetal — tudo em um só lugar.
-      </p>
+    <div class="section-luxury relative z-10 w-full">
+      <div class="section-inner">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-3 px-5 py-2.5 mb-10 rounded-full border border-gold-400/20 bg-gold-400/5 backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span class="text-gold-300 text-sm font-medium tracking-wide uppercase">Referência em Consultoria Ambiental no Rio</span>
+          </div>
 
-      <div class="flex flex-wrap gap-4">
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center px-8 py-5 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-green-500/20"
-        >
-          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Solicitar Orçamento
-        </a>
-        <a
-          href="/servicos"
-          class="inline-flex items-center justify-center px-8 py-5 border-2 border-gray-200 text-gray-700 font-bold rounded-xl hover:border-secondary-900 hover:text-secondary-900 hover:scale-105 active:scale-95 transition-all"
-        >
-          Conhecer Nossos Serviços
-        </a>
+          <h1 class="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-white tracking-tight leading-[0.95] mb-8">
+            Regularize seu
+            <br />
+            <span class="text-gradient-gold">Empreendimento</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-white/50 max-w-xl mb-12 leading-relaxed font-light">
+            Há mais de 15 anos, a {SITE_CONFIG.company.shortName} auxilia empresas e propriedades rurais a navegarem pela legislação ambiental com <span class="text-white/80 font-medium">segurança, precisão e conformidade legal</span>.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-luxury"
+            >
+              Solicitar Orçamento
+            </a>
+            <a
+              href="/servicos"
+              class="btn-luxury-dark"
+            >
+              Conhecer Serviços
+            </a>
+          </div>
+
+          <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-10">
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-gold-400 mb-1">200+</div>
+              <div class="text-sm text-white/40">Empreendimentos Regularizados</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-gold-400 mb-1">98%</div>
+              <div class="text-sm text-white/40">Taxa de Aprovação</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-gold-400 mb-1">15+</div>
+              <div class="text-sm text-white/40">Anos de Experiência</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold text-gold-400 mb-1">5</div>
+              <div class="text-sm text-white/40">Especialidades Técnicas</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- DIFERENCIAIS -->
-  <section class="bg-gray-50">
+  <section class="section-luxury bg-paper">
     <div class="section-inner">
-      <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Por que empresas e propriedades rurais confiam na {SITE_CONFIG.company.shortName}?</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Técnica, experiência e compromisso com prazos e conformidade legal em cada projeto.</p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">
+          Por que empresas e propriedades rurais confiam na {SITE_CONFIG.company.shortName}?
+        </h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Técnica, experiência e compromisso com prazos e conformidade legal em cada projeto.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <DiferencialCard
           title="Análise Técnica em 24h"
           description="Após o primeiro contato, nossa equipe técnica analisa as particularidades do seu empreendimento e apresenta uma proposta detalhada em até um dia útil."
-          icon="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          icon="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
         />
         <DiferencialCard
           title="Equipe Multidisciplinar"
           description="Engenheiros, biólogos e advogados ambientais trabalhando integrados para uma solução completa e segura, cobrindo todos os aspectos legais e técnicos."
-          icon="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0z"
+          icon="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12.375 6.898a8.963 8.963 0 01-.031-2.533C12.446 2.018 13.88 0 15.5 0c.921 0 1.743.488 2.348 1.268.605.78.914 1.78.868 2.88a8.966 8.966 0 01-2.31 5.98M12.375 6.898a8.963 8.963 0 012.533-.031c1.843.046 3.276 1.064 3.897 2.365.605 1.26.692 2.74.232 4.088M12.375 6.898l-.097.281c-.261.768-.66 1.468-1.177 2.063"
         />
         <DiferencialCard
           title="Conformidade Legal Garantida"
           description="Todo projeto segue rigorosamente as normas da Lei 6.938/81, CONAMA e Código Florestal. Documentação completa e pronta para protocolo."
-          icon="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          icon="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.031-.057-2.062-.168-3.063M12 2.25c.912.913 1.919 1.713 3.002 2.381"
         />
         <DiferencialCard
           title="Atendimento em Todo o Estado"
           description="Onde seu empreendimento estiver, nossa equipe vai até você. Atendimento presencial e remoto flexível, adaptado às necessidades do projeto."
-          icon="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+          icon="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
         />
       </div>
     </div>
   </section>
 
   <!-- SOBRE NÓS (RESUMO) -->
-  <section>
+  <section class="section-luxury bg-cream">
     <div class="section-inner">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
-            Quem é a <span class="text-secondary-900">{SITE_CONFIG.company.shortName}</span>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-8 tracking-tight">
+            Quem é a <span class="text-deep-700">{SITE_CONFIG.company.shortName}</span>
           </h2>
-          <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+          <div class="space-y-5 text-lg text-charcoal/60 leading-relaxed">
             <p>
               A {SITE_CONFIG.company.shortName} é uma consultoria ambiental sediada no Rio de Janeiro, com atuação em todo o estado. Há mais de 15 anos, auxiliamos empresas de diversos setores e propriedades rurais a cumprirem a legislação ambiental brasileira de forma segura, eficiente e dentro dos prazos estabelecidos.
             </p>
@@ -105,33 +140,45 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
               Nossa equipe multidisciplinar — composta por engenheiros ambientais, biólogos e advogados especialistas — oferece soluções integradas que vão do licenciamento ambiental ao reflorestamento, da compensação ambiental ao inventário florestal e de fauna.
             </p>
           </div>
-          <div class="mt-8">
+          <div class="mt-10">
             <a
               href="/sobre"
-              class="inline-flex items-center justify-center px-8 py-4 bg-secondary-900 text-white font-bold rounded-lg hover:bg-accent-900 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary-900/20"
+              class="btn-luxury-outline"
             >
-              Conheça Nossa Trajetória →
+              Conheça Nossa Trajetória
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
             </a>
           </div>
         </div>
 
-        <div class="bg-secondary-900 rounded-3xl p-10 lg:p-12 text-white">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="text-center">
-              <div class="text-4xl font-black text-primary-400 mb-2">200+</div>
-              <div class="text-sm text-gray-100">Empreendimentos Regularizados</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-black text-primary-400 mb-2">98%</div>
-              <div class="text-sm text-gray-100">Taxa de Aprovação de Licenças</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-black text-primary-400 mb-2">15+</div>
-              <div class="text-sm text-gray-100">Anos de Experiência</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-black text-primary-400 mb-2">5</div>
-              <div class="text-sm text-gray-100">Especialidades Técnicas</div>
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] opacity-10 blur-2xl"></div>
+            <div class="relative bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] p-10 lg:p-14 text-white overflow-hidden">
+              <div class="absolute inset-0 noise-overlay"></div>
+              <div class="relative z-10 space-y-8">
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-xl shrink-0">200+</div>
+                  <div>
+                    <p class="font-bold text-white">Empreendimentos Regularizados</p>
+                    <p class="text-white/50 text-sm">Desde 2010</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-xl shrink-0">98%</div>
+                  <div>
+                    <p class="font-bold text-white">Taxa de Aprovação</p>
+                    <p class="text-white/50 text-sm">Na primeira submissão</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-xl shrink-0">24h</div>
+                  <div>
+                    <p class="font-bold text-white">Resposta Técnica</p>
+                    <p class="text-white/50 text-sm">Proposta em até 1 dia útil</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -139,15 +186,16 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- NOSSOS SERVIÇOS -->
-  <section class="bg-gray-50">
+  <!-- SERVIÇOS -->
+  <section class="section-luxury bg-paper">
     <div class="section-inner">
-      <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Nossos Serviços</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Soluções ambientais completas para cada etapa da regularização do seu negócio.</p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Nossos Serviços</h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Soluções ambientais completas para cada etapa da regularização do seu negócio.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {servicos.map((servico) => (
           <a href={`/servicos/${servico.slug}`} class="group">
             <Card
@@ -159,26 +207,28 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
         ))}
       </div>
 
-      <div class="text-center mt-12">
+      <div class="text-center mt-16">
         <a
           href="/servicos"
-          class="inline-flex items-center justify-center px-8 py-4 border-2 border-secondary-900 text-secondary-900 font-bold rounded-lg hover:bg-secondary-900 hover:text-white hover:scale-105 active:scale-95 transition-all"
+          class="btn-luxury-outline"
         >
-          Ver Todos os Serviços →
+          Ver Todos os Serviços
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
         </a>
       </div>
     </div>
   </section>
 
   <!-- DEPOIMENTOS -->
-  <section>
+  <section class="section-luxury bg-cream">
     <div class="section-inner">
-      <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">O que dizem nossos clientes</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Empresas e empreendedores que já regularizaram com a {SITE_CONFIG.company.shortName}.</p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">O que dizem nossos clientes</h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Empresas e empreendedores que já regularizaram com a {SITE_CONFIG.company.shortName}.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <DepoimentoCard
           name="Roberto Mendes"
           role="Diretor Industrial — Agropecuária Mendes"
@@ -201,8 +251,8 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     </div>
   </section>
 
-  <!-- CHAMADA DE CONTATO FINAL -->
-  <section class="bg-gray-50">
+  <!-- CTA FINAL -->
+  <section class="section-luxury bg-paper">
     <div class="section-inner">
       <CTABox />
     </div>

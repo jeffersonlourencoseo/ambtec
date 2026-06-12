@@ -13,48 +13,74 @@ import { SITE_CONFIG } from '../data/config.ts';
 >
   <Fragment slot="header"><Header /></Fragment>
 
-  <!-- NOSSA HISTÓRIA -->
-  <section>
-    <div class="section-inner">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight mb-16 text-gray-900">
-        Sobre a <span class="text-secondary-900">{SITE_CONFIG.company.shortName}</span>
-      </h1>
+  <!-- HERO SOBRE -->
+  <section class="relative bg-deep-900 overflow-hidden">
+    <div class="absolute inset-0 noise-overlay"></div>
+    <div class="absolute top-1/3 -left-32 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl"></div>
+    <div class="section-luxury relative z-10">
+      <div class="section-inner">
+        <div class="max-w-4xl">
+          <div class="deco-line mb-8"></div>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight leading-[0.95] mb-8">
+            Sobre a <span class="text-gradient-gold">{SITE_CONFIG.company.shortName}</span>
+          </h1>
+          <p class="text-xl text-white/50 max-w-2xl leading-relaxed">
+            Consultoria ambiental de excelência no Rio de Janeiro. Mais de 15 anos transformando burocracia em resultados concretos para empresas e propriedades rurais.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-        <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
-          <p>
-            A {SITE_CONFIG.company.shortName} nasceu de uma constatação simples: <strong class="text-gray-900">a burocracia ambiental estava matando bons empreendimentos</strong>. Empresários e produtores rurais perdiam meses — às vezes anos — tentando entender sozinhos um sistema que deveria ser acessível, mas era injustamente complexo.
+  <!-- HISTÓRIA -->
+  <section class="section-luxury bg-paper">
+    <div class="section-inner">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div class="lg:col-span-7 space-y-6 text-lg text-charcoal/60 leading-relaxed">
+          <p class="text-2xl font-display font-medium text-charcoal leading-relaxed">
+            A {SITE_CONFIG.company.shortName} nasceu de uma constatação simples: <span class="text-deep-700 font-semibold">a burocracia ambiental estava matando bons empreendimentos</span>.
           </p>
           <p>
-            Fundada em 2010 por um grupo de engenheiros ambientais e advogados especialistas, a {SITE_CONFIG.company.shortName} começou como uma pequena consultoria local. Hoje, <strong class="text-gray-900">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado.
+            Empresários e produtores rurais perdiam meses — às vezes anos — tentando entender sozinhos um sistema que deveria ser acessível, mas era injustamente complexo. Fundada em 2010 por um grupo de engenheiros ambientais e advogados especialistas, a {SITE_CONFIG.company.shortName} começou como uma pequena consultoria local.
           </p>
           <p>
-            Nosso diferencial nunca foi apenas o conhecimento técnico — embora tenhamos isso de sobra. O que nos destaca é o <strong class="text-gray-900">compromisso de traduzir a linguagem burocrática em ações claras</strong>, acompanhando cada cliente da primeira conversa até a licença aprovada.
+            Hoje, <strong class="text-charcoal">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado do Rio de Janeiro.
+          </p>
+          <p>
+            Nosso diferencial nunca foi apenas o conhecimento técnico — embora tenhamos isso de sobra. O que nos destaca é o <strong class="text-charcoal">compromisso de traduzir a linguagem burocrática em ações claras</strong>, acompanhando cada cliente da primeira conversa até a licença aprovada.
           </p>
         </div>
 
-        <div class="bg-secondary-900 rounded-3xl p-10 lg:p-12 text-white">
-          <h3 class="text-2xl font-bold mb-6">Números que contam</h3>
-          <div class="space-y-6">
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 rounded-2xl bg-primary-500 flex items-center justify-center text-secondary-900 font-black text-xl">200+</div>
-              <div>
-                <p class="font-bold">Empreendimentos Regularizados</p>
-                <p class="text-gray-100 text-sm">Desde 2010</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 rounded-2xl bg-primary-500 flex items-center justify-center text-secondary-900 font-black text-xl">98%</div>
-              <div>
-                <p class="font-bold">Taxa de Aprovação</p>
-                <p class="text-gray-100 text-sm">Na primeira submissão</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 rounded-2xl bg-primary-500 flex items-center justify-center text-secondary-900 font-black text-xl">24h</div>
-              <div>
-                <p class="font-bold">Diagnóstico Inicial</p>
-                <p class="text-gray-100 text-sm">Resposta em até 1 dia útil</p>
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] opacity-10 blur-2xl"></div>
+            <div class="relative bg-gradient-to-br from-deep-900 to-forest-800 rounded-[2.5rem] p-10 lg:p-12 text-white overflow-hidden">
+              <div class="absolute inset-0 noise-overlay"></div>
+              <div class="relative z-10">
+                <h3 class="text-2xl font-display font-bold mb-8">Números que contam</h3>
+                <div class="space-y-6">
+                  <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">200+</div>
+                    <div>
+                      <p class="font-bold text-white">Empreendimentos Regularizados</p>
+                      <p class="text-white/50 text-sm">Desde 2010</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">98%</div>
+                    <div>
+                      <p class="font-bold text-white">Taxa de Aprovação</p>
+                      <p class="text-white/50 text-sm">Na primeira submissão</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-400 font-display font-bold text-lg shrink-0">24h</div>
+                    <div>
+                      <p class="font-bold text-white">Resposta Técnica</p>
+                      <p class="text-white/50 text-sm">Proposta em até 1 dia útil</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -64,76 +90,78 @@ import { SITE_CONFIG } from '../data/config.ts';
   </section>
 
   <!-- MISSÃO, VISÃO E VALORES -->
-  <section class="bg-gray-50">
+  <section class="section-luxury bg-cream">
     <div class="section-inner">
-      <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Missão, Visão e Valores</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">O que nos move todos os dias.</p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Missão, Visão e Valores</h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">O que nos move todos os dias.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <DiferencialCard
           title="Missão"
           description="Simplificar a conformidade ambiental para que empresas e propriedades rurais possam crescer com segurança jurídica e responsabilidade socioambiental."
-          icon="M13 10V3L4 14h7v7l9-11h-7z"
+          icon="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
         />
         <DiferencialCard
           title="Visão"
           description="Ser reconhecida como a consultoria ambiental mais confiável e eficiente do estado, referência em licenciamento rápido e gestão sustentável."
-          icon="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+          icon="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
         />
         <DiferencialCard
           title="Valores"
           description="Transparência, excelência técnica, compromisso com prazos, sustentabilidade e atendimento humanizado em cada projeto."
-          icon="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+          icon="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
         />
       </div>
     </div>
   </section>
 
   <!-- COMPROMISSO COM A CONFORMIDADE -->
-  <section>
+  <section class="section-luxury bg-paper">
     <div class="section-inner">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
-            Compromisso com a <span class="text-secondary-900">Conformidade</span>
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-8 tracking-tight">
+            Compromisso com a <span class="text-deep-700">Conformidade</span>
           </h2>
-          <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+          <div class="space-y-5 text-lg text-charcoal/60 leading-relaxed">
             <p>
-              Trabalhamos em <strong class="text-gray-900">estrita aderência à Lei 6.938/81 (Política Nacional do Meio Ambiente)</strong>, às resoluções do CONAMA e às normas estaduais e municipais vigentes.
+              Trabalhamos em <strong class="text-charcoal">strita aderência à Lei 6.938/81 (Política Nacional do Meio Ambiente)</strong>, às resoluções do CONAMA e às normas estaduais e municipais vigentes.
             </p>
             <p>
-              Cada projeto passa por uma <strong class="text-gray-900">revisão técnica interna</strong> antes de ser protocolado. Isso garante que a documentação esteja completa, correta e com a menor chance de reprovação.
+              Cada projeto passa por uma <strong class="text-charcoal">revisão técnica interna</strong> antes de ser protocolado. Isso garante que a documentação esteja completa, correta e com a menor chance de reprovação.
             </p>
             <p>
-              Nossa equipe participa continuamente de <strong class="text-gray-900">capacitações e congressos ambientais</strong> para manter o conhecimento sempre atualizado frente às mudanças legislativas.
+              Nossa equipe participa continuamente de <strong class="text-charcoal">capacitações e congressos ambientais</strong> para manter o conhecimento sempre atualizado frente às mudanças legislativas.
             </p>
           </div>
         </div>
 
-        <div class="bg-gray-50 rounded-3xl p-10 lg:p-12">
-          <h3 class="text-xl font-bold text-gray-900 mb-6">Legislações que Dominamos</h3>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="text-primary-500 font-bold">✓</span>
-              <span class="text-gray-700">Lei 6.938/81 — Política Nacional do Meio Ambiente</span>
+        <div class="glass-card p-10 lg:p-12 rounded-[2.5rem]">
+          <h3 class="text-xl font-display font-bold text-charcoal mb-8">Legislações que Dominamos</h3>
+          <ul class="space-y-5">
+            <li class="flex items-start gap-4">
+              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-charcoal/70">Lei 6.938/81 — Política Nacional do Meio Ambiente</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-primary-500 font-bold">✓</span>
-              <span class="text-gray-700">Resoluções CONAMA (401, 463, 492, entre outras)</span>
+            <li class="flex items-start gap-4">
+              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-charcoal/70">Resoluções CONAMA (401, 463, 492, entre outras)</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-primary-500 font-bold">✓</span>
-              <span class="text-gray-700">Lei 12.651/2012 — Novo Código Florestal</span>
+            <li class="flex items-start gap-4">
+              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-charcoal/70">Lei 12.651/2012 — Novo Código Florestal</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-primary-500 font-bold">✓</span>
-              <span class="text-gray-700">Normas técnicas estaduais e municipais</span>
+            <li class="flex items-start gap-4">
+              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-charcoal/70">Normas técnicas estaduais e municipais</span>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="text-primary-500 font-bold">✓</span>
-              <span class="text-gray-700">Normas internas de auditoria e gestão ISO 14001</span>
+            <li class="flex items-start gap-4">
+              <span class="w-6 h-6 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-500 text-xs font-bold shrink-0 mt-0.5">✓</span>
+              <span class="text-charcoal/70">Normas internas de auditoria e gestão ISO 14001</span>
             </li>
           </ul>
         </div>
@@ -141,43 +169,42 @@ import { SITE_CONFIG } from '../data/config.ts';
     </div>
   </section>
 
-  <!-- NOSSA EQUIPE -->
-  <section class="bg-gray-50">
+  <!-- EQUIPE -->
+  <section class="section-luxury bg-cream">
     <div class="section-inner">
-      <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Nossa Equipe</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          Atendimento humanizado, técnico e próximo. Você nunca é um número para nós.
-        </p>
+      <div class="text-center mb-20">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Nossa Equipe</h2>
+        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Atendimento humanizado, técnico e próximo. Você nunca é um número para nós.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-        <div class="bg-white rounded-2xl p-10 lg:p-12 text-center shadow-sm">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-700 font-black text-2xl">EP</div>
-          <h3 class="text-lg font-bold text-gray-900 mb-1">Eng. Paula Ribeiro</h3>
-          <p class="text-gray-500 text-sm mb-3">Fundadora e Diretora Técnica</p>
-          <p class="text-gray-600 text-sm leading-relaxed">15 anos de experiência em licenciamento ambiental e gestão de projetos de grande porte.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-deep-900 to-forest-800 flex items-center justify-center text-gold-400 font-display font-bold text-2xl shadow-dramatic">EP</div>
+          <h3 class="text-lg font-display font-bold text-charcoal mb-1">Eng. Paula Ribeiro</h3>
+          <p class="text-charcoal/40 text-sm mb-3">Fundadora e Diretora Técnica</p>
+          <p class="text-charcoal/60 text-sm leading-relaxed">15 anos de experiência em licenciamento ambiental e gestão de projetos de grande porte.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 lg:p-12 text-center shadow-sm">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-700 font-black text-2xl">DC</div>
-          <h3 class="text-lg font-bold text-gray-900 mb-1">Dr. Carlos Mendes</h3>
-          <p class="text-gray-500 text-sm mb-3">Advogado Ambiental</p>
-          <p class="text-gray-600 text-sm leading-relaxed">Especialista em defesa ambiental e consultoria jurídica para empresas e propriedades rurais.</p>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-deep-900 to-forest-800 flex items-center justify-center text-gold-400 font-display font-bold text-2xl shadow-dramatic">DC</div>
+          <h3 class="text-lg font-display font-bold text-charcoal mb-1">Dr. Carlos Mendes</h3>
+          <p class="text-charcoal/40 text-sm mb-3">Advogado Ambiental</p>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Especialista em defesa ambiental e consultoria jurídica para empresas e propriedades rurais.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 lg:p-12 text-center shadow-sm">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-700 font-black text-2xl">BS</div>
-          <h3 class="text-lg font-bold text-gray-900 mb-1">Bióloga Sara Lima</h3>
-          <p class="text-gray-500 text-sm mb-3">Coordenadora de Campo</p>
-          <p class="text-gray-600 text-sm leading-relaxed">Responsável por levantamentos de fauna, flora e monitoramento ambiental in situ.</p>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-deep-900 to-forest-800 flex items-center justify-center text-gold-400 font-display font-bold text-2xl shadow-dramatic">BS</div>
+          <h3 class="text-lg font-display font-bold text-charcoal mb-1">Bióloga Sara Lima</h3>
+          <p class="text-charcoal/40 text-sm mb-3">Coordenadora de Campo</p>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Responsável por levantamentos de fauna, flora e monitoramento ambiental in situ.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 lg:p-12 text-center shadow-sm">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-700 font-black text-2xl">AT</div>
-          <h3 class="text-lg font-bold text-gray-900 mb-1">Ana Torres</h3>
-          <p class="text-gray-500 text-sm mb-3">Atendimento e Projetos</p>
-          <p class="text-gray-600 text-sm leading-relaxed">Garante que cada cliente tenha acompanhamento humanizado do início ao fim do projeto.</p>
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-deep-900 to-forest-800 flex items-center justify-center text-gold-400 font-display font-bold text-2xl shadow-dramatic">AT</div>
+          <h3 class="text-lg font-display font-bold text-charcoal mb-1">Ana Torres</h3>
+          <p class="text-charcoal/40 text-sm mb-3">Atendimento e Projetos</p>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Garante que cada cliente tenha acompanhamento humanizado do início ao fim do projeto.</p>
         </div>
       </div>
     </div>
