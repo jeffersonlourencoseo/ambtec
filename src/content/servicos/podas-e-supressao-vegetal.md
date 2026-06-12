@@ -1,12 +1,12 @@
 ---
 title: "Podas e Supressão Vegetal Legalizada"
-description: "Serviço técnico de autorização para poda ou corte de árvores, realizado exclusivamente por profissionais credenciados (Biólogo, Engenheiro Florestal ou Agrônomo), em conformidade com a legislação ambiental."
+description: "Empresa de poda de árvores no Rio de Janeiro. Serviço técnico de autorização para corte e poda de árvore, realizado por Biólogo, Engenheiro Florestal ou Agrônomo credenciado. Podas de árvores RJ legalizadas."
 icon: "M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"
 ---
 
-A poda e a supressão vegetal (corte de árvores) são atividades sujeitas a rigoroso controle ambiental no Brasil. Conforme as normas ecológicas federais, estaduais e municipais, nenhuma árvore pode ser cortada ou podada sem a devida autorização dos órgãos ambientais competentes. O descumprimento dessa exigência configura infração ambiental sujeita a multas, embargos e até processos criminais.
+A poda e a supressão vegetal (corte e poda de árvore) são atividades sujeitas a rigoroso controle ambiental no Brasil, especialmente quando se trata de podas de árvores no Rio de Janeiro. Conforme as normas ecológicas federais, estaduais e municipais, nenhuma árvore pode ser cortada ou podada sem a devida autorização dos órgãos ambientais competentes. O descumprimento dessa exigência configura infração ambiental sujeita a multas, embargos e até processos criminais.
 
-O trabalho de poda ou supressão deve ser realizado exclusivamente por profissionais legalmente habilitados: Biólogos, Engenheiros Florestaes ou Agrônomos, registrados em seus respectivos conselhos de classe (CRBio, CREA ou CRA). Além disso, a empresa contratada deve possuir Alvará de Funcionamento, Cadastro Técnico Federal (CTF) do IBAMA e todas as certificações exigidas para operação em áreas urbanas ou rurais.
+O trabalho de poda ou supressão deve ser realizado exclusivamente por profissionais legalmente habilitados: Biólogos, Engenheiros Florestaes ou Agrônomos, registrados em seus respectivos conselhos de classe (CRBio, CREA ou CRA). Por isso, contratar uma empresa de poda de árvores credenciada é essencial para garantir a legalidade do serviço. Além disso, a empresa contratada deve possuir Alvará de Funcionamento, Cadastro Técnico Federal (CTF) do IBAMA e todas as certificações exigidas para operação em áreas urbanas ou rurais.
 
 ## Quando a Supressão ou Poda é Permitida?
 
@@ -36,4 +36,4 @@ Nossa equipe técnica conduz todo o processo de forma legal, segura e documentad
 
 6. **Relatório de Execução:** Após a conclusão, entregamos relatório fotográfico final e documentação comprobatória do cumprimento da autorização.
 
-Com a Ambtec, você elimina riscos legais e garante que toda intervenção vegetal seja conduzida por quem entende da legislação e da biologia das árvores.
+Com a Ambtec, empresa de poda de árvores no Rio de Janeiro com equipe técnica credenciada, você elimina riscos legais e garante que toda poda de árvores RJ seja conduzida por quem entende da legislação e da biologia das árvores.

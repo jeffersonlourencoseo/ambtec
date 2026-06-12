@@ -1,11 +1,11 @@
 ---
 title: "EIA/RIMA: Guia Completo do Estudo de Impacto Ambiental no Rio de Janeiro"
-description: "Entenda o que é o EIA/RIMA, quando é obrigatório, como é elaborado e por que ele é indispensável para empreendimentos de grande porte no estado do Rio de Janeiro."
+description: "Entenda o que é o EIA/RIMA, quando é obrigatório, como é elaborado e por que ele é indispensável para o licenciamento ambiental no Rio de Janeiro."
 pubDate: 2026-06-08
 draft: false
 ---
 
-O Estudo de Impacto Ambiental (EIA) e o respectivo Relatório de Impacto sobre o Meio Ambiente (RIMA) representam um dos pilares mais importantes do licenciamento ambiental brasileiro. Instituído pela Resolução CONAMA 01/1986 e regulamentado por normas subsequentes, o EIA/RIMA é um instrumento técnico-científico obrigatório para empreendimentos considerados de potencial impacto significativo sobre o meio ambiente. No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros e a baía de Guanabara compõem um cenário ambiental de alta sensibilidade, a exigência desse estudo é particularmente rigorosa.
+O Estudo de Impacto Ambiental (EIA) e o respectivo Relatório de Impacto sobre o Meio Ambiente (RIMA) representam um dos pilares mais importantes do licenciamento ambiental no Rio de Janeiro e em todo o Brasil. Instituído pela Resolução CONAMA 01/1986 e regulamentado por normas subsequentes, o EIA/RIMA é um instrumento técnico-científico obrigatório para empreendimentos considerados de potencial impacto significativo sobre o meio ambiente. No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros e a baía de Guanabara compõem um cenário ambiental de alta sensibilidade, a exigência desse estudo é particularmente rigorosa.
 
 Se você é um empreendedor, gestor de projetos ou proprietário rural no Rio de Janeiro e planeja instalar, ampliar ou modificar um empreendimento de grande porte, entender o EIA/RIMA não é apenas uma necessidade legal — é uma vantagem estratégica que pode definir o sucesso ou o fracasso do seu projeto.
 

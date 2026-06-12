@@ -1,6 +1,6 @@
 ---
 title: "Licenciamento Ambiental"
-description: "Processo administrativo obrigatório para autorização de instalação, expansão, alteração ou operação de empreendimentos que possam causar degradação ambiental, conforme a Lei 6.938/81 e resoluções CONAMA."
+description: "Licenciamento ambiental no Rio de Janeiro. Processo administrativo obrigatório para autorização de instalação, expansão, alteração ou operação de empreendimentos, conforme a Lei 6.938/81 e resoluções CONAMA."
 icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 ---
 

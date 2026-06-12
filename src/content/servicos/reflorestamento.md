@@ -1,6 +1,6 @@
 ---
 title: "Reflorestamento e Recuperação de Áreas Degradadas"
-description: "Práticas ecológicas de restauração florestal voltadas à reocupação de locais onde a cobertura vegetal desapareceu, utilizando espécies nativas e técnicas sustentáveis adaptadas ao bioma local."
+description: "Reflorestamento no Rio de Janeiro. Práticas ecológicas de restauração florestal voltadas à reocupação de áreas degradadas, utilizando espécies nativas e técnicas sustentáveis adaptadas ao bioma local."
 icon: "M12 19l7-7h-4v-7h-6v7h-4l7 7z"
 ---
 

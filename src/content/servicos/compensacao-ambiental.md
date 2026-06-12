@@ -1,6 +1,6 @@
 ---
 title: "Compensação Ambiental"
-description: "Instrumento jurídico-ambiental que equilibra impactos ecológicos antecipados ou existentes por meio de ações compensatórias, inseridas no planejamento orçamentário do empreendimento."
+description: "Compensação ambiental no Rio de Janeiro. Instrumento jurídico-ambiental que equilibra impactos ecológicos por meio de ações compensatórias, inseridas no planejamento orçamentário do empreendimento."
 icon: "M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10m-9-11v10"
 ---
 
