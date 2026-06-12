@@ -4,11 +4,12 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
+import { SITE_CONFIG } from '../data/config.ts';
 ---
 
 <Layout
-  title="Sobre a Ambtec — Quem Somos e Nossa História"
-  description="Conheça a Ambtec: equipe multidisciplinar especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável."
+  title={`Sobre a ${SITE_CONFIG.company.shortName} — Quem Somos e Nossa História`}
+  description={`Conheça a ${SITE_CONFIG.company.name}: equipe multidisciplinar especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -16,16 +17,16 @@ import DiferencialCard from '../components/DiferencialCard.astro';
   <section>
     <div class="section-inner">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight mb-16 text-gray-900">
-        Sobre a <span class="text-secondary-900">Ambtec</span>
+        Sobre a <span class="text-secondary-900">{SITE_CONFIG.company.shortName}</span>
       </h1>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
         <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
           <p>
-            A Ambtec nasceu de uma constatação simples: <strong class="text-gray-900">a burocracia ambiental estava matando bons empreendimentos</strong>. Empresários e produtores rurais perdiam meses — às vezes anos — tentando entender sozinhos um sistema que deveria ser acessível, mas era injustamente complexo.
+            A {SITE_CONFIG.company.shortName} nasceu de uma constatação simples: <strong class="text-gray-900">a burocracia ambiental estava matando bons empreendimentos</strong>. Empresários e produtores rurais perdiam meses — às vezes anos — tentando entender sozinhos um sistema que deveria ser acessível, mas era injustamente complexo.
           </p>
           <p>
-            Fundada em 2010 por um grupo de engenheiros ambientais e advogados especialistas, a Ambtec começou como uma pequena consultoria local. Hoje, <strong class="text-gray-900">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado.
+            Fundada em 2010 por um grupo de engenheiros ambientais e advogados especialistas, a {SITE_CONFIG.company.shortName} começou como uma pequena consultoria local. Hoje, <strong class="text-gray-900">já são mais de 200 empreendimentos regularizados</strong> e uma equipe multidisciplinar que atua em todo o estado.
           </p>
           <p>
             Nosso diferencial nunca foi apenas o conhecimento técnico — embora tenhamos isso de sobra. O que nos destaca é o <strong class="text-gray-900">compromisso de traduzir a linguagem burocrática em ações claras</strong>, acompanhando cada cliente da primeira conversa até a licença aprovada.

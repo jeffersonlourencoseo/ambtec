@@ -8,13 +8,15 @@ import DiferencialCard from '../components/DiferencialCard.astro';
 import DepoimentoCard from '../components/DepoimentoCard.astro';
 import CTABox from '../components/CTABox.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config.ts';
 
 const servicos = await getCollection('servicos');
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
 ---
 
 <Layout
-  title="Ambtec — Licenciamento Ambiental e Consultoria Ambiental"
-  description="Regularize seu empreendimento com a Ambtec. Licenciamento ambiental, CAR, EIA/RIMA e gestão ambiental com equipe multidisciplinar."
+  title={SITE_CONFIG.seo.defaultTitle}
+  description={SITE_CONFIG.seo.defaultDescription}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -31,12 +33,12 @@ const servicos = await getCollection('servicos');
       </h1>
 
       <p class="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed">
-        Mais de 200 empresas já confiaram na Ambtec para tirar licenças, regularizar propriedades e dormir tranquila com o meio ambiente. Diagnóstico gratuito em até 24h.
+        Mais de 200 empresas já confiaram na {SITE_CONFIG.company.shortName} para tirar licenças, regularizar propriedades e dormir tranquila com o meio ambiente. Diagnóstico gratuito em até 24h.
       </p>
 
       <div class="flex flex-wrap gap-4">
         <a
-          href="https://wa.me/+550000000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20ambiental."
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-8 py-5 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-green-500/20"
@@ -58,7 +60,7 @@ const servicos = await getCollection('servicos');
   <section class="bg-gray-50">
     <div class="section-inner">
       <div class="text-center mb-12 lg:mb-16">
-        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Por que escolher a Ambtec?</h2>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">Por que escolher a {SITE_CONFIG.company.shortName}?</h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">A consultoria ambiental que resolve, não apenas assessora.</p>
       </div>
 
@@ -93,7 +95,7 @@ const servicos = await getCollection('servicos');
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
           <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">
-            Quem é a <span class="text-secondary-900">Ambtec</span>
+            Quem é a <span class="text-secondary-900">{SITE_CONFIG.company.shortName}</span>
           </h2>
           <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
             <p>
@@ -146,7 +148,7 @@ const servicos = await getCollection('servicos');
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
-        {servicos.slice(0, 6).map((servico) => (
+        {servicos.map((servico) => (
           <a href={`/servicos/${servico.slug}`} class="group">
             <Card
               title={servico.data.title}
@@ -173,7 +175,7 @@ const servicos = await getCollection('servicos');
     <div class="section-inner">
       <div class="text-center mb-12 lg:mb-16">
         <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-gray-900 mb-4">O que dizem nossos clientes</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Empresas e empreendedores que já regularizaram com a Ambtec.</p>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Empresas e empreendedores que já regularizaram com a {SITE_CONFIG.company.shortName}.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
@@ -181,7 +183,7 @@ const servicos = await getCollection('servicos');
           name="Roberto Mendes"
           role="Diretor Industrial — Agropecuária Mendes"
           initials="RM"
-          text="A Ambtec conduziu todo o processo de licenciamento da nossa indústria com extrema competência. Conseguimos a liberação em tempo recorde e sem dor de cabeça."
+          text={`A ${SITE_CONFIG.company.shortName} conduziu todo o processo de licenciamento da nossa indústria com extrema competência. Conseguimos a liberação em tempo recorde e sem dor de cabeça.`}
         />
         <DepoimentoCard
           name="Luciana Costa"

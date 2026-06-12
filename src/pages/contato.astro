@@ -4,11 +4,15 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import ContactForm from '../components/ContactForm.astro';
+import { SITE_CONFIG } from '../data/config.ts';
+
+const address = `${SITE_CONFIG.company.address.street} — ${SITE_CONFIG.company.address.neighborhood}<br /&gt;${SITE_CONFIG.company.address.city} — ${SITE_CONFIG.company.address.state}<br /&gt;CEP: ${SITE_CONFIG.company.address.zipCode}`;
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
 ---
 
 <Layout
-  title="Contato — Ambtec Licenciamento Ambiental"
-  description="Entre em contato com a Ambtec. Solicite um diagnóstico ambiental gratuito e descubra como regularizar seu empreendimento."
+  title={`Contato — ${SITE_CONFIG.company.name}`}
+  description={`Entre em contato com a ${SITE_CONFIG.company.shortName}. Solicite um diagnóstico ambiental gratuito e descubra como regularizar seu empreendimento.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -30,7 +34,7 @@ import ContactForm from '../components/ContactForm.astro';
                 </div>
                 <div>
                   <p class="font-semibold text-gray-900">Telefone / WhatsApp</p>
-                  <p class="text-gray-600"><a href="tel:+550000000000" class="hover:text-secondary-900 transition-colors">(00) 00000-0000</a></p>
+                  <p class="text-gray-600"><a href={`tel:${SITE_CONFIG.company.phone}`} class="hover:text-secondary-900 transition-colors">{SITE_CONFIG.company.phoneFormatted}</a></p>
                 </div>
               </div>
 
@@ -40,7 +44,7 @@ import ContactForm from '../components/ContactForm.astro';
                 </div>
                 <div>
                   <p class="font-semibold text-gray-900">E-mail</p>
-                  <p class="text-gray-600"><a href="mailto:contato@ambtec.com.br" class="hover:text-secondary-900 transition-colors">contato@ambtec.com.br</a></p>
+                  <p class="text-gray-600"><a href={`mailto:${SITE_CONFIG.company.email}`} class="hover:text-secondary-900 transition-colors">{SITE_CONFIG.company.email}</a></p>
                 </div>
               </div>
 
@@ -50,7 +54,7 @@ import ContactForm from '../components/ContactForm.astro';
                 </div>
                 <div>
                   <p class="font-semibold text-gray-900">Endereço</p>
-                  <p class="text-gray-600">Rua das Acácias, 123 — Centro<br />Cidade Ambiental — Estado<br />CEP: 00000-000</p>
+                  <p class="text-gray-600">{SITE_CONFIG.company.address.street} — {SITE_CONFIG.company.address.neighborhood}<br />{SITE_CONFIG.company.address.city} — {SITE_CONFIG.company.address.state}<br />CEP: {SITE_CONFIG.company.address.zipCode}</p>
                 </div>
               </div>
 
@@ -72,7 +76,7 @@ import ContactForm from '../components/ContactForm.astro';
               Resposta rápida para dúvidas e solicitações de orçamento. Clique no botão abaixo.
             </p>
             <a
-              href="https://wa.me/+550000000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20ambiental."
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center p-6 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-colors w-full"

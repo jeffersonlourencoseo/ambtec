@@ -3,11 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { SITE_CONFIG } from '../data/config.ts';
 ---
 
 <Layout
-  title="Política de Privacidade — Ambtec"
-  description="Política de privacidade da Ambtec Consultoria Ambiental. Saiba como tratamos seus dados."
+  title={`Política de Privacidade — ${SITE_CONFIG.company.shortName}`}
+  description={`Política de privacidade da ${SITE_CONFIG.company.name}. Saiba como tratamos seus dados.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -20,7 +21,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
         <div class="space-y-6 text-gray-600 leading-relaxed">
           <p>
-            A Ambtec Consultoria Ambiental valoriza a privacidade dos seus visitantes e clientes. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.
+            A {SITE_CONFIG.company.name} valoriza a privacidade dos seus visitantes e clientes. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Informações Coletadas</h2>
@@ -51,7 +52,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Seus Direitos</h2>
           <p>
-            Você tem o direito de solicitar acesso, correção ou exclusão dos seus dados pessoais a qualquer momento. Para exercer esses direitos, entre em contato pelo e-mail contato@ambtec.com.br.
+            Você tem o direito de solicitar acesso, correção ou exclusão dos seus dados pessoais a qualquer momento. Para exercer esses direitos, entre em contato pelo e-mail {SITE_CONFIG.company.email}.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Alterações nesta Política</h2>

@@ -3,11 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { SITE_CONFIG } from '../data/config.ts';
 ---
 
 <Layout
-  title="Termos de Uso — Ambtec"
-  description="Termos de uso do site da Ambtec Consultoria Ambiental. Condições de acesso e utilização."
+  title={`Termos de Uso — ${SITE_CONFIG.company.shortName}`}
+  description={`Termos de uso do site da ${SITE_CONFIG.company.name}. Condições de acesso e utilização.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 
@@ -25,12 +26,12 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Objetivo do Site</h2>
           <p>
-            Este site tem como finalidade apresentar os serviços de consultoria ambiental da Ambtec, compartilhar conteúdo técnico e facilitar o contato entre potenciais clientes e nossa equipe.
+            Este site tem como finalidade apresentar os serviços de consultoria ambiental da {SITE_CONFIG.company.shortName}, compartilhar conteúdo técnico e facilitar o contato entre potenciais clientes e nossa equipe.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Propriedade Intelectual</h2>
           <p>
-            Todo o conteúdo disponível neste site — textos, imagens, logotipos, ícones e materiais técnicos — é de propriedade exclusiva da Ambtec ou de seus respectivos titulares, e está protegido pelas leis de direitos autorais.
+            Todo o conteúdo disponível neste site — textos, imagens, logotipos, ícones e materiais técnicos — é de propriedade exclusiva da {SITE_CONFIG.company.shortName} ou de seus respectivos titulares, e está protegido pelas leis de direitos autorais.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Uso Permitido</h2>
@@ -50,17 +51,17 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Formulários e Contato</h2>
           <p>
-            Ao enviar informações através dos formulários do site, você declara que os dados são verdadeiros e autoriza a Ambtec a entrar em contato para fins de atendimento e orçamento.
+            Ao enviar informações através dos formulários do site, você declara que os dados são verdadeiros e autoriza a {SITE_CONFIG.company.shortName} a entrar em contato para fins de atendimento e orçamento.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Alterações nos Termos</h2>
           <p>
-            A Ambtec reserva-se o direito de alterar estes termos a qualquer momento. As mudanças entrarão em vigor assim que publicadas nesta página.
+            A {SITE_CONFIG.company.shortName} reserva-se o direito de alterar estes termos a qualquer momento. As mudanças entrarão em vigor assim que publicadas nesta página.
           </p>
 
           <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">7. Legislação Aplicável</h2>
           <p>
-            Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de domicílio da Ambtec.
+            Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de domicílio da {SITE_CONFIG.company.shortName}.
           </p>
 
           <p class="text-sm text-gray-500 mt-12">

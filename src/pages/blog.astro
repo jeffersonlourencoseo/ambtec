@@ -5,13 +5,14 @@ import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import SectionTitle from '../components/SectionTitle.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config.ts';
 
 const posts = await getCollection('blog', ({ data }) => !data.draft);
 posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
 <Layout
-  title="Blog — Ambtec Licenciamento Ambiental"
+  title={`Blog — ${SITE_CONFIG.company.name}`}
   description="Artigos, guias e novidades sobre licenciamento ambiental, CAR, gestão sustentável e regularização ambiental."
 >
   <Fragment slot="header"><Header /></Fragment>

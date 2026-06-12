@@ -4,6 +4,9 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../../data/config.ts';
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -18,10 +21,12 @@ const { Content } = await post.render();
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.title !== post.data.title);
 const relatedPosts = allPosts.slice(0, 3);
+
+const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações')}`;
 ---
 
 <Layout
-  title={`${post.data.title} — Blog Ambtec`}
+  title={`${post.data.title} — Blog ${SITE_CONFIG.company.shortName}`}
   description={post.data.description}
 >
   <Fragment slot="header"><Header /></Fragment>
@@ -62,7 +67,7 @@ const relatedPosts = allPosts.slice(0, 3);
                 Nossa equipe oferece diagnóstico gratuito. Descubra o caminho mais rápido para regularizar seu empreendimento.
               </p>
               <a
-                href="https://wa.me/+550000000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20ambiental."
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center p-5 bg-primary-500 text-secondary-900 font-bold rounded-xl hover:bg-primary-400 transition-colors w-full"

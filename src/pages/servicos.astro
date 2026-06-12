@@ -6,13 +6,14 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 import SectionTitle from '../components/SectionTitle.astro';
 import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config.ts';
 
 const servicos = await getCollection('servicos');
 ---
 
 <Layout
-  title="Serviços — Ambtec Consultoria Ambiental"
-  description="Conheça todos os serviços de consultoria ambiental da Ambtec: licenciamento, EIA/RIMA, CAR, gestão e auditoria ambiental."
+  title={`Serviços — ${SITE_CONFIG.company.name}`}
+  description={`Conheça todos os serviços de consultoria ambiental da ${SITE_CONFIG.company.shortName}: licenciamento, EIA/RIMA, CAR, gestão e auditoria ambiental.`}
 >
   <Fragment slot="header"><Header /></Fragment>
 

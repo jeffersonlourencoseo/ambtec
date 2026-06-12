@@ -5,6 +5,9 @@ import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CTABox from '../../components/CTABox.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../../data/config.ts';
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const servicos = await getCollection('servicos');
@@ -26,7 +29,7 @@ const beneficios = [
 ---
 
 <Layout
-  title={`${servico.data.title} — Ambtec Serviços`}
+  title={`${servico.data.title} — ${SITE_CONFIG.company.shortName} Serviços`}
   description={servico.data.description}
 >
   <Fragment slot="header"><Header /></Fragment>
