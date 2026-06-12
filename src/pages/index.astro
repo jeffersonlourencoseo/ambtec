@@ -11,7 +11,11 @@ import SchemaReview from '../components/SchemaReview.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config.ts';
 
-const servicos = await getCollection('servicos');
+const todosServicos = await getCollection('servicos');
+const servicos = [
+  todosServicos.find(s => s.slug === 'licenciamento-ambiental'),
+  ...todosServicos.filter(s => s.slug !== 'licenciamento-ambiental')
+].filter(Boolean);
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
