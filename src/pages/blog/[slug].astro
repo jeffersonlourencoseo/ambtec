@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import SchemaFAQ from '../../components/SchemaFAQ.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config.ts';
@@ -61,7 +60,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <!-- CONTEÚDO PRINCIPAL -->
-          <div class="lg:col-span-8">
+          <div class="lg:col-span-8 min-w-0">
             <div class="flex items-center gap-3 mb-8">
               <span class="text-xs font-bold uppercase tracking-wider text-accent-gold-deep bg-accent-gold/10 px-3 py-1 rounded-full">
                 {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
@@ -154,5 +153,3 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
   <Fragment slot="footer"><Footer /></Fragment>
 </Layout>
-
-<WhatsAppButton />

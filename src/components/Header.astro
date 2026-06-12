@@ -9,7 +9,7 @@ const navLinks = [
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="main-header">
-  <div class="absolute inset-0 bg-brand-deep/80 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-0" id="header-bg"></div>
+  <div class="absolute inset-0 bg-brand-deep/95 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-100" id="header-bg"></div>
 
   <div class="container mx-auto px-6 lg:px-12 relative">
     <div class="flex items-center justify-between h-20 lg:h-24">
@@ -58,10 +58,10 @@ const navLinks = [
 <!-- Mobile Drawer -->
 <div
   id="mobile-drawer"
-  class="fixed inset-0 z-[999] hidden"
+  class="fixed inset-0 z-[9999] hidden"
   aria-hidden="true"
 >
-  <div id="mobile-backdrop" class="absolute inset-0 bg-brand-deep/98"></div>
+  <div id="mobile-backdrop" class="absolute inset-0 bg-brand-deep"></div>
 
   <div class="relative z-10 flex flex-col items-center justify-center h-full px-8">
     <button
@@ -94,21 +94,6 @@ const navLinks = [
 </div>
 
 <script is:inline>
-  const header = document.getElementById('main-header');
-  const headerBg = document.getElementById('header-bg');
-
-  function updateHeader() {
-    if (window.scrollY > 50) {
-      headerBg.classList.remove('opacity-0');
-      headerBg.classList.add('opacity-100');
-    } else {
-      headerBg.classList.remove('opacity-100');
-      headerBg.classList.add('opacity-0');
-    }
-  }
-  window.addEventListener('scroll', updateHeader, { passive: true });
-  updateHeader();
-
   const toggle = document.getElementById('mobile-menu-toggle');
   const drawer = document.getElementById('mobile-drawer');
   const closeBtn = document.getElementById('mobile-menu-close');

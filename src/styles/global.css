@@ -6,6 +6,13 @@
   html, body {
     overflow-x: hidden;
   }
+  /* Tables inside prose scroll horizontally on mobile instead of overflowing */
+  .prose table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
   html {
     scroll-behavior: smooth;
   }

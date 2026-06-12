@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import WhatsAppButton from '../components/WhatsAppButton.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config.ts';
 
@@ -63,5 +62,3 @@ posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
   <Fragment slot="footer"><Footer /></Fragment>
 </Layout>
-
-<WhatsAppButton />
