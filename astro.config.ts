@@ -9,6 +9,6 @@ export default defineConfig({
   output: 'static',
   integrations: [tailwind(), mdx(), sitemap()],
   build: {
-    inlineStylesheets: 'auto',
+    inlineStylesheets: 'always',
   },
 });
