@@ -3,19 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
-import Card from '../components/Card.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
-import DepoimentoCard from '../components/DepoimentoCard.astro';
 import CTABox from '../components/CTABox.astro';
 import SchemaReview from '../components/SchemaReview.astro';
-import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config.ts';
 
-const todosServicos = await getCollection('servicos');
-const servicos = [
-  todosServicos.find(s => s.slug === 'licenciamento-ambiental'),
-  ...todosServicos.filter(s => s.slug !== 'licenciamento-ambiental')
-].filter(Boolean);
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
@@ -232,42 +224,52 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-        <div class="glass-card p-8 rounded-3xl text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="/servicos/licenciamento-ambiental" class="group">
+          <div class="glass-card p-8 rounded-3xl text-center group-hover:border-gold-400/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-charcoal mb-2">Licenciamento Ambiental</h3>
+            <p class="text-sm text-charcoal/60">LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras.</p>
           </div>
-          <h3 class="text-base font-display font-bold text-charcoal mb-2">1. Licenciamento Ambiental</h3>
-          <p class="text-sm text-charcoal/60">LP, LI, LO, EIA/RIMA e protocolo junto ao INEA e prefeituras.</p>
-        </div>
-        <div class="glass-card p-8 rounded-3xl text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10"/></svg>
+        </a>
+        <a href="/servicos/compensacao-ambiental" class="group">
+          <div class="glass-card p-8 rounded-3xl text-center group-hover:border-gold-400/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-charcoal mb-2">Compensação Ambiental</h3>
+            <p class="text-sm text-charcoal/60">Plano, cálculo e execução de ações compensatórias exigidas na licença.</p>
           </div>
-          <h3 class="text-base font-display font-bold text-charcoal mb-2">2. Compensação Ambiental</h3>
-          <p class="text-sm text-charcoal/60">Plano, cálculo e execução de ações compensatórias exigidas na licença.</p>
-        </div>
-        <div class="glass-card p-8 rounded-3xl text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </a>
+        <a href="/servicos/inventario-florestal-e-fauna" class="group">
+          <div class="glass-card p-8 rounded-3xl text-center group-hover:border-gold-400/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-charcoal mb-2">Inventário Florestal e Fauna</h3>
+            <p class="text-sm text-charcoal/60">Levantamento científico que subsidia o licenciamento e a compensação.</p>
           </div>
-          <h3 class="text-base font-display font-bold text-charcoal mb-2">3. Inventário Florestal e Fauna</h3>
-          <p class="text-sm text-charcoal/60">Levantamento científico que subsidia o licenciamento e a compensação.</p>
-        </div>
-        <div class="glass-card p-8 rounded-3xl text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"/></svg>
+        </a>
+        <a href="/servicos/podas-e-supressao-vegetal" class="group">
+          <div class="glass-card p-8 rounded-3xl text-center group-hover:border-gold-400/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-charcoal mb-2">Podas e Supressão Vegetal</h3>
+            <p class="text-sm text-charcoal/60">Laudo, autorização e execução de cortes legais para obras licenciadas.</p>
           </div>
-          <h3 class="text-base font-display font-bold text-charcoal mb-2">4. Podas e Supressão Vegetal</h3>
-          <p class="text-sm text-charcoal/60">Laudo, autorização e execução de cortes legais para obras licenciadas.</p>
-        </div>
-        <div class="glass-card p-8 rounded-3xl text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7h-4v-7h-6v7h-4l7 7z"/></svg>
+        </a>
+        <a href="/servicos/reflorestamento" class="group">
+          <div class="glass-card p-8 rounded-3xl text-center group-hover:border-gold-400/20 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gold-400/10 flex items-center justify-center text-gold-500 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7h-4v-7h-6v7h-4l7 7z"/></svg>
+            </div>
+            <h3 class="text-lg font-display font-bold text-charcoal mb-2">Reflorestamento e Recuperação</h3>
+            <p class="text-sm text-charcoal/60">Plantio de espécies nativas e monitoramento de áreas recuperadas.</p>
           </div>
-          <h3 class="text-base font-display font-bold text-charcoal mb-2">5. Reflorestamento e Recuperação</h3>
-          <p class="text-sm text-charcoal/60">Plantio de espécies nativas e monitoramento de áreas recuperadas.</p>
-        </div>
+        </a>
       </div>
 
       <div class="mt-12 text-center">
@@ -276,39 +278,6 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
         </p>
         <a href="/servicos" class="btn-luxury-outline">
           Conhecer Todos os Serviços
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section class="section-luxury bg-cream">
-    <div class="section-inner">
-      <div class="text-center mb-20">
-        <div class="deco-line mx-auto mb-8"></div>
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-charcoal mb-6 tracking-tight">Nossos Serviços em Detalhe</h2>
-        <p class="text-lg text-charcoal/50 max-w-2xl mx-auto">Clique em cada serviço para entender como ele se encaixa no processo de regularização do seu empreendimento.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {servicos.map((servico) => (
-          <a href={`/servicos/${servico.slug}`} class="group">
-            <Card
-              title={servico.data.title}
-              description={servico.data.description}
-              icon={servico.data.icon}
-            />
-          </a>
-        ))}
-      </div>
-
-      <div class="text-center mt-16">
-        <a
-          href="/servicos"
-          class="btn-luxury-outline"
-        >
-          Ver Todos os Serviços
           <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
         </a>
       </div>
