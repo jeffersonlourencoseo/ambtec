@@ -1,6 +1,6 @@
 ---
-title: "Podas e Supressão Vegetal Legalizada"
-description: "Empresa de poda de árvores no Rio de Janeiro. Serviço técnico de autorização para corte e poda de árvore, realizado por Biólogo, Engenheiro Florestal ou Agrônomo credenciado. Podas de árvores RJ legalizadas."
+title: "Podas de Árvores no Rio de Janeiro — Autorização Legal"
+description: "Podas de árvores no Rio de Janeiro com autorização legal. Serviço técnico de corte e poda de árvore realizado por Biólogo, Engenheiro Florestal ou Agrônomo credenciado. Empresa de poda RJ autorizada."
 icon: "M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"
 ---
 

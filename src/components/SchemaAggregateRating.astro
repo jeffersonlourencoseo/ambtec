@@ -1,0 +1,25 @@
+---
+import { SITE_CONFIG } from '../data/config.ts';
+
+interface Props {
+  ratingValue?: number;
+  reviewCount?: number;
+  bestRating?: number;
+}
+
+const {
+  ratingValue = 5,
+  reviewCount = 3,
+  bestRating = 5,
+} = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'AggregateRating',
+  ratingValue,
+  reviewCount,
+  bestRating,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

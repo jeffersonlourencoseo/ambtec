@@ -6,6 +6,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
 import CTABox from '../components/CTABox.astro';
 import SchemaReview from '../components/SchemaReview.astro';
+import SchemaAggregateRating from '../components/SchemaAggregateRating.astro';
 import { SITE_CONFIG } from '../data/config.ts';
 
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
@@ -17,6 +18,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 >
   <Fragment slot="header"><Header /></Fragment>
 
+  <SchemaAggregateRating ratingValue={5} reviewCount={3} bestRating={5} />
   <SchemaReview
     itemReviewed={SITE_CONFIG.company.name}
     reviews={[
