@@ -1,18 +1,13 @@
 # Preços — Ambtec Consultoria Ambiental
 
-> Valores orientativos para planejamento de investimento. Cada projeto recebe proposta técnica personalizada após diagnóstico.
+> Valores orientativos para planejamento de investimento. Cada projeto recebe proposta técnica personalizada após diagnóstico inicial gratuito.
 
 ## Licenciamento Ambiental
-- **Diagnóstico inicial:** Gratuito (em até 24h)
+- **Diagnóstico inicial:** Gratuito
 - **Licença Prévia (LP):** A partir de R$ 4.500
 - **Licença de Instalação (LI):** A partir de R$ 6.000
 - **Licença de Operação (LO):** A partir de R$ 3.500
 - **Pacote completo LP+LI+LO:** A partir de R$ 12.000
-
-## Cadastro Ambiental Rural (CAR)
-- **Cadastro e ativação:** A partir de R$ 2.500
-- **Retificação / correção:** A partir de R$ 1.800
-- **Regularização completa (CAR + Reserva Legal):** A partir de R$ 5.000
 
 ## EIA / RIMA
 - **RAS (Relatório Ambiental Simplificado):** A partir de R$ 8.000

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CTABox from '../../components/CTABox.astro';
 import SchemaFAQ from '../../components/SchemaFAQ.astro';
+import SchemaHowTo from '../../components/SchemaHowTo.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config.ts';
 
@@ -20,6 +21,44 @@ export async function getStaticPaths() {
 
 const { servico } = Astro.props;
 const { Content } = await servico.render();
+
+const howToSteps: Record<string, { name: string; text: string }[]> = {
+  'licenciamento-ambiental': [
+    { name: 'Diagnóstico inicial', text: 'Análise do empreendimento, documentação existente e classificação do porte segundo a CONAMA 401/2008.' },
+    { name: 'Elaboração de estudos', text: 'Preparação de EIA, RIMA, RAS ou outros estudos exigidos conforme o porte e tipologia.' },
+    { name: 'Protocolo no órgão ambiental', text: 'Submissão da documentação ao INEA ou Secretaria Municipal de Meio Ambiente e acompanhamento técnico.' },
+    { name: 'Execução de condicionantes', text: 'Compensação ambiental, inventário, podas ou reflorestamento quando exigido na licença.' },
+    { name: 'Acompanhamento pós-licenciamento', text: 'Monitoramento de condicionantes, relatórios periódicos e renovações de licenças.' },
+  ],
+  'compensacao-ambiental': [
+    { name: 'Mapeamento das áreas impactadas', text: 'Vistoria técnica, georreferenciamento e análise do uso do solo para identificar áreas afetadas.' },
+    { name: 'Cálculo técnico', text: 'Quantificação da compensação exigida considerando área, bioma e serviços ecossistêmicos perdidos.' },
+    { name: 'Elaboração do plano', text: 'Desenvolvimento do Plano de Compensação Ambiental com ações: RPPN, restauração florestal ou CRAs.' },
+    { name: 'Execução e monitoramento', text: 'Implantação das ações compensatórias com acompanhamento técnico de plantio, fauna e fitossociologia.' },
+    { name: 'Regularização final', text: 'Entrega de relatórios, certificações e documentação para comprovação junto aos órgãos ambientais.' },
+  ],
+  'inventario-florestal-e-fauna': [
+    { name: 'Planejamento metodológico', text: 'Definição do universo amostral, parcelas, período de coleta e equipe especializada.' },
+    { name: 'Execução de campo', text: 'Coletas, medições, fotografias e registros sonoros por biólogos e técnicos especializados.' },
+    { name: 'Identificação laboratorial', text: 'Processamento de amostras e validação taxonômica com especialistas e coleções científicas.' },
+    { name: 'Análise de dados', text: 'Tratamento estatístico, SIG, mapas e índices de diversidade (Shannon, Simpson).' },
+    { name: 'Relatório técnico', text: 'Documentação completa para protocolo em licenciamentos, regularizações e publicações científicas.' },
+  ],
+  'podas-e-supressao-vegetal': [
+    { name: 'Vistoria técnica in loco', text: 'Avaliação da saúde das árvores, riscos, espécies, DAP e localização por engenheiro florestal credenciado.' },
+    { name: 'Identificação botânica', text: 'Catalogação de espécies e verificação de exemplares raras, ameaçados ou protegidos.' },
+    { name: 'Elaboração do laudo', text: 'Laudo técnico com justificativa, fotos, identificação, DAP, estado fitossanitário e recomendações.' },
+    { name: 'Solicitação de autorização', text: 'Protocolo do pedido junto ao INEA ou Secretaria Municipal e acompanhamento até aprovação.' },
+    { name: 'Execução e relatório', text: 'Poda ou supressão com equipe treinada, EPIs adequados e entrega de relatório fotográfico final.' },
+  ],
+  'reflorestamento': [
+    { name: 'Diagnóstico do solo e clima', text: 'Análise física, química e biológica do solo e variáveis climáticas locais.' },
+    { name: 'Seleção de espécies nativas', text: 'Escolha de espécies pioneiras, secundárias e climácicas adequadas ao bioma local.' },
+    { name: 'Preparo e plantio', text: 'Preparo físico do solo, correção de acidez, adubação orgânica e plantio em densidades ecológicas.' },
+    { name: 'Monitoramento e manutenção', text: 'Acompanhamento periódico da sobrevivência, controle de pragas, replantio e regeneração natural.' },
+    { name: 'Relatórios e certificações', text: 'Documentação técnica com ART, relatórios fotográficos e laudos de conclusão para órgãos ambientais.' },
+  ],
+};
 
 const beneficios = [
   { title: 'Conformidade Legal Garantida', desc: 'Seu empreendimento 100% dentro das normas ambientais federais, estaduais e municipais.', icon: 'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
@@ -73,6 +112,14 @@ const beneficios = [
       </div>
     </div>
   </section>
+
+  {howToSteps[servico.slug] && (
+    <SchemaHowTo
+      name={`Como funciona ${servico.data.title.toLowerCase()} na Ambtec`}
+      description={`Passo a passo do processo técnico de ${servico.data.title.toLowerCase()} no Rio de Janeiro.`}
+      steps={howToSteps[servico.slug]}
+    />
+  )}
 
   <!-- CONTEÚDO -->
   <section class="section-luxury bg-cream">

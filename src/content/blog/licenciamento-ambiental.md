@@ -8,6 +8,8 @@ authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
 ---
 
+> **Resumo:** O licenciamento ambiental é obrigatório para empresas que instalam, ampliam ou operam atividades impactantes no Rio de Janeiro. O INEA e as Secretarias Municipais exigem Licença Prévia, Instalação e Operação para garantir conformidade legal e proteção ambiental. Empreendimentos imobiliários, indústrias, hotéis e shoppings devem regularizar-se antes de iniciar as obras.
+
 O licenciamento ambiental é o principal instrumento de controle e gestão ambiental do Brasil. Instituído pela Lei 6.938/81 (Política Nacional do Meio Ambiente) e regulamentado pelas resoluções do CONAMA, esse processo administrativo obriga empresas e empreendimentos que possam causar impacto ao meio ambiente a obter autorização prévia dos órgãos ambientais competentes antes de instalar, ampliar, modificar ou operar suas atividades.
 
 No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros, lagoas e serras formam um patrimônio natural de alta sensibilidade, o licenciamento ambiental no Rio de Janeiro é particularmente rigoroso. O INEA (Instituto Estadual do Ambiente) atua como principal órgão licenciador estadual, trabalhando em conjunto com o IBAMA para empreendimentos de grande porte e com as prefeituras para atividades de menor impacto. A complexidade da legislação ambiental fluminense, somada à diversidade de biomas e à pressão urbana, torna o licenciamento no RJ um processo que exige conhecimento técnico especializado e planejamento estratégico.

@@ -8,6 +8,8 @@ authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
 ---
 
+> **Resumo:** O EIA/RIMA é um estudo técnico obrigatório para empreendimentos de grande porte no Rio de Janeiro. Avalia impactos sobre a Mata Atlântica, água, ar e comunidades, sendo exigido pelo INEA antes da Licença Prévia. Sem ele, projetos de infraestrutura e loteamento não avançam no licenciamento estadual.
+
 O Estudo de Impacto Ambiental (EIA) e o respectivo Relatório de Impacto sobre o Meio Ambiente (RIMA) representam um dos pilares mais importantes do licenciamento ambiental no Rio de Janeiro e em todo o Brasil. Instituído pela Resolução CONAMA 01/1986 e regulamentado por normas subsequentes, o EIA/RIMA é um instrumento técnico-científico obrigatório para empreendimentos considerados de potencial impacto significativo sobre o meio ambiente. No estado do Rio de Janeiro, onde a Mata Atlântica, os ecossistemas costeiros e a baía de Guanabara compõem um cenário ambiental de alta sensibilidade, a exigência desse estudo é particularmente rigorosa.
 
 Se você é um empreendedor ou gestor de projetos no Rio de Janeiro e planeja instalar, ampliar ou modificar um empreendimento de grande porte, entender o EIA/RIMA não é apenas uma necessidade legal — é uma vantagem estratégica que pode definir o sucesso ou o fracasso do seu projeto. Empreendimentos que subestimam o EIA/RIMA frequentemente enfrentam reprovações, atrasos de meses ou anos, multas milionárias e danos irreversíveis à imagem corporativa.
