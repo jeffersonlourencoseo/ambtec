@@ -9,16 +9,16 @@ const navLinks = [
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="main-header">
-  <div class="absolute inset-0 bg-brand-deep/80 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-0" id="header-bg"></div>
+  <div class="absolute inset-0 bg-[#080c0a]/90 backdrop-blur-xl border-b border-white/[0.06] transition-opacity duration-500 opacity-0" id="header-bg"></div>
 
   <div class="container mx-auto px-6 lg:px-12 relative">
     <div class="flex items-center justify-between h-20 lg:h-24">
       <!-- Logo -->
       <a
         href="/"
-        class="text-2xl lg:text-3xl font-display font-bold text-white tracking-tight hover:scale-105 active:scale-95 transition-transform duration-300"
+        class="text-2xl lg:text-3xl font-display font-bold text-[#f0ebe3] tracking-tight hover:scale-105 active:scale-95 transition-transform duration-300"
       >
-        <span class="text-accent-gold">AMB</span>TEC
+        <span class="text-[#c9a84c]">AMB</span>TEC
       </a>
 
       <!-- Desktop Nav -->
@@ -26,15 +26,15 @@ const navLinks = [
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class="text-sm font-medium text-white/70 hover:text-white tracking-wide uppercase transition-colors duration-300 relative group focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
+            class="text-sm font-medium text-[#f0ebe3]/60 hover:text-[#f0ebe3] tracking-wide uppercase transition-colors duration-300 relative group"
           >
             {link.label}
-            <span class="absolute -bottom-1 left-0 w-0 h-px bg-accent-gold group-hover:w-full transition-all duration-300"></span>
+            <span class="absolute -bottom-1 left-0 w-0 h-px bg-[#c9a84c] group-hover:w-full transition-all duration-300"></span>
           </a>
         ))}
         <a
           href="/contato"
-          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-accent-gold/90 text-brand-deep text-sm font-bold uppercase tracking-wider rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
+          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-[#c9a84c] text-[#080c0a] text-sm font-bold uppercase tracking-wider rounded-none hover:bg-[#d4b862] active:scale-95 transition-all duration-300"
         >
           Orçamento
         </a>
@@ -45,7 +45,7 @@ const navLinks = [
         id="mobile-menu-toggle"
         aria-label="Abrir menu"
         aria-expanded="false"
-        class="lg:hidden inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-white hover:bg-white/20 hover:scale-105 active:scale-95 transition-all backdrop-blur-sm border border-white/10"
+        class="lg:hidden inline-flex items-center justify-center w-12 h-12 border border-white/10 text-[#f0ebe3] hover:border-[#c9a84c]/50 hover:text-[#c9a84c] active:scale-95 transition-all duration-300"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
@@ -61,13 +61,13 @@ const navLinks = [
   class="fixed inset-0 z-[999] hidden"
   aria-hidden="true"
 >
-  <div id="mobile-backdrop" class="absolute inset-0 bg-brand-deep/98"></div>
+  <div id="mobile-backdrop" class="absolute inset-0 bg-[#080c0a]"></div>
 
   <div class="relative z-10 flex flex-col items-center justify-center h-full px-8">
     <button
       id="mobile-menu-close"
       aria-label="Fechar menu"
-      class="absolute top-6 right-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all border border-white/10"
+      class="absolute top-6 right-6 inline-flex items-center justify-center w-14 h-14 border border-white/10 text-[#f0ebe3] hover:border-[#c9a84c]/50 hover:text-[#c9a84c] active:scale-95 transition-all duration-300"
     >
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -78,14 +78,14 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="text-2xl font-display font-medium text-white/80 hover:text-accent-gold transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
+          class="text-2xl font-display font-medium text-[#f0ebe3]/80 hover:text-[#c9a84c] transition-colors duration-300"
         >
           {link.label}
         </a>
       ))}
       <a
         href="/contato"
-        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-accent-gold text-brand-deep font-bold rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
+        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-[#c9a84c] text-[#080c0a] font-bold rounded-none hover:bg-[#d4b862] active:scale-95 transition-all duration-300"
       >
         Solicitar Orçamento
       </a>
