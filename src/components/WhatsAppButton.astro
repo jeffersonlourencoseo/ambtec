@@ -1,7 +1,9 @@
 ---
-const phone = "+550000000000";
-const message = "Olá! Gostaria de solicitar um diagnóstico ambiental.";
-const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+import { SITE_CONFIG } from '../data/config.ts';
+
+const { company } = SITE_CONFIG;
+const message = encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!');
+const url = `https://wa.me/${company.whatsapp}?text=${message}`;
 ---
 
 <a
