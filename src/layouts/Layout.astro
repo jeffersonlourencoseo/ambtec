@@ -81,7 +81,7 @@ if (pathname !== '/' && pathname !== '') {
       image={props.image ? (props.image.startsWith('http') ? props.image : `${SITE_CONFIG.site}${props.image}`) : undefined}
     />
   ) : (
-    <SchemaLocalBusiness />
+    <SchemaLocalBusiness ratingValue={5} reviewCount={3} bestRating={5} />
   )}
   {breadcrumbItems.length > 0 && (
     <SchemaBreadcrumb items={breadcrumbItems} />
