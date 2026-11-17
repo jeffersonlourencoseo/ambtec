@@ -2,9 +2,20 @@
 title: "Compensação Ambiental"
 description: "Compensação ambiental no Rio de Janeiro. Instrumento jurídico-ambiental que equilibra impactos ecológicos por meio de ações compensatórias, inseridas no planejamento orçamentário do empreendimento."
 icon: "M3 6l3 1m0 0l-3 1m3-1v10m9-11v10m-3-11v10m6-11v10m-9-11v10"
+h1: "Compensação Ambiental no Rio de Janeiro"
+seoTitle: "Compensação Ambiental no Rio de Janeiro"
+faq:
+  - q: "O que é compensação ambiental?"
+    a: "É a medida que o órgão ambiental exige para compensar impactos que não podem ser evitados ou mitigados por um empreendimento. Está prevista no artigo 36 da Lei 9.985/2000 (SNUC) e em normas do CONAMA, e costuma aparecer como condicionante da licença."
+  - q: "Como funciona a compensação ambiental?"
+    a: "O órgão define a medida na licença ou na autorização de supressão. O empreendedor apresenta e executa um plano, que pode envolver plantio compensatório, recuperação de áreas, destinação de recursos a unidades de conservação ou outra modalidade aceita pelo órgão, e comprova o cumprimento por relatórios."
+  - q: "Quem calcula a compensação?"
+    a: "O cálculo e a forma de cumprimento seguem a regra do órgão licenciador. A Ambtec levanta a área impactada, prepara o plano técnico e acompanha a aprovação."
+  - q: "A compensação ambiental se confunde com reposição florestal?"
+    a: "São instrumentos diferentes, mas podem aparecer juntos numa mesma licença ou autorização. Identificamos o que o órgão exige em cada caso e planejamos a execução em conjunto."
 ---
 
-A compensação ambiental é um instrumento jurídico-ambiental institucionalizado para equilibrar danos ecológicos antecipados ou existentes resultantes da instalação, operação ou desativação de empreendimentos. Regulamentada pelo artigo 36 da Lei 6.938/81 e pelas Resoluções CONAMA 253/98 e subsequentes, essa ferramenta funciona como reparação pelo desgaste ambiental causado, inserindo despesas de natureza social e ecológica no orçamento total do empreendimento.
+A **compensação ambiental** é um instrumento jurídico-ambiental institucionalizado para equilibrar danos ecológicos antecipados ou existentes resultantes da instalação, operação ou desativação de empreendimentos. Prevista no artigo 36 da Lei 9.985/2000 (SNUC) e regulamentada por resoluções do CONAMA, como a 371/2006, essa ferramenta funciona como reparação pelo desgaste ambiental causado, inserindo despesas de natureza social e ecológica no orçamento total do empreendimento.
 
 O instrumento se aplica principalmente como condicionante de licenciamento ambiental para empreendimentos de grande porte e impacto significativo: usinas, mineradoras, loteamentos de grande extensão, rodovias, portos, grandes indústrias, shoppings e empreendimentos imobiliários massivos. Na Ambtec, a compensação ambiental é planejada e executada como uma etapa integrada ao processo de licenciamento, não como um serviço isolado.
 
@@ -33,4 +44,4 @@ Nossa equipe técnica desenvolve planos de compensação ambiental personalizado
 
 5. **Regularização Final:** Preparamos todos os relatórios técnicos, certificações e documentação necessária para comprovar junto aos órgãos fiscalizadores o cumprimento integral da compensação ambiental.
 
-Com a Ambtec, sua obra cumpre todas as exigências legais de forma sustentável, técnica e documentada, minimizando riscos de embargos e sanções futuras.
+A compensação costuma andar junto com o [licenciamento ambiental](/servicos/licenciamento-ambiental), a [supressão de vegetação](/servicos/podas-e-supressao-vegetal) e o [reflorestamento](/servicos/reflorestamento). Com a Ambtec, tudo é feito pela mesma equipe, de forma técnica e documentada, o que reduz o risco de embargos e sanções futuras.

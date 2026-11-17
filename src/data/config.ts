@@ -48,9 +48,9 @@ export const SITE_CONFIG = {
 
   // SEO Defaults
   seo: {
-    defaultTitle: 'Ambtec — Licenciamento Ambiental no Rio de Janeiro',
+    defaultTitle: 'Consultoria Ambiental no Rio de Janeiro — Ambtec',
     defaultDescription:
-      'Consultoria especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável no Rio de Janeiro. Diagnóstico inicial gratuito.',
+      'Consultoria ambiental no Rio de Janeiro: licenciamento junto ao INEA e prefeituras, supressão vegetal, inventário florestal, compensação e reflorestamento. Diagnóstico gratuito.',
     defaultImage: '/og-image.jpg',
     twitterHandle: '@ambtecambiental',
     locale: 'pt_BR',

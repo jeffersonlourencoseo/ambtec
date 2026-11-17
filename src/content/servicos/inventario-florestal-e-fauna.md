@@ -2,9 +2,20 @@
 title: "Inventário Florestal e de Fauna"
 description: "Inventário florestal e de fauna no Rio de Janeiro. Mapeamento técnico-científico da cobertura vegetal e biodiversidade local, utilizado como insumo para licenciamento ambiental, gestão de terras e conservação."
 icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+h1: "Inventário Florestal e Levantamento de Fauna no Rio de Janeiro"
+seoTitle: "Inventário Florestal no Rio de Janeiro"
+faq:
+  - q: "O que é inventário florestal?"
+    a: "É o levantamento técnico que identifica e quantifica a vegetação de uma área: espécies, quantidade de árvores, diâmetro (DAP), altura, volume e estado de conservação. É a base para pedir autorização de supressão, licenciar um empreendimento e calcular compensação."
+  - q: "Quando o inventário florestal é exigido?"
+    a: "Normalmente quando há supressão de vegetação, implantação de empreendimento em área com vegetação nativa, regularização de reserva legal, compensação ambiental ou projetos de carbono florestal. O órgão ambiental indica o que exige em cada caso."
+  - q: "O inventário de fauna é obrigatório?"
+    a: "Depende do empreendimento e do órgão licenciador. Em áreas com vegetação nativa, o levantamento de fauna costuma ser exigido nos estudos ambientais do licenciamento."
+  - q: "Quanto tempo leva um inventário?"
+    a: "Depende da área, do grupo avaliado e da sazonalidade exigida para a coleta. Informamos o cronograma na proposta, depois de conhecer a área e a exigência do órgão."
 ---
 
-O inventário florestal e de fauna é um levantamento técnico-científico sistemático que coleta, identifica e quantifica as espécies vegetais e animais presentes em uma determinada área, em um período específico. Esse estudo é fundamental para caracterizar a biodiversidade local, avaliar o estado de conservação do ecossistema e subsidiar decisões de gestão ambiental, licenciamento de empreendimentos, compensação ambiental e planos de manejo.
+O **inventário florestal** e de fauna é um levantamento técnico-científico sistemático que coleta, identifica e quantifica as espécies vegetais e animais presentes em uma determinada área, em um período específico. Esse estudo é fundamental para caracterizar a biodiversidade local, avaliar o estado de conservação do ecossistema e subsidiar decisões de gestão ambiental, licenciamento de empreendimentos, compensação ambiental e planos de manejo.
 
 No contexto do licenciamento ambiental, o inventário florestal e de fauna é exigido em diversas situações: implantação de empreendimentos em áreas de vegetação nativa, supressão vegetal autorizada, regularização de Reserva Legal, compensação ambiental, criação de unidades de conservação e projetos de carbono florestal. Além disso, construtoras, incorporadoras e gestores de empreendimentos utilizam esses dados para planejar o uso sustentável dos recursos naturais e cumprir exigências de licenciamento.
 
@@ -40,4 +51,4 @@ Nossos inventários seguem protocolos científicos reconhecidos e normas técnic
 
 5. **Elaboração de Relatórios Técnicos:** Produzimos relatórios completos com descrição metodológica, resultados, discussão, conclusões e recomendações técnicas. A documentação está pronta para protocolo em licenciamentos, regularizações e publicações científicas.
 
-As informações obtidas em nossos inventários servem como insumo fundamental para o licenciamento ambiental, compensação de áreas impactadas, conservação da biodiversidade e atendimento às exigências legais dos órgãos ambientais.
+As informações obtidas em nossos inventários servem como insumo fundamental para o [licenciamento ambiental](/servicos/licenciamento-ambiental), a [supressão vegetal autorizada](/servicos/podas-e-supressao-vegetal), a [compensação ambiental](/servicos/compensacao-ambiental), a conservação da biodiversidade e o atendimento às exigências legais dos órgãos ambientais.

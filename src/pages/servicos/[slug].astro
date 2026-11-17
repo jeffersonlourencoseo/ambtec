@@ -20,6 +20,9 @@ export async function getStaticPaths() {
 
 const { servico } = Astro.props;
 const { Content } = await servico.render();
+const h1 = servico.data.h1 ?? servico.data.title;
+const pageTitle = servico.data.seoTitle ?? servico.data.title;
+const faqItems = servico.data.faq ?? [];
 
 const howToSteps: Record<string, { name: string; text: string }[]> = {
   'licenciamento-ambiental': [
@@ -69,13 +72,13 @@ const beneficios = [
 
 <Layout
   type="service"
-  title={servico.data.title}
+  title={pageTitle}
   description={servico.data.description}
 >
   <Fragment slot="header"><Header /></Fragment>
 
   <SchemaFAQ
-    questions={[
+    questions={faqItems.length > 0 ? faqItems.map((f) => ({ question: f.q, answer: f.a })) : [
       {
         question: `Quanto tempo leva ${servico.data.title.toLowerCase()}?`,
         answer: 'O prazo médio varia conforme o porte do empreendimento e a complexidade técnica. Após diagnóstico gratuito, apresentamos cronograma realista com acompanhamento semanal.',
@@ -102,7 +105,7 @@ const beneficios = [
             <span class="text-accent-gold text-sm font-medium tracking-wide uppercase">Serviço Especializado</span>
           </div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white tracking-tight leading-tight mb-8">
-            {servico.data.title}
+            {h1}
           </h1>
           <p class="text-xl text-white/50 max-w-3xl leading-relaxed">
             {servico.data.description}
@@ -158,6 +161,25 @@ const beneficios = [
       </div>
     </div>
   </section>
+
+  {faqItems.length > 0 && (
+    <section class="section-luxury bg-neutral-cream">
+      <div class="section-inner">
+        <div class="max-w-4xl mx-auto">
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-ink mb-10 tracking-tight">Perguntas frequentes</h2>
+          <div class="space-y-4">
+            {faqItems.map((f) => (
+              <details class="card-surface rounded-xl p-6 group">
+                <summary class="cursor-pointer font-display font-bold text-neutral-ink text-lg">{f.q}</summary>
+                <p class="mt-4 text-neutral-ink-muted leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- CTA -->
   <section class="section-luxury bg-neutral-cream">

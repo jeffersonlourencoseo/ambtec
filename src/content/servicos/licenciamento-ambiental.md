@@ -1,37 +1,72 @@
 ---
 title: "Licenciamento Ambiental"
-description: "Licenciamento ambiental no Rio de Janeiro. Processo administrativo obrigatório para autorização de instalação, expansão, alteração ou operação de empreendimentos, conforme a Lei 6.938/81 e resoluções CONAMA."
+h1: "Empresa de Licenciamento Ambiental no Rio de Janeiro"
+seoTitle: "Empresa de Licenciamento Ambiental no Rio de Janeiro"
+description: "Empresa de licenciamento ambiental no Rio de Janeiro: LP, LI, LO, LAC e EIA/RIMA junto ao INEA e às Secretarias Municipais, com a mesma equipe técnica do protocolo à execução em campo."
 icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+faq:
+  - q: "Quem faz licenciamento ambiental?"
+    a: "O pedido é feito pelo próprio empreendedor, mas na prática é conduzido por uma empresa de licenciamento ou consultoria ambiental com responsável técnico habilitado, que elabora os estudos, protocola no INEA ou na Secretaria Municipal de Meio Ambiente e responde às exigências do órgão."
+  - q: "Como saber se preciso de licenciamento ambiental?"
+    a: "Depende da atividade, do porte e da localização. Indústrias, obras, loteamentos, hotéis, postos de combustível e outras atividades com potencial poluidor costumam precisar. O primeiro passo é o enquadramento da atividade, que fazemos no diagnóstico inicial para definir o órgão competente e o tipo de licença."
+  - q: "Quanto custa o licenciamento ambiental?"
+    a: "Não existe valor único. O custo soma a taxa do órgão, os estudos exigidos e o trabalho de consultoria, e varia com porte, tipo de atividade e fase da licença. Depois do diagnóstico enviamos proposta com escopo e valor definidos. Veja também nosso artigo sobre quanto custa o licenciamento ambiental no RJ."
+  - q: "Qual a diferença entre LP, LI e LO?"
+    a: "A Licença Prévia (LP) aprova a localização e a concepção do projeto. A Licença de Instalação (LI) autoriza a obra. A Licença de Operação (LO) autoriza o funcionamento depois de comprovado o cumprimento das condicionantes anteriores."
+  - q: "Vocês atendem fora da capital?"
+    a: "Sim. Atendemos todo o estado do Rio de Janeiro, tanto nos processos do INEA quanto nos das Secretarias Municipais de Meio Ambiente, com vistoria presencial quando necessário."
 ---
 
-O licenciamento ambiental é o processo administrativo obrigatório pelo qual um empreendimento obtém autorização dos órgãos ambientais competentes para instalar, expandir, alterar ou operar atividades que possam causar degradação ao meio ambiente. Instituído pela Lei 6.938/81 (Política Nacional do Meio Ambiente) e regulamentado pelas resoluções do CONAMA, esse instrumento visa garantir que o desenvolvimento econômico ocorra de forma compatível com a preservação ambiental e a qualidade de vida da população.
+A Ambtec é uma **empresa de licenciamento ambiental** sediada no Rio de Janeiro. Conduzimos todo o processo junto ao INEA, às Secretarias Municipais de Meio Ambiente e, quando aplicável, ao IBAMA: do enquadramento da atividade até a licença emitida e o cumprimento das condicionantes. O que nos diferencia é que **a mesma equipe que protocola a licença executa em campo** o que ela exige, como inventário florestal, supressão e poda autorizadas, compensação e reflorestamento.
 
-Toda empresa ou atividade que utilize recursos naturais, gere efluentes, emissões atmosféricas, resíduos sólidos ou cause qualquer forma de interferência no meio ambiente está sujeita ao licenciamento. Isso inclui indústrias de todos os portes, galpões logísticos, loteamentos, mineradoras, usinas de energia, portos, rodovias, shoppings, hotéis e empreendimentos imobiliários.
+## O que uma empresa de licenciamento ambiental faz
 
-## Tipos de Licença Ambiental
+O licenciamento ambiental é o processo administrativo obrigatório pelo qual um empreendimento obtém autorização para instalar, ampliar, alterar ou operar atividades que possam causar degradação ambiental. Está previsto na Lei 6.938/81 (Política Nacional do Meio Ambiente) e regulamentado por resoluções do CONAMA e normas estaduais.
 
-No Brasil, o licenciamento ambiental é estruturado em três modalidades principais, cada uma correspondente a uma fase do empreendimento:
+Uma empresa especializada cuida de:
 
-- **Licença Prévia (LP):** Concedida na fase de planejamento, analisa a localização e viabilidade ambiental do empreendimento. Avalia se o projeto é compatível com o zoneamento ambiental, os usos do solo e as características ecológicas da região. Sem a LP, o empreendimento não pode avançar para as etapas seguintes.
+- **enquadramento** da atividade (porte, tipologia, potencial poluidor) e definição do órgão competente;
+- **estudos e projetos ambientais** exigidos (EIA/RIMA, RAS, PCA, planos e programas);
+- **protocolo digital** do requerimento e acompanhamento técnico do processo;
+- **resposta às exigências** do órgão ambiental, que é onde a maioria dos atrasos acontece;
+- **condicionantes, monitoramento e renovação** depois da licença emitida.
 
-- **Licença de Instalação (LI):** Autoriza a construção, instalação e implantação do empreendimento após a aprovação dos projetos técnicos e ambientais. Nesta fase, são detalhados os sistemas de controle e mitigação de impactos, como tratamento de efluentes, controle de emissões e gerenciamento de resíduos.
+## Quando contratar uma empresa de licenciamento
 
-- **Licença de Operação (LO):** Permite o início efetivo das atividades produtivas, após a verificação de que todas as condicionantes da LI foram cumpridas. A LO é emitida com prazo de validade e condições de controle ambiental que devem ser monitoradas e renovadas periodicamente.
+Vale contratar quando o empreendimento:
 
-Além dessas, existem licenças específicas como a Licença de Operação Corretiva (LOC), emitida quando há necessidade de adequação de empreendimentos já instalados, e autorizações para atividades especiais.
+- vai ser instalado, ampliado ou teve a atividade alterada;
+- opera sem licença ou com licença vencida e precisa regularizar;
+- recebeu exigência, notificação ou auto de infração do órgão ambiental;
+- depende da licença para obter alvará, financiamento ou certificação;
+- envolve supressão de vegetação, intervenção em APP ou compensação ambiental.
 
-## Como a Ambtec realiza o Licenciamento Ambiental
+## Licenças e estudos que conduzimos
 
-Nossa metodologia é estruturada para minimizar prazos, reduzir riscos de reprovação e garantir total conformidade legal:
+- **Licença Prévia (LP):** aprova a localização e a concepção, verificando a viabilidade ambiental e a compatibilidade com o zoneamento. Sem LP, o empreendimento não avança.
+- **Licença de Instalação (LI):** autoriza a construção e detalha os sistemas de controle de impactos, como efluentes, emissões e resíduos.
+- **Licença de Operação (LO):** autoriza o funcionamento depois da verificação do cumprimento das condicionantes da LI. Tem prazo de validade e exige renovação.
+- **Licença de Operação Corretiva (LOC):** adequação de empreendimentos que já estão instalados.
+- **LAC e modalidades simplificadas:** para atividades de menor impacto, quando a norma do órgão permite.
+- **Estudos:** EIA/RIMA, RAS, PCA e outros, conforme o porte e a tipologia. Veja o artigo sobre [EIA/RIMA](/blog/eia-rima-estudo-impacto-ambiental) e a [diferença entre LP, LI e LO](/blog/licenca-previa-vs-instalacao-vs-operacao).
 
-1. **Diagnóstico e Análise Documental:** Avaliamos a situação atual do empreendimento, documentação existente, histórico ambiental e a classificação do empreendimento segundo a Resolução CONAMA 401/2008 e normas estaduais.
+## Como funciona o nosso trabalho
 
-2. **Elaboração de Estudos Ambientais:** Preparamos Estudo de Impacto Ambiental (EIA), Relatório de Impacto sobre o Meio Ambiente (RIMA), Relatório Ambiental Simplificado (RAS) ou outros estudos exigidos conforme o porte e a tipologia do empreendimento.
+1. **Diagnóstico:** analisamos o empreendimento, a documentação existente e o enquadramento segundo a Resolução CONAMA 401/2008 e as normas estaduais.
+2. **Proposta:** escopo, cronograma e valor definidos antes de começar.
+3. **Estudos e protocolo:** elaboramos os estudos e protocolamos no INEA, na Secretaria Municipal ou no órgão federal competente.
+4. **Acompanhamento e exigências:** acompanhamos o processo e respondemos tecnicamente a cada exigência até a emissão da licença.
+5. **Execução das condicionantes:** quando a licença exige compensação ambiental, inventário florestal, poda ou supressão autorizadas e reflorestamento, nossa própria equipe executa. Não terceirizamos, o que mantém a execução coerente com o projeto aprovado.
+6. **Pós-licença:** relatórios de monitoramento, cumprimento de condicionantes e renovação.
 
-3. **Protocolo e Acompanhamento:** Submetemos a documentação aos órgãos ambientais competentes — INEA (Instituto Estadual do Ambiente do Rio de Janeiro), Secretarias Municipais de Meio Ambiente ou órgãos federais quando aplicável — e acompanhamos tecnicamente o processo até a emissão da licença.
+## Segmentos que atendemos
 
-4. **Execução Técnica Integrada:** Quando o licenciamento exige compensação ambiental, inventário florestal, podas de árvores autorizadas ou reflorestamento, nossa própria equipe técnica executa esses serviços — não terceirizamos para fornecedores externos. Isso garante coerência entre o projeto aprovado e a execução no terreno.
+Indústrias, construtoras e incorporadoras, loteamentos, hotéis e empreendimentos de hospitalidade, concessionárias e redes varejistas, galpões logísticos e infraestrutura, em todo o estado do Rio de Janeiro.
 
-5. **Condições e Acompanhamento Pós-Licenciamento:** Após a emissão da licença, auxiliamos o cliente no cumprimento das condicionantes ambientais, elaboração de relatórios de monitoramento e renovações de licenças.
+## Por que a Ambtec
 
-Com mais de 200 processos de licenciamento conduzidos com sucesso, a Ambtec oferece segurança jurídica, agilidade nos trâmites e total transparência. Nosso diferencial é a integração: a mesma equipe que protocola sua licença também executa, quando necessário, os serviços técnicos de campo exigidos na condicionante. Tudo em um só lugar.
+- **Execução integrada:** licenciamento, [inventário florestal](/servicos/inventario-florestal-e-fauna), [supressão e poda](/servicos/podas-e-supressao-vegetal), [compensação ambiental](/servicos/compensacao-ambiental) e [reflorestamento](/servicos/reflorestamento) com a mesma equipe técnica.
+- **Mais de 15 anos de atuação** e mais de 200 empreendimentos regularizados no estado.
+- **Responsável técnico habilitado** em cada processo e documentação pronta para o protocolo.
+
+Quer entender o processo antes de contratar? Leia o [guia completo de licenciamento ambiental no Rio de Janeiro](/blog/licenciamento-ambiental) ou veja [se vale a pena contratar consultoria](/blog/licenciamento-com-sem-consultoria). Para regularizar uma empresa que já opera, veja [regularização ambiental de empresas no RJ](/blog/regularizacao-ambiental-empresas-rj).

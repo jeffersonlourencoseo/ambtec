@@ -1,12 +1,25 @@
 ---
-title: "O que é Licenciamento Ambiental e por que sua empresa precisa"
-description: "Entenda as etapas do licenciamento ambiental no Rio de Janeiro, os tipos de licença e como a gestão ambiental protege seu negócio."
+title: "Licenciamento Ambiental no Rio de Janeiro: Guia Completo (2026)"
+description: "Guia completo do licenciamento ambiental no Rio de Janeiro: o que é, tipos de licença (LP, LI, LO), quem licencia (INEA ou prefeitura), etapas, documentos e o Decreto 50.473/2026."
 pubDate: 2026-06-01
 draft: false
+tags: ["licenciamento ambiental", "INEA", "Rio de Janeiro", "licença ambiental"]
+faq:
+  - q: "O que é licenciamento ambiental e por que ele é obrigatório?"
+    a: "É o procedimento administrativo pelo qual o órgão ambiental autoriza a instalação, ampliação e operação de atividades que possam causar impacto ao meio ambiente. É obrigatório porque a legislação exige autorização prévia para atividades potencialmente poluidoras ou que utilizam recursos ambientais."
+  - q: "Como saber se preciso de licenciamento ambiental?"
+    a: "Depende da atividade, do porte e da localização. Indústrias, obras, loteamentos, hotéis, postos de combustível e outras atividades com potencial poluidor costumam precisar. O enquadramento é feito segundo as normas do órgão competente, o INEA ou a Secretaria Municipal de Meio Ambiente."
+  - q: "Quais são os 3 tipos de licença ambiental?"
+    a: "Licença Prévia (LP), que aprova a localização e a concepção; Licença de Instalação (LI), que autoriza a obra; e Licença de Operação (LO), que autoriza o funcionamento. Existem ainda modalidades simplificadas, como a LAC, e a Licença Ambiental Integrada prevista no novo decreto estadual."
+  - q: "Quem faz o licenciamento ambiental no Rio de Janeiro?"
+    a: "O INEA licencia as atividades de competência estadual. As Secretarias Municipais de Meio Ambiente licenciam atividades de impacto local, e o IBAMA atua nos casos de competência federal. O pedido é feito pelo empreendedor, geralmente com apoio de uma consultoria ambiental."
+  - q: "O que acontece se minha licença vencer?"
+    a: "Operar com licença vencida é infração. O pedido de renovação deve ser feito com antecedência, com laudos de monitoramento e comprovação de cumprimento das condicionantes."
+---
 author: "Eng. Paula Ribeiro"
 authorRole: "Fundadora e Diretora Técnica"
 authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
-updatedDate: 2026-06-01
+updatedDate: 2026-11-16
 ---
 
 > **Resumo:** O licenciamento ambiental é obrigatório para empresas que instalam, ampliam ou operam atividades impactantes no Rio de Janeiro. O INEA e as Secretarias Municipais exigem Licença Prévia, Instalação e Operação para garantir conformidade legal e proteção ambiental. Empreendimentos imobiliários, indústrias, hotéis e shoppings devem regularizar-se antes de iniciar as obras.
@@ -25,7 +38,6 @@ Entender o licenciamento ambiental não é apenas uma necessidade burocrática �
 
 Empresas que enxergam o licenciamento como investimento, e não como despesa, colhem benefícios de longo prazo que vão muito além da simples **conformidade legal**.
 
-> **Dado relevante:** Segundo dados do IBAMA e INEA (2024), mais de 60% dos empreendimentos autuados no Rio de Janeiro operavam com licença ambiental vencida ou inexistente. A multa média para infrações de grande porte no estado supera R$ 2 milhões. Empresas que investem em regularização preventiva economizam, em média, 73% do custo total em comparação com aquelas que reagem apenas após autuação.
 
 ## Tipos de Licença Ambiental
 
@@ -44,6 +56,16 @@ Além dessas, existem licenças específicas como a **Licença de Operação Cor
   <p class="text-neutral-ink-muted mb-4">Nossa equipe oferece diagnóstico gratuito.</p>
   <a href="/contato" class="btn-luxury">Solicitar Proposta Técnica</a>
 </div>
+
+## Quem licencia no Rio de Janeiro: INEA ou prefeitura?
+
+A competência depende do porte e do impacto da atividade:
+
+- **INEA (Instituto Estadual do Ambiente):** licencia as atividades de competência estadual. O requerimento é feito pelo portal de licenciamento do INEA, de forma digital, e o enquadramento considera porte, tipologia e potencial poluidor.
+- **Secretarias Municipais de Meio Ambiente:** licenciam atividades de impacto local, no município onde o empreendimento está, como a SMAC na capital. Parte dos municípios licencia por delegação do estado.
+- **IBAMA:** atua em empreendimentos de competência federal.
+
+Antes de protocolar, é preciso enquadrar a atividade e confirmar o órgão competente, porque protocolar no órgão errado atrasa o processo. Esse enquadramento faz parte do [diagnóstico da Ambtec](/servicos/licenciamento-ambiental).
 
 ## Quem precisa de Licenciamento Ambiental?
 
@@ -121,6 +143,16 @@ A gestão ambiental não termina com a LO. **Monitoramento periódico**, apresen
   <p class="text-neutral-ink-muted mb-4">Nossa equipe oferece diagnóstico gratuito.</p>
   <a href="/contato" class="btn-luxury">Solicitar Proposta Técnica</a>
 </div>
+
+## Novidade: Decreto 50.473/2026 e o novo licenciamento no RJ
+
+Em setembro de 2026 foi publicado o **Decreto Estadual nº 50.473/2026**, que atualiza o Sistema Estadual de Licenciamento Ambiental (SELCA) e adequa os procedimentos de controle ambiental do estado à Lei Geral do Licenciamento Ambiental. Entre as modalidades previstas está a **Licença Ambiental Integrada (LAI)**, concedida antes de iniciar a implantação do empreendimento. Leia mais em [o que muda com o Decreto 50.473/2026](/blog/decreto-50473-2026-licenciamento-ambiental-rj).
+
+O texto do decreto é extenso e as regras de transição dependem de cada atividade. Antes de iniciar ou renovar um processo, confirme a regra que vale para o seu caso com o órgão ou com uma consultoria.
+
+## Como contratar uma consultoria de licenciamento
+
+Quem não tem equipe técnica própria costuma contratar uma consultoria, que elabora os estudos, protocola e responde às exigências do órgão. Veja quando [vale a pena contratar consultoria](/blog/licenciamento-com-sem-consultoria) e quanto [custa o licenciamento ambiental no RJ](/blog/quanto-custa-licenciamento-ambiental-rj). Para empresas que já operam sem licença, leia [regularização ambiental de empresas no RJ](/blog/regularizacao-ambiental-empresas-rj).
 
 ## Perguntas Frequentes sobre Licenciamento Ambiental
 

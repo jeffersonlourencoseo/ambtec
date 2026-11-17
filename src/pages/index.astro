@@ -5,16 +5,42 @@ import Footer from '../components/Footer.astro';
 import DiferencialCard from '../components/DiferencialCard.astro';
 import CTABox from '../components/CTABox.astro';
 import SchemaReview from '../components/SchemaReview.astro';
+import SchemaFAQ from '../components/SchemaFAQ.astro';
 import { SITE_CONFIG } from '../data/config.ts';
+
+const faqs = [
+  {
+    question: 'O que faz uma consultoria ambiental?',
+    answer: 'A consultoria ambiental ajuda empresas e empreendimentos a cumprir a legislação ambiental. Isso inclui enquadrar a atividade, elaborar estudos e projetos, obter e renovar licenças junto ao INEA e às prefeituras, responder a exigências e autuações e executar medidas como inventário florestal, supressão e poda autorizadas, compensação e reflorestamento.',
+  },
+  {
+    question: 'Quem faz licenciamento ambiental no Rio de Janeiro?',
+    answer: 'O pedido é do empreendedor, mas é conduzido por uma empresa de licenciamento ou consultoria ambiental com responsável técnico habilitado. O processo corre no INEA, na Secretaria Municipal de Meio Ambiente do município ou, quando aplicável, no IBAMA, conforme o porte e o impacto da atividade.',
+  },
+  {
+    question: 'O que o INEA fiscaliza?',
+    answer: 'O INEA é o órgão ambiental do estado do Rio de Janeiro. Licencia e fiscaliza atividades com potencial poluidor, cuida de unidades de conservação estaduais e dos recursos hídricos e controla a supressão de vegetação em sua competência. Prefeituras têm competência sobre atividades de impacto local.',
+  },
+  {
+    question: 'Como escolher uma consultoria ambiental no Rio de Janeiro?',
+    answer: 'Verifique se há responsável técnico habilitado e ART nos projetos, experiência com os processos do INEA e da prefeitura do seu município, proposta com escopo e cronograma claros e se a empresa consegue executar em campo o que a licença exige, sem depender de vários fornecedores.',
+  },
+  {
+    question: 'A Ambtec atende em todo o estado do Rio de Janeiro?',
+    answer: 'Sim. Atendemos a capital, a Baixada Fluminense, a Região dos Lagos, a Serra e o interior do estado, com vistoria presencial quando necessário.',
+  },
+];
 
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
 ---
 
 <Layout
   title={SITE_CONFIG.seo.defaultTitle}
-  description="Consultoria ambiental no Rio de Janeiro. Licenciamento junto ao INEA e Secretarias Municipais, mais compensação ambiental, inventário florestal, podas legalizadas e reflorestamento. Tudo em um só lugar."
+  description="Consultoria ambiental no Rio de Janeiro: licenciamento junto ao INEA e prefeituras, supressão vegetal, inventário florestal, compensação e reflorestamento com a mesma equipe técnica. Diagnóstico gratuito."
 >
   <Fragment slot="header"><Header /></Fragment>
+
+  <SchemaFAQ questions={faqs} />
 
   <SchemaReview
     itemReviewed={SITE_CONFIG.company.name}
@@ -64,16 +90,16 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
           </div>
 
           <h1 class="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white tracking-tight leading-tight mb-6">
-            Licenciamento Ambiental
+            Consultoria Ambiental
             <span class="text-accent-gold">no Rio de Janeiro</span>
           </h1>
 
           <h2 class="text-xl md:text-2xl lg:text-3xl font-display font-bold text-white/80 tracking-tight leading-snug mb-8 max-w-2xl">
-            Licencie sua empresa junto ao <span class="text-accent-gold">INEA</span> e Secretarias Municipais de Meio Ambiente
+            Licenciamento ambiental junto ao <span class="text-accent-gold">INEA</span> e Secretarias Municipais de Meio Ambiente
           </h2>
 
           <p class="text-lg md:text-xl text-white/50 max-w-xl mb-12 leading-relaxed font-light">
-            Regularização ambiental completa para empresas no Rio de Janeiro. <strong class="text-white/80">Uma única equipe técnica</strong> cuida do licenciamento junto ao INEA e das Secretarias Municipais <span class="text-white/80">— e executa no terreno tudo o que for necessário:</span> compensação ambiental, inventário florestal, podas legalizadas e reflorestamento. Sem fornecedores terceirizados, sem descasamento técnico.
+            Empresa de consultoria ambiental e <a href="/servicos/licenciamento-ambiental" class="underline decoration-accent-gold/60 hover:text-white">licenciamento ambiental</a> para empresas no Rio de Janeiro. <strong class="text-white/80">Uma única equipe técnica</strong> cuida do licenciamento junto ao INEA e das Secretarias Municipais <span class="text-white/80">— e executa no terreno tudo o que for necessário:</span> compensação ambiental, inventário florestal, podas legalizadas e reflorestamento. Sem fornecedores terceirizados, sem descasamento técnico.
           </p>
 
           <div class="flex flex-wrap gap-4">
@@ -129,6 +155,52 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
             O <strong class="text-neutral-ink">licenciamento ambiental no Rio de Janeiro</strong> é o processo obrigatório de autorização junto ao INEA e Secretarias Municipais para instalar, ampliar ou operar empreendimentos impactantes. Garante conformidade legal, protege ecossistemas como a Mata Atlântica e evita multas milionárias a empresas.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE FAZ UMA CONSULTORIA -->
+  <section class="section-luxury bg-neutral-cream">
+    <div class="section-inner">
+      <div class="max-w-4xl mx-auto">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-2xl md:text-3xl font-display font-bold text-neutral-ink mb-6 tracking-tight text-center">
+          O que faz uma <span class="text-brand-mid">consultoria ambiental</span>?
+        </h2>
+        <p class="text-lg text-neutral-ink-muted leading-relaxed mb-8 text-center">
+          A consultoria ambiental cuida da conformidade legal da sua empresa: enquadra a atividade, elabora estudos e projetos, obtém e renova licenças, responde a exigências e autuações e executa em campo o que a licença pede.
+        </p>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-ink-muted">
+          <li class="card-surface p-5 rounded-xl"><a href="/servicos/licenciamento-ambiental" class="font-bold text-neutral-ink hover:text-brand-mid">Licenciamento ambiental</a>: LP, LI, LO, LAC e EIA/RIMA.</li>
+          <li class="card-surface p-5 rounded-xl"><a href="/servicos/podas-e-supressao-vegetal" class="font-bold text-neutral-ink hover:text-brand-mid">Supressão vegetal e poda</a> com laudo e autorização.</li>
+          <li class="card-surface p-5 rounded-xl"><a href="/servicos/inventario-florestal-e-fauna" class="font-bold text-neutral-ink hover:text-brand-mid">Inventário florestal</a> e levantamento de fauna.</li>
+          <li class="card-surface p-5 rounded-xl"><a href="/servicos/compensacao-ambiental" class="font-bold text-neutral-ink hover:text-brand-mid">Compensação ambiental</a> e <a href="/servicos/reflorestamento" class="font-bold text-neutral-ink hover:text-brand-mid">reflorestamento</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section-luxury bg-neutral-paper">
+    <div class="section-inner">
+      <div class="text-center mb-16">
+        <div class="deco-line mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Como funciona o nosso trabalho</h2>
+        <p class="text-lg text-neutral-ink-muted max-w-2xl mx-auto">Quatro etapas, uma equipe do começo ao fim.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          { n: '1', t: 'Diagnóstico', d: 'Analisamos o empreendimento, a documentação e o enquadramento junto ao INEA ou à prefeitura.' },
+          { n: '2', t: 'Proposta', d: 'Escopo, cronograma e valor definidos antes de começar.' },
+          { n: '3', t: 'Protocolo e acompanhamento', d: 'Estudos, protocolo e resposta técnica às exigências até a emissão da licença.' },
+          { n: '4', t: 'Execução e pós-licença', d: 'Inventário, supressão, compensação e reflorestamento, mais condicionantes e renovação.' },
+        ].map((p) => (
+          <div class="card-surface p-8 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 flex items-center justify-center text-accent-gold font-display font-bold text-xl mb-5">{p.n}</div>
+            <h3 class="text-lg font-display font-bold text-neutral-ink mb-2">{p.t}</h3>
+            <p class="text-sm text-neutral-ink-muted leading-relaxed">{p.d}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -299,6 +371,55 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
           Conhecer Todos os Serviços
           <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÓRGÃOS E COMO ESCOLHER -->
+  <section class="section-luxury bg-neutral-paper">
+    <div class="section-inner">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div>
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Órgãos com que atuamos</h2>
+          <ul class="space-y-4 text-neutral-ink-muted leading-relaxed">
+            <li><strong class="text-neutral-ink">INEA</strong> (Instituto Estadual do Ambiente): licenciamento e fiscalização de atividades de competência estadual.</li>
+            <li><strong class="text-neutral-ink">Secretarias Municipais de Meio Ambiente</strong>, como a SMAC no município do Rio: atividades de impacto local, podas e supressão em área urbana.</li>
+            <li><strong class="text-neutral-ink">IBAMA</strong>: empreendimentos de competência federal.</li>
+          </ul>
+          <p class="mt-6 text-neutral-ink-muted">Quer entender qual se aplica ao seu caso? Leia o <a href="/blog/licenciamento-ambiental" class="text-brand-mid underline">guia de licenciamento ambiental no Rio de Janeiro</a>.</p>
+        </div>
+        <div>
+          <div class="deco-line mb-8"></div>
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-ink mb-6 tracking-tight">Como escolher uma consultoria ambiental no RJ</h2>
+          <ul class="space-y-3 text-neutral-ink-muted leading-relaxed list-disc pl-5">
+            <li>Responsável técnico habilitado e ART nos projetos.</li>
+            <li>Experiência nos processos do INEA e da prefeitura do seu município.</li>
+            <li>Proposta com escopo, cronograma e valor definidos.</li>
+            <li>Capacidade de executar em campo o que a licença exige.</li>
+            <li>Atendimento em todo o estado, com vistoria presencial.</li>
+          </ul>
+          <p class="mt-6 text-neutral-ink-muted">Em dúvida entre fazer sozinho ou contratar? Veja <a href="/blog/licenciamento-com-sem-consultoria" class="text-brand-mid underline">licenciamento com ou sem consultoria</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-luxury bg-neutral-cream">
+    <div class="section-inner">
+      <div class="max-w-4xl mx-auto">
+        <div class="deco-line mb-8"></div>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-ink mb-10 tracking-tight">Perguntas frequentes sobre consultoria ambiental</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <details class="card-surface rounded-xl p-6">
+              <summary class="cursor-pointer font-display font-bold text-neutral-ink text-lg">{f.question}</summary>
+              <p class="mt-4 text-neutral-ink-muted leading-relaxed">{f.answer}</p>
+            </details>
+          ))}
+        </div>
+        <p class="mt-8 text-neutral-ink-muted">Mais respostas na página de <a href="/faq" class="text-brand-mid underline">perguntas frequentes</a>.</p>
       </div>
     </div>
   </section>

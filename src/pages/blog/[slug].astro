@@ -39,7 +39,7 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
   <Fragment slot="header"><Header /></Fragment>
 
   <SchemaFAQ
-    questions={[
+    questions={post.data.faq && post.data.faq.length > 0 ? post.data.faq.map((f) => ({ question: f.q, answer: f.a })) : [
       {
         question: 'Esse processo é obrigatório no Rio de Janeiro?',
         answer: 'Sim. Conforme a legislação ambiental brasileira (Lei 6.938/81, CONAMA, Código Florestal), empresas e empreendimentos que causem impacto ambiental devem estar regularizadas junto ao INEA ou à Secretaria Municipal de Meio Ambiente de seu município.',

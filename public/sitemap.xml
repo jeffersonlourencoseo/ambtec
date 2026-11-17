@@ -2,91 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://licenciamentoambientalrio.com.br/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/compensacao-ambiental/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/inventario-florestal-e-fauna/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/licenciamento-ambiental/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/podas-e-supressao-vegetal/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/reflorestamento/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://licenciamentoambientalrio.com.br/blog/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://licenciamentoambientalrio.com.br/sobre/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/contato/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/faq/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/licenciamento-ambiental/</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://licenciamentoambientalrio.com.br/servicos/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/podas-e-supressao-vegetal/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/reflorestamento/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/compensacao-ambiental/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/servicos/inventario-florestal-e-fauna/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/blog/licenciamento-ambiental/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/blog/licenciamento-com-sem-consultoria/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/blog/regularizacao-ambiental-empresas-rj/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://licenciamentoambientalrio.com.br/blog/licenca-previa-vs-instalacao-vs-operacao/</loc>
+    <loc>https://licenciamentoambientalrio.com.br/blog/decreto-50473-2026-licenciamento-ambiental-rj/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://licenciamentoambientalrio.com.br/blog/eia-rima-estudo-impacto-ambiental/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/licenca-previa-vs-instalacao-vs-operacao/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/licenciamento-ambiental/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/licenciamento-com-sem-consultoria/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/poda-e-remocao-de-arvore-no-rio-de-janeiro-autorizacao/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/quanto-custa-licenciamento-ambiental-rj/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/blog/regularizacao-ambiental-empresas-rj/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/contato/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/faq/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://licenciamentoambientalrio.com.br/sobre/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://licenciamentoambientalrio.com.br/privacidade/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://licenciamentoambientalrio.com.br/termos/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

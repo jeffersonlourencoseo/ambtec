@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/licenciamento-ambiental-guia-completo-para-entender-e-obter-sua-licenca",
+      "destination": "/blog/licenciamento-ambiental",
+      "permanent": true
+    },
+    {
+      "source": "/blog/licenciamento-ambiental-guia-completo-para-entender-e-obter-sua-licenca/",
+      "destination": "/blog/licenciamento-ambiental",
+      "permanent": true
+    }
+  ]
+}
