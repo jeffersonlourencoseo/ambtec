@@ -25,6 +25,7 @@
 - [x] GA4: tag G-CX7M0R0M31 confere com o stream www.licenciamentoambientalrio.com.br (propriedade "licenciamento ambiental rio", conta Ambetec) e recebe tráfego.
 - [x] GA4: criados eventos click_whatsapp, click_telefone, click_email e generate_lead. Marcar como eventos-chave no GA4 depois que aparecerem.
 - [x] Formulário de contato: não enviava nada (action="#"). Agora abre o WhatsApp da Ambtec com os dados preenchidos e registra generate_lead.
+- [x] Search Console (propriedade de domínio): enviado o sitemap https://www.licenciamentoambientalrio.com.br/sitemap.xml (21 páginas processadas) e solicitada indexação da home, do serviço de licenciamento, do serviço de supressão e dos 3 artigos novos. O sitemap antigo (sem www, 19 páginas) continua listado; pode ser removido.
 
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
