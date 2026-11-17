@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   // Domínio
-  site: 'https://licenciamentoambientalrio.com.br',
+  site: 'https://www.licenciamentoambientalrio.com.br',
 
   // Empresa (NAP)
   company: {

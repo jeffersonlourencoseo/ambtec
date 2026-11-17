@@ -2,7 +2,7 @@
 
 Site profissional e de alta conversão para **Ambtec Consultoria Ambiental**, especializada em licenciamento ambiental, CAR, EIA/RIMA e gestão sustentável no Rio de Janeiro.
 
-🔗 **Domínio:** [licenciamentoambientalrio.com.br](https://licenciamentoambientalrio.com.br)
+🔗 **Domínio:** [licenciamentoambientalrio.com.br](https://www.licenciamentoambientalrio.com.br)
 
 ---
 

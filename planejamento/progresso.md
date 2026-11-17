@@ -12,7 +12,9 @@
 - [x] Blog: guia pilar atualizado (INEA x prefeitura, Decreto 50.473/2026); artigo duplicado quebrado removido com 301 (vercel.json).
 - [x] 3 artigos novos: custo do licenciamento no RJ, Decreto 50.473/2026, poda e remoção de árvore no RJ.
 - [x] sitemap.xml atualizado (21 URLs).
-- [ ] Pendente (decisão do Jefferson): domínio principal (ambtec.bio.br x licenciamentoambientalrio.com.br) e redirecionar o outro no DNS/Vercel.
+- [x] Domínio: ambtec.bio.br é site antigo, tudo vai para licenciamentoambientalrio.com.br. O Vercel serve o site em www (apex redireciona 308 para www): canonical, sitemap, robots, llms.txt e schemas passaram para https://www.licenciamentoambientalrio.com.br.
+- [ ] Pendente (Jefferson): redirecionar ambtec.bio.br no Vercel/DNS (ver passos na conversa).
+- [ ] Pendente: Semrush incompleto, limite diário atingido. Ver `pendencias-semrush.md`.
 - [ ] Pendente: revisar estatísticas sem fonte em outros artigos (ex.: 98% x 35% em licenciamento-com-sem-consultoria).
 
 ## Registro de backlinks (preencher)
