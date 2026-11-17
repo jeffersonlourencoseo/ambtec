@@ -17,7 +17,7 @@ Legenda de intenção: **C** comercial/transacional (fecha contrato), **I** info
 | licença ambiental / como tirar licença ambiental | 2.900 / 140 | 26 / 21 | I | Blog (guia + LP/LI/LO) | |
 | cadastro ambiental rural | 4.400 | 28 | I | Blog: CAR (existente) | SERP do RJ é só gov: apoio, não alvo |
 | EIA/RIMA | alto no tópico | n/a | I | Blog (existente) | |
-| laudo ambiental | 140 | 11 | I | A decidir: seção dentro do licenciamento | |
+| laudo ambiental | 140 | 11 | I | Artigo de apoio futuro (prioridade baixa); sem página de serviço | SERP mista em 16/11/2026: artigos explicativos, consultorias e laudo de ruído (intenção vaga). Decidido não criar página própria |
 
 ### Lacunas de conteúdo (artigos novos, ainda NÃO publicados)
 | Artigo novo | Por quê |

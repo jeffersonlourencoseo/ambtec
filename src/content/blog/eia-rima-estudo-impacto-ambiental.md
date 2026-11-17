@@ -189,3 +189,16 @@ No Rio de Janeiro, onde a pressão sobre os ecossistemas é intensa, a biodivers
 Se você está planejando um empreendimento que pode exigir EIA/RIMA, entre em contato com a Ambtec.
 
 Nossa equipe está preparada para conduzir seu estudo com o rigor técnico e o conhecimento local que o Rio de Janeiro exige.
+
+## Veja também
+
+**Serviços:**
+
+- [Empresa de licenciamento ambiental no Rio de Janeiro](/servicos/licenciamento-ambiental)
+- [Inventário florestal e levantamento de fauna](/servicos/inventario-florestal-e-fauna)
+
+**Artigos relacionados:**
+
+- [Licença Prévia, de Instalação e de Operação: diferenças](/blog/licenca-previa-vs-instalacao-vs-operacao)
+- [Licenciamento ambiental no Rio de Janeiro: guia completo](/blog/licenciamento-ambiental)
+- [Quanto custa o licenciamento ambiental no RJ](/blog/quanto-custa-licenciamento-ambiental-rj)

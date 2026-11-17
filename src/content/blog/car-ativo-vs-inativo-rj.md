@@ -164,3 +164,15 @@ Se você é produtor rural no Rio de Janeiro e não sabe o status do seu CAR, a 
 </div>
 
 > **Sobre a autora:** Eng. Paula Ribeiro é fundadora e diretora técnica da Ambtec, engenheira ambiental com CREA-RJ e 15 anos de experiência em licenciamento ambiental. Liderou mais de 200 processos de regularização no estado do Rio de Janeiro.
+
+## Veja também
+
+**Serviços:**
+
+- [Reflorestamento e recuperação de áreas degradadas](/servicos/reflorestamento)
+
+**Artigos relacionados:**
+
+- [CAR: Cadastro Ambiental Rural](/blog/car-cadastro-ambiental)
+- [Código Florestal e reserva legal](/blog/codigo-florestal-reserva-legal)
+- [Licenciamento ambiental no Rio de Janeiro: guia completo](/blog/licenciamento-ambiental)

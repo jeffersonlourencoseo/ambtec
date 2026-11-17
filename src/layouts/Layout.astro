@@ -66,9 +66,22 @@ if (pathname !== '/' && pathname !== '') {
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
     gtag('js', new Date());
 
     gtag('config', 'G-CX7M0R0M31');
+
+    // Eventos de conversão: clique em WhatsApp, telefone e e-mail
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a') : null;
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      var name = null;
+      if (href.indexOf('wa.me') !== -1) name = 'click_whatsapp';
+      else if (href.indexOf('tel:') === 0) name = 'click_telefone';
+      else if (href.indexOf('mailto:') === 0) name = 'click_email';
+      if (name) gtag('event', name, { link_url: href, page_path: location.pathname });
+    });
   </script>
   <SEO {...props} />
   {props.type === 'article' ? (

@@ -174,3 +174,15 @@ Se você está planejando um empreendimento no Rio de Janeiro e não sabe por on
 </div>
 
 > **Sobre a autora:** Eng. Paula Ribeiro é fundadora e diretora técnica da Ambtec, engenheira ambiental com CREA-RJ e 15 anos de experiência em licenciamento ambiental. Liderou mais de 200 processos de regularização no estado do Rio de Janeiro.
+
+## Veja também
+
+**Serviços:**
+
+- [Empresa de licenciamento ambiental no Rio de Janeiro](/servicos/licenciamento-ambiental)
+
+**Artigos relacionados:**
+
+- [Licenciamento ambiental no Rio de Janeiro: guia completo](/blog/licenciamento-ambiental)
+- [Quanto custa o licenciamento ambiental no RJ](/blog/quanto-custa-licenciamento-ambiental-rj)
+- [Decreto 50.473/2026: o que muda no licenciamento do RJ](/blog/decreto-50473-2026-licenciamento-ambiental-rj)

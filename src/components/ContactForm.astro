@@ -1,4 +1,9 @@
-<form class="card-surface p-8 lg:p-10 space-y-6" action="#" method="POST">
+---
+import { SITE_CONFIG } from '../data/config.ts';
+const waNumber = SITE_CONFIG.company.whatsapp.replace(/\D/g, '');
+---
+
+<form id="contact-form" data-wa={waNumber} class="card-surface p-8 lg:p-10 space-y-6">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div>
       <label for="nome" class="block text-sm font-semibold text-neutral-ink mb-2">Nome completo</label>
@@ -83,4 +88,29 @@
   >
     Solicitar Proposta Técnica
   </button>
+  <p class="text-xs text-neutral-ink-muted text-center">Ao enviar, abrimos o WhatsApp da Ambtec com a sua mensagem pronta.</p>
 </form>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = new FormData(form);
+      var servico = form.querySelector('#servico');
+      var servicoTxt = servico && servico.value ? servico.options[servico.selectedIndex].text : 'Não informado';
+      var msg = 'Olá, vim pelo site e gostaria de uma proposta técnica.\n' +
+        'Nome: ' + (f.get('nome') || '') + '\n' +
+        'E-mail: ' + (f.get('email') || '') + '\n' +
+        'Telefone: ' + (f.get('telefone') || '') + '\n' +
+        'Empreendimento: ' + (f.get('empresa') || 'Não informado') + '\n' +
+        'Serviço: ' + servicoTxt + '\n' +
+        'Mensagem: ' + (f.get('mensagem') || '');
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', { form_id: 'contato', page_path: location.pathname });
+      }
+      window.open('https://wa.me/' + form.getAttribute('data-wa') + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  })();
+</script>

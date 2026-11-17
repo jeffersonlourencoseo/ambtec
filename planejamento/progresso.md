@@ -17,6 +17,15 @@
 - [ ] Pendente: Semrush incompleto, limite diário atingido. Ver `pendencias-semrush.md`.
 - [ ] Pendente: revisar estatísticas sem fonte em outros artigos (ex.: 98% x 35% em licenciamento-com-sem-consultoria).
 
+## 16/11/2026 (2): ajustes finais no site
+- [x] Listagens otimizadas: /servicos, /blog, /sobre, /contato (H1 e title distintos da home).
+- [x] Links internos ("Veja também") nos 7 artigos antigos do blog.
+- [x] "laudo ambiental": artigo de apoio futuro, sem página de serviço (SERP mista).
+- [x] Conferência visual desktop e celular (home, serviço, FAQ): ok, sem rolagem horizontal.
+- [x] GA4: tag G-CX7M0R0M31 confere com o stream www.licenciamentoambientalrio.com.br (propriedade "licenciamento ambiental rio", conta Ambetec) e recebe tráfego.
+- [x] GA4: criados eventos click_whatsapp, click_telefone, click_email e generate_lead. Marcar como eventos-chave no GA4 depois que aparecerem.
+- [x] Formulário de contato: não enviava nada (action="#"). Agora abre o WhatsApp da Ambtec com os dados preenchidos e registra generate_lead.
+
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
 |---|---|---|---|---|
