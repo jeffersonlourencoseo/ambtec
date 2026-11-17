@@ -9,6 +9,6 @@
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
 |---|---|---|---|---|
-| 16/11/2026 (sem 1) | /servicos/licenciamento-ambiental/ | empresa de licenciamento ambiental no Rio de Janeiro | dingbatcobogo.com.br (Construção, DA 28) | criado (gerando) |
-| 16/11/2026 (sem 1) | Home | Ambtec Consultoria Ambiental | sibic.com.br (Educação, DA 32) | criado (gerando) |
+| 16/11/2026 (sem 1) | /servicos/licenciamento-ambiental/ | empresa de licenciamento ambiental no Rio de Janeiro | dingbatcobogo.com.br (Construção, DA 28) | publicado: dingbatcobogo.com.br/como-obter-licenciamento-ambiental-para-construcao |
+| 16/11/2026 (sem 1) | Home | Ambtec Consultoria Ambiental | sibic.com.br (Educação, DA 32) | publicado: sibic.com.br/como-escolher-curso-tecnico-em-meio-ambiente-em-2026 |
 | 26/06 a 14/07/2026 | (8 backlinks antigos, âncora "licenciamento ambiental" e variações) | | cideb, traineeflat, npcast, octooc, atelierh2o, decorandocomclasseshop, mobiliintelligenti, prefeituradecampogrande | publicados |
