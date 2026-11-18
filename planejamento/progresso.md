@@ -27,6 +27,11 @@
 - [x] Formulário de contato: não enviava nada (action="#"). Agora abre o WhatsApp da Ambtec com os dados preenchidos e registra generate_lead.
 - [x] Search Console (propriedade de domínio): enviado o sitemap https://www.licenciamentoambientalrio.com.br/sitemap.xml (21 páginas processadas) e solicitada indexação da home, do serviço de licenciamento, do serviço de supressão e dos 3 artigos novos. O sitemap antigo (sem www, 19 páginas) continua listado; pode ser removido.
 
+## 18/11/2026: Semrush concluído
+- [x] 2ª rodada do Semrush (organic do site e de 3 concorrentes, volumes faltantes, Keyword Overview). Dados em `exports/semrush-2026-11-18.md`.
+- [x] Site: ASV como H2 e novo título (poda de árvores) no serviço de supressão; título do artigo de poda; artigo novo "Reflorestamento: o que é...".
+- [ ] Pendente: pedir indexação do artigo novo e do artigo de poda (título mudou) no Search Console.
+
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
 |---|---|---|---|---|

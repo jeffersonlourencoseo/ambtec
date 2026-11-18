@@ -1,7 +1,7 @@
 ---
 title: "Podas e Supressão Vegetal"
 h1: "Supressão Vegetal e Poda de Árvores no Rio de Janeiro"
-seoTitle: "Supressão Vegetal no Rio de Janeiro e Poda Autorizada"
+seoTitle: "Poda de Árvores e Supressão Vegetal no Rio de Janeiro"
 description: "Supressão vegetal e poda de árvores no Rio de Janeiro com laudo técnico, autorização do INEA ou da Secretaria Municipal e execução por equipe habilitada. Do pedido à entrega do relatório final."
 icon: "M14.121 14.121L19 19m-4.95-4.95l4.95 4.95m0 0L19 19m-4.95-4.95L19 19m-4.95-4.95l4.95 4.95m-14.849 5.657l-1.414-1.414"
 faq:
@@ -35,7 +35,7 @@ A autorização só é concedida em situações específicas e comprovadas:
 
 Sombra, queda de folhas, frutos ou raízes não justificam a supressão total. Nesses casos, a solução é a poda técnica de manutenção.
 
-## Autorização: como funciona o passo a passo
+## Autorização de supressão de vegetação (ASV): passo a passo
 
 1. **Vistoria técnica:** engenheiro florestal ou biólogo avalia saúde, risco, espécie, porte, DAP e localização em relação a edificações e infraestrutura.
 2. **Identificação botânica:** catalogação das espécies e verificação de exemplares raros, ameaçados ou protegidos, que podem não poder ser cortados.

@@ -1,4 +1,8 @@
-# Pendências do Semrush (limite diário atingido em 16/11/2026)
+# Pendências do Semrush: RESOLVIDAS em 18/11/2026
+
+A 2ª rodada foi feita em 18/11 (ver `exports/semrush-2026-11-18.md`). Ficaram de fora só o export de 200 linhas e a `planilha-serp.xlsx`, que o Jefferson dispensou. O texto abaixo é o histórico do limite de 16/11.
+
+# (histórico) Limite diário atingido em 16/11/2026
 
 O SEO Pack limita **30 consultas/dia e 200 linhas de export/dia**. Em 16/11 o limite acabou; a tela informa que renova "amanhã, 12:00 AM (horário da Índia)", ou seja, por volta de **15:30 de Brasília** do dia seguinte. Não usar as contas 02/03 para contornar (risco de suspensão do acesso).
 

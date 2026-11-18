@@ -9,10 +9,11 @@ Legenda de intenção: **C** comercial/transacional (fecha contrato), **I** info
 | consultoria ambiental rio de janeiro | 70 (+2.400 "consultoria ambiental") | 20 | C | **Home** | SERP = homes de consultorias locais + oHub |
 | empresa de licenciamento ambiental | 140 | 13 | C | /servicos/licenciamento-ambiental/ | CPC R$ 6,74. "empresas de licenciamento ambiental" (90) é a mesma intenção: entra como variação |
 | consultores ambientais / empresa de consultoria ambiental | 260 / 170 | 9 / 10 | C | Home (variações) | |
-| supressão vegetal (RJ) | 1.000 | 16 | I+C | /servicos/podas-e-supressao-vegetal/ | A Ambtec já está em 3º e 8º lugar no RJ |
+| supressão vegetal (RJ) | 1.000 (+ "supressão de vegetação" 390, "autorização de supressão de vegetação" 140, KD 9) | 16 | I+C | /servicos/podas-e-supressao-vegetal/ | A Ambtec já está em 3º e 8º lugar no RJ. H2 de ASV adicionado em 18/11 |
+| poda de árvores | 3.600 (+ "podas de árvores" 720, "poda de árvore" 590) | 17 | I+C | /servicos/podas-e-supressao-vegetal/ + artigo de poda | Dado de 18/11. Variações incluem máquina de poda e árvore de Natal (ruído) |
 | inventário florestal | 390 | 13 | I+C | /servicos/inventario-florestal-e-fauna/ | |
 | compensação ambiental | 720 | 16 | I | /servicos/compensacao-ambiental/ | SERP é gov; só variações de serviço |
-| reflorestamento / recuperação de áreas degradadas | sem dado | n/a | C | /servicos/reflorestamento/ | Sem volume no Semrush; entra pelo serviço e pelos backlinks |
+| reflorestamento / recuperação de áreas degradadas | 3.600 / 590 ("recuperação de área degradada" 390, PRAD 90) | 29 / 15 | I+C | /servicos/reflorestamento/ + artigo "Reflorestamento: o que é..." (1.000 "o que é reflorestamento") | Dado de 18/11. Artigo publicado em 18/11 |
 | licenciamento ambiental | 5.400 | 18 | I | Blog: guia completo | Pilar do blog; unificar os 2 artigos existentes |
 | licença ambiental / como tirar licença ambiental | 2.900 / 140 | 26 / 21 | I | Blog (guia + LP/LI/LO) | |
 | cadastro ambiental rural | 4.400 | 28 | I | Blog: CAR (existente) | SERP do RJ é só gov: apoio, não alvo |
@@ -22,12 +23,17 @@ Legenda de intenção: **C** comercial/transacional (fecha contrato), **I** info
 ### Lacunas de conteúdo (artigos novos, ainda NÃO publicados)
 | Artigo novo | Por quê |
 |---|---|
-| Quanto custa licenciamento ambiental no RJ (INEA) | SERP sem nenhum resultado do RJ; intenção comercial forte |
+| Quanto custa licenciamento ambiental no RJ (INEA) | SERP sem nenhum resultado do RJ; intenção comercial forte. Volume baixo no Semrush (40/mês): não esperar tráfego alto |
 | Decreto 50.473/2026: o que muda no licenciamento do RJ (SELCA, LAI) | Tema novo de set/2026, SERP só com gov e escritório de advocacia |
 | Poda e remoção de árvore no RJ: quando precisa de autorização | Brecha: só jardinagem e gov; alimenta o serviço de podas |
 | Supressão vegetal no RJ: ASV, INEA e passo a passo | Alimenta o serviço (SERP onde já aparecemos) |
 
 Backlinks para artigos novos só entram no cronograma DEPOIS que o artigo estiver no ar (marcados com ⏳).
+
+## 1b. O que o Semrush mostrou em 18/11/2026 (ver `exports/semrush-2026-11-18.md`)
+- O domínio ainda tem 0 palavras no Semrush; é a linha de base.
+- Os concorrentes (Rio Ambiental, Métrica, Primal) estão entre a 15ª e a 50ª posição nacional nas palavras comerciais: ninguém domina. "empresa de licenciamento ambiental" tem KD 13.
+- Oportunidade fora do escopo: MTR/manifesto de resíduos do INEA (2,4K + 1,3K). Só se a Ambtec for atender resíduos.
 
 ## 2. Problemas encontrados no site (para a fase de construção)
 1. **Dois artigos sobre o mesmo tema**: `licenciamento-ambiental` e `licenciamento-ambiental-guia-completo-...`. Canibalização. Unificar com 301 ou separar (geral × RJ/Decreto 50.473).

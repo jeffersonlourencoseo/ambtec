@@ -1,5 +1,5 @@
 ---
-title: "Poda e Remoção de Árvore no Rio de Janeiro: Quando Precisa de Autorização"
+title: "Poda de Árvores no Rio de Janeiro: Quando Precisa de Autorização"
 description: "Saiba quando poda, corte ou remoção de árvore precisa de autorização no Rio de Janeiro, a diferença entre poda e supressão, quem pode executar e as multas por fazer sem licença."
 pubDate: 2026-11-16
 draft: false
