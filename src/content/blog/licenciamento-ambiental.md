@@ -1,5 +1,5 @@
 ---
-title: "Licenciamento Ambiental no Rio de Janeiro: Guia Completo (2026)"
+title: "Licenciamento Ambiental no RJ: Guia Completo (2026)"
 description: "Guia completo do licenciamento ambiental no Rio de Janeiro: o que é, tipos de licença (LP, LI, LO), quem licencia (INEA ou prefeitura), etapas, documentos e o Decreto 50.473/2026."
 pubDate: 2026-06-01
 draft: false

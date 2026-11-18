@@ -1,5 +1,5 @@
 ---
-title: "Licenciamento Ambiental com Consultoria vs Sem Consultoria: Vale a Pena?"
+title: "Licenciamento Ambiental com ou sem Consultoria?"
 description: "Compare licenciamento ambiental feito com consultoria especializada vs feito internamente ou sem assessoria. Dados reais de prazo, custo e taxa de aprovação no RJ."
 pubDate: 2026-06-15
 draft: false

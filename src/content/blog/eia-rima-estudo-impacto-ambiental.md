@@ -1,5 +1,5 @@
 ---
-title: "EIA/RIMA: Guia Completo do Estudo de Impacto Ambiental no Rio de Janeiro"
+title: "EIA/RIMA: Guia do Estudo de Impacto Ambiental no RJ"
 description: "Entenda o que é o EIA/RIMA, quando é obrigatório, como é elaborado e por que ele é indispensável para o licenciamento ambiental no Rio de Janeiro."
 pubDate: 2026-06-08
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Regularização Ambiental de Empresas no Rio de Janeiro: Passo a Passo Completo"
+title: "Regularização Ambiental de Empresas no RJ: Passo a Passo"
 description: "Guia prático de gestão ambiental para empresas de todos os portes no RJ. Como regularizar o licenciamento ambiental, evitar multas e operar dentro da conformidade legal."
 pubDate: 2026-06-10
 draft: false

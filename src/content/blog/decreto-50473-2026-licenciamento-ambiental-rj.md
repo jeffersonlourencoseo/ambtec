@@ -1,5 +1,5 @@
 ---
-title: "Decreto 50.473/2026: o que muda no licenciamento ambiental do Rio de Janeiro"
+title: "Decreto 50.473/2026: o que muda no licenciamento do RJ"
 description: "O Decreto Estadual 50.473/2026 atualiza o SELCA e adequa o licenciamento do RJ à Lei Geral. Veja o que se sabe, a Licença Ambiental Integrada e o que fazer agora."
 pubDate: 2026-11-16
 draft: false
