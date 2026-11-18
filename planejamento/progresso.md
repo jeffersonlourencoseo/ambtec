@@ -32,6 +32,11 @@
 - [x] Site: ASV como H2 e novo título (poda de árvores) no serviço de supressão; título do artigo de poda; artigo novo "Reflorestamento: o que é...".
 - [x] Search Console: indexação solicitada para o artigo de reflorestamento e o de poda (título mudou). O serviço de supressão foi alterado, mas não foi reenviado.
 
+## 18/11/2026 (2): SERPs do Google concluídas
+- [x] SERPs de todas as palavras principais e PAA salvos em `serp/serp-2026-11-18.md`.
+- [x] Posições do site novo em 18/11: 1º em "quanto custa licenciamento ambiental", 2º em "supressão vegetal rio de janeiro" (domínio antigo em 4º) e 3º em "empresa de licenciamento ambiental rio de janeiro".
+- [x] FAQs ampliados com os PAA reais (consultoria, inventário, supressão, poda, reflorestamento).
+
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
 |---|---|---|---|---|

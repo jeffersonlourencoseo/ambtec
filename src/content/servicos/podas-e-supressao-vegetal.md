@@ -13,6 +13,8 @@ faq:
     a: "ASV é a autorização de supressão de vegetação, emitida pelo órgão ambiental competente. É o documento que autoriza legalmente a retirada da vegetação em um empreendimento e que costuma vir acompanhado de condicionantes, como compensação ambiental."
   - q: "Quem pode assinar o laudo de poda ou supressão?"
     a: "O laudo deve ser elaborado por profissional legalmente habilitado, como engenheiro florestal, biólogo ou engenheiro agrônomo, com registro no conselho de classe e ART quando aplicável."
+  - q: "Qual é a multa por suprimir vegetação sem autorização?"
+    a: "Suprimir vegetação sem autorização é infração ambiental, regulamentada pelo Decreto 6.514/2008, e o valor depende da área, do tipo de vegetação e do bioma. Além da multa, pode haver embargo, responsabilização criminal e obrigação de recuperar a área."
   - q: "A supressão exige compensação?"
     a: "Muitas vezes sim. Dependendo do bioma, da espécie e do tamanho da intervenção, o órgão pode condicionar a autorização a plantio compensatório, reposição florestal ou outra medida. Nossa equipe já planeja e executa a compensação junto com a supressão."
 ---

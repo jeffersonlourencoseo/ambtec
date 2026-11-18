@@ -11,6 +11,10 @@ faq:
     a: "Sim, desde que o serviço seja feito por equipe habilitada e com a autorização necessária. Confirme a regra vigente do seu município antes de contratar."
   - q: "Qual a diferença entre poda, remoção e supressão?"
     a: "Poda é a retirada controlada de galhos. Remoção é o corte da árvore inteira. Supressão vegetal é a retirada de vegetação em área, em geral ligada a obras, e costuma exigir autorização específica e compensação."
+  - q: "Quanto custa podar uma árvore no Rio de Janeiro?"
+    a: "O valor depende do porte e da altura da árvore, da espécie, do risco, do acesso ao local e de a intervenção exigir ou não laudo e autorização. Por isso o orçamento é feito depois de uma vistoria."
+  - q: "Como solicitar poda de árvore no Rio de Janeiro?"
+    a: "Em área pública, o pedido segue pelos canais da prefeitura, como o 1746. Em área particular, costuma ser necessário pedir autorização à Secretaria Municipal de Meio Ambiente, em geral com laudo técnico. Confirme o procedimento vigente antes de intervir."
   - q: "O que acontece se eu cortar uma árvore sem autorização?"
     a: "É infração ambiental, sujeita a multa, embargo e, em alguns casos, responsabilização criminal, além da obrigação de reparar o dano."
 ---

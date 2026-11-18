@@ -11,6 +11,10 @@ faq:
     a: "Normalmente quando há supressão de vegetação, implantação de empreendimento em área com vegetação nativa, regularização de reserva legal, compensação ambiental ou projetos de carbono florestal. O órgão ambiental indica o que exige em cada caso."
   - q: "O inventário de fauna é obrigatório?"
     a: "Depende do empreendimento e do órgão licenciador. Em áreas com vegetação nativa, o levantamento de fauna costuma ser exigido nos estudos ambientais do licenciamento."
+  - q: "Quem pode fazer inventário florestal?"
+    a: "O inventário deve ser elaborado por profissional habilitado, como engenheiro florestal, biólogo ou engenheiro agrônomo, com registro no conselho de classe e ART quando aplicável."
+  - q: "Quanto custa um inventário florestal?"
+    a: "Depende do tamanho da área, do tipo de vegetação, do método de amostragem e das exigências do órgão ambiental. Depois de conhecer a área, enviamos proposta com escopo e valor definidos."
   - q: "Quanto tempo leva um inventário?"
     a: "Depende da área, do grupo avaliado e da sazonalidade exigida para a coleta. Informamos o cronograma na proposta, depois de conhecer a área e a exigência do órgão."
 ---

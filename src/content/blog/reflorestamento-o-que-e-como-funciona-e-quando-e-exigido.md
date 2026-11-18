@@ -13,6 +13,12 @@ faq:
     a: "Costuma ser exigido como condicionante de licenciamento, como compensação por supressão de vegetação, na recomposição de áreas de preservação permanente e em termos firmados com o órgão ambiental. O órgão define o que vale para cada caso."
   - q: "Quem pode elaborar o projeto de reflorestamento?"
     a: "O projeto deve ser elaborado por profissional habilitado, como engenheiro florestal, biólogo ou engenheiro agrônomo, com ART quando aplicável."
+  - q: "Quais são os benefícios do reflorestamento?"
+    a: "Reduz a erosão, protege nascentes e matas ciliares, melhora a fertilidade do solo, abriga fauna e flora locais e ajuda a regular o clima ao absorver carbono. Em projetos de licenciamento, também cumpre a obrigação exigida pelo órgão ambiental."
+  - q: "Qual a melhor planta para reflorestamento?"
+    a: "Não existe uma espécie única. A escolha depende do bioma, do solo, da altura e da finalidade da área. Em projetos ambientais no Rio de Janeiro, usam-se espécies nativas da Mata Atlântica em diferentes estágios de sucessão, definidas no projeto."
+  - q: "Quanto custa um projeto de recuperação de área degradada (PRAD)?"
+    a: "Depende do tamanho da área, do estado de degradação, das espécies, do preparo do solo e do tempo de monitoramento exigido. Por isso o valor só pode ser definido depois de conhecer a área e a exigência do órgão ambiental."
 ---
 
 **Reflorestamento** é o plantio de espécies florestais em áreas que perderam a vegetação. Em projetos ambientais, ele vai além de "plantar árvores": usa espécies nativas do bioma local, planeja a sucessão ecológica e é acompanhado por monitoramento até a área se estabelecer. Este artigo explica o que é, como funciona e quando o órgão ambiental exige.
@@ -45,6 +51,10 @@ Quando o órgão ambiental exige o projeto, em geral pede o PRAD (plano de recup
 3. **Preparo do terreno e plantio:** preparo do solo, controle de invasoras e plantio em espaçamento adequado.
 4. **Monitoramento e manutenção:** acompanhamento da sobrevivência das mudas, controle de pragas, replantio e relatórios para o órgão. O prazo segue o que a licença ou o projeto aprovado exigir.
 5. **Relatórios e ART:** documentação técnica para comprovar o cumprimento da obrigação.
+
+## Benefícios do reflorestamento
+
+O reflorestamento reduz a erosão, protege nascentes e matas ciliares, melhora a fertilidade do solo, dá abrigo e alimento à fauna e à flora locais e ajuda a regular o clima ao absorver carbono. Em projetos de licenciamento, ele também é a forma de cumprir a obrigação exigida pelo órgão ambiental.
 
 ## Quem elabora e executa
 
