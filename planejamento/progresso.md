@@ -30,7 +30,7 @@
 ## 18/11/2026: Semrush concluído
 - [x] 2ª rodada do Semrush (organic do site e de 3 concorrentes, volumes faltantes, Keyword Overview). Dados em `exports/semrush-2026-11-18.md`.
 - [x] Site: ASV como H2 e novo título (poda de árvores) no serviço de supressão; título do artigo de poda; artigo novo "Reflorestamento: o que é...".
-- [ ] Pendente: pedir indexação do artigo novo e do artigo de poda (título mudou) no Search Console.
+- [x] Search Console: indexação solicitada para o artigo de reflorestamento e o de poda (título mudou). O serviço de supressão foi alterado, mas não foi reenviado.
 
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
