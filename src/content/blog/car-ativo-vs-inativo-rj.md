@@ -3,9 +3,9 @@ title: "CAR Ativo vs Inativo no Rio de Janeiro: O que Muda para o Produtor Rural
 description: "Entenda as diferenças práticas entre CAR ativo, inativo e pendente no RJ. Tabela comparativa com impactos no crédito rural, comercialização e risco fiscal."
 pubDate: 2026-06-14
 draft: true
-author: "Eng. Paula Ribeiro"
-authorRole: "Fundadora e Diretora Técnica"
-authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+author: "Roberto Lourenço"
+authorRole: "Sócio e Responsável Técnico"
+authorCredentials: "Biólogo, CRBio-02 42542-02D, pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental (UFRJ)"
 tags: ["CAR", "cadastro ambiental rural", "produtor rural", "Rio de Janeiro", "regularização"]
 updatedDate: 2026-06-14
 ---
@@ -163,7 +163,7 @@ Se você é produtor rural no Rio de Janeiro e não sabe o status do seu CAR, a 
   </div>
 </div>
 
-> **Sobre a autora:** Eng. Paula Ribeiro é fundadora e diretora técnica da Ambtec, engenheira ambiental com CREA-RJ e 15 anos de experiência em licenciamento ambiental. Liderou mais de 200 processos de regularização no estado do Rio de Janeiro.
+> **Sobre o autor:** Roberto Lourenço é biólogo, sócio e responsável técnico da Ambtec, formado em 2000 pela Universidade da Cidade (graduação e licenciatura em Ciências Biológicas, com ênfase em meio ambiente) e pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental pela UFRJ. Registro CRBio-02 42542-02D.
 
 ## Veja também
 

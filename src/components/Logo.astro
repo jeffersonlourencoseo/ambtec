@@ -1,0 +1,23 @@
+---
+interface Props {
+  class?: string;
+  tone?: 'light' | 'dark';
+  tagline?: boolean;
+}
+const { class: cls = '', tone = 'light', tagline = true } = Astro.props;
+const dark = tone === 'dark';
+---
+
+<span class={`inline-flex items-center gap-2.5 ${cls}`}>
+  <span class:list={['relative inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl', dark ? 'bg-brand-deep' : 'bg-accent-gold']}>
+    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M3.5 15.5c2-3.6 4.4-5.7 7.2-5.7 2.6 0 3.8 1.7 5.9 1.7 1.6 0 2.9-.8 4-2.3" stroke={dark ? '#c4ef6a' : '#05221a'} stroke-width="2" stroke-linecap="round" />
+      <path d="M5 19.5c1.7-2.2 3.7-3.4 5.9-3.4 2.3 0 3.4 1.3 5.4 1.3 1.4 0 2.7-.6 3.9-2" stroke={dark ? '#ffffff' : '#05221a'} stroke-opacity=".55" stroke-width="2" stroke-linecap="round" />
+      <circle cx="16.5" cy="5.5" r="2" fill={dark ? '#c4ef6a' : '#05221a'} />
+    </svg>
+  </span>
+  <span class="flex flex-col leading-none">
+    <span class:list={['font-display text-[1.3rem] font-bold tracking-[-0.04em]', dark ? 'text-neutral-ink' : 'text-white']}>ambtec</span>
+    {tagline && <span class:list={['mt-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.14em]', dark ? 'text-neutral-ink-muted' : 'text-white/55']}>Consultoria Ambiental</span>}
+  </span>
+</span>

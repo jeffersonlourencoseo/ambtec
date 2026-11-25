@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import SchemaFAQ from '../../components/SchemaFAQ.astro';
+import PageHero from '../../components/PageHero.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config.ts';
 
@@ -23,6 +24,16 @@ const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.t
 const relatedPosts = allPosts.slice(0, 3);
 
 const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encodeURIComponent('Olá, vi o site no google e gostaria de mais informações!')}`;
+const words = (post.body || '').split(/\s+/).filter(Boolean).length;
+const readMin = Math.max(2, Math.round(words / 220));
+const authorInitials = (post.data.author || 'Ambtec')
+  .replace(/^(Eng\.|Dr\.|Dra\.)\s*/i, '')
+  .split(' ')
+  .filter((p) => p.length > 2)
+  .slice(0, 2)
+  .map((p) => p[0])
+  .join('')
+  .toUpperCase();
 ---
 
 <Layout
@@ -55,73 +66,101 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
     ]}
   />
 
-  <section class="section-luxury bg-neutral-paper">
+  <!-- Barra de leitura -->
+  <div class="fixed inset-x-0 top-[var(--header-h)] z-40 h-[2px] bg-transparent" aria-hidden="true">
+    <div id="read-progress" class="h-full w-0 origin-left bg-accent-gold"></div>
+  </div>
+
+  <!-- CABEÇALHO DO ARTIGO -->
+  <PageHero crumbs={[{ label: 'Blog', href: '/blog' }, { label: 'Artigo' }]}>
+    <div class="rise rise-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.8rem] font-semibold text-white/55">
+      <span class="text-accent-gold">{post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+      {post.data.updatedDate && (
+        <>
+          <span class="h-1 w-1 rounded-full bg-white/30" aria-hidden="true"></span>
+          <span>Atualizado em {post.data.updatedDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+        </>
+      )}
+      <span class="h-1 w-1 rounded-full bg-white/30" aria-hidden="true"></span>
+      <span>{readMin} min de leitura</span>
+    </div>
+    <h1 class="rise rise-2 mt-8 text-display-lg font-bold text-white">{post.data.title}</h1>
+    <p class="rise rise-3 mt-7 max-w-3xl text-lg leading-relaxed text-white/60 md:text-xl">{post.data.description}</p>
+    {post.data.author && (
+      <div class="rise rise-4 mt-10 flex items-center gap-4 border-t border-white/10 pt-8">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full border border-accent-gold/50 font-display text-lg text-accent-gold">{authorInitials}</span>
+        <div>
+          <p class="font-medium text-white">{post.data.author}</p>
+          {(post.data.authorRole || post.data.authorCredentials) && (
+            <p class="mt-0.5 text-sm text-white/50">{post.data.authorRole}{post.data.authorRole && post.data.authorCredentials ? ' · ' : ''}{post.data.authorCredentials}</p>
+          )}
+        </div>
+      </div>
+    )}
+  </PageHero>
+
+  <section class="section-luxury bg-neutral-paper !pt-16 md:!pt-24">
     <div class="section-inner">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <!-- CONTEÚDO PRINCIPAL -->
-          <div class="lg:col-span-8 min-w-0">
-            <div class="flex items-center gap-3 mb-8">
-              <span class="text-xs font-bold uppercase tracking-wider text-accent-gold-deep bg-accent-gold/10 px-3 py-1 rounded-full">
-                {post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
-              </span>
-              {post.data.updatedDate && (
-                <span class="text-xs text-neutral-ink-muted/50">
-                  Atualizado em {post.data.updatedDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
-                </span>
-              )}
-            </div>
+      <div class="grid grid-cols-1 gap-16 lg:grid-cols-12">
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="min-w-0 lg:col-span-8" id="post-body">
+          <article class="prose prose-lg">
+            <Content />
+          </article>
 
-            <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight leading-tight mb-16 text-neutral-ink">
-              {post.data.title}
-            </h1>
+          {post.data.tags && post.data.tags.length > 0 && (
+            <ul class="mt-14 flex flex-wrap gap-2">
+              {post.data.tags.map((t) => (
+                <li class="rounded-full border border-neutral-line px-3.5 py-1.5 text-[0.8rem] font-semibold text-neutral-ink-muted">{t}</li>
+              ))}
+            </ul>
+          )}
 
-            <article class="prose prose-lg text-neutral-ink-muted">
-              <Content />
-            </article>
-
-            <div class="mt-16 pt-10 border-t border-neutral-ink/10">
-              <a
-                href="/blog"
-                class="inline-flex items-center justify-center px-8 py-4 border border-neutral-ink/10 text-neutral-ink font-semibold rounded-full hover:border-brand-mid hover:text-brand-mid transition-colors"
-              >
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
-                Voltar para o Blog
-              </a>
-            </div>
+          <div class="mt-14 border-t border-neutral-line pt-10">
+            <a href="/blog" class="btn-luxury-outline">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m6 6-6-6 6-6" /></svg>
+              Voltar para o Blog
+            </a>
           </div>
+        </div>
 
-          <!-- SIDEBAR -->
-          <aside class="lg:col-span-4 space-y-8">
-            <div class="relative overflow-hidden rounded-2xl p-8 bg-gradient-to-br from-brand-deep to-brand-mid text-white sticky top-28">
-              <div class="absolute inset-0 noise-overlay"></div>
-              <div class="relative z-10">
-                <h3 class="text-xl font-display font-bold mb-3">Precisa de ajuda ambiental?</h3>
-                <p class="text-white/50 mb-6 text-sm leading-relaxed">
-                  Nossa equipe oferece proposta técnica personalizada. Descubra o caminho mais rápido para regularizar seu empreendimento.
-                </p>
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center p-5 bg-accent-gold text-brand-deep font-bold rounded-xl hover:bg-accent-gold-deep transition-colors w-full"
-                >
-                  Solicitar Orçamento
-                </a>
-              </div>
-            </div>
-
-            <div class="card-surface p-8 rounded-2xl">
-              <h3 class="text-lg font-display font-bold text-neutral-ink mb-5">Serviços Populares</h3>
-              <ul class="space-y-3">
-                <li><a href="/servicos/licenciamento-ambiental" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Licenciamento Ambiental</a></li>
-                <li><a href="/servicos/compensacao-ambiental" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Compensação Ambiental</a></li>
-                <li><a href="/servicos/reflorestamento" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Reflorestamento</a></li>
-                <li><a href="/servicos/podas-e-supressao-vegetal" class="text-neutral-ink-muted hover:text-brand-mid transition-colors text-sm">Podas e Supressão</a></li>
+        <!-- SIDEBAR -->
+        <aside class="lg:col-span-4">
+          <div class="flex h-full flex-col gap-6">
+            <div class="rounded-3xl border border-neutral-line p-8">
+              <h3 class="text-[0.8rem] font-semibold text-neutral-ink-muted">Serviços Populares</h3>
+              <ul class="mt-4">
+                {[
+                  { href: '/servicos/licenciamento-ambiental', l: 'Licenciamento Ambiental' },
+                  { href: '/servicos/compensacao-ambiental', l: 'Compensação Ambiental' },
+                  { href: '/servicos/reflorestamento', l: 'Reflorestamento' },
+                  { href: '/servicos/podas-e-supressao-vegetal', l: 'Podas e Supressão' },
+                ].map((o) => (
+                  <li class="border-b border-neutral-line last:border-0">
+                    <a href={o.href} class="group flex items-center justify-between gap-4 py-3.5 text-[0.95rem] text-neutral-ink transition-colors hover:text-brand-mid">
+                      {o.l}
+                      <svg class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
-          </aside>
-        </div>
+
+            <div class="lg:sticky lg:top-28">
+              <div class="relative overflow-hidden rounded-3xl bg-brand-deep p-8 text-white">
+                <div class="topo text-white/[0.07]"></div>
+                <div class="relative z-10">
+                  <span class="text-[0.8rem] font-semibold text-accent-gold">Diagnóstico gratuito</span>
+                  <h3 class="mt-4 font-display text-[1.6rem] font-semibold leading-tight">Precisa de ajuda ambiental?</h3>
+                  <p class="mt-3 text-sm leading-relaxed text-white/55">
+                    Nossa equipe oferece proposta técnica personalizada. Descubra o caminho mais rápido para regularizar seu empreendimento.
+                  </p>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="btn-luxury-gold mt-7 w-full">Solicitar Orçamento</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
@@ -130,22 +169,27 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
   {relatedPosts.length > 0 && (
     <section class="section-luxury bg-neutral-cream">
       <div class="section-inner">
-        <div class="max-w-6xl mx-auto">
-          <div class="deco-line mb-8"></div>
-          <h2 class="text-3xl font-display font-bold text-neutral-ink mb-12 tracking-tight">Outras dicas ambientais</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {relatedPosts.map((rp) => (
-              <a href={`/blog/${rp.slug}`} class="group block">
-                <article class="card-surface p-8 rounded-2xl hover:shadow-lift transition-all duration-500 h-full">
-                  <div class="text-xs font-bold uppercase tracking-wider text-accent-gold-deep bg-accent-gold/10 px-3 py-1 rounded-full inline-block mb-4">
-                    {rp.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
-                  </div>
-                  <h3 class="text-xl font-display font-bold text-neutral-ink mb-3 group-hover:text-brand-mid transition-colors">{rp.data.title}</h3>
-                  <p class="text-neutral-ink-muted/70 text-sm leading-relaxed">{rp.data.description}</p>
-                </article>
-              </a>
-            ))}
+        <div class="reveal flex items-end justify-between gap-6">
+          <div>
+            <span class="eyebrow">Continue lendo</span>
+            <h2 class="mt-7 text-display-md font-bold text-neutral-ink">Outras dicas ambientais</h2>
           </div>
+          <a href="/blog" class="hidden font-medium text-neutral-ink link-u md:inline">Ver todos os artigos</a>
+        </div>
+        <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+          {relatedPosts.map((rp, i) => (
+            <a href={`/blog/${rp.slug}`} class={`reveal reveal-delay-${i + 1} group flex h-full flex-col rounded-[1.25rem] border border-neutral-line bg-neutral-paper/60 p-8 transition-all duration-500 ease-out-expo hover:-translate-y-1 hover:bg-white hover:shadow-lift`}>
+              <span class="text-[0.8rem] font-semibold text-accent-gold-deep">
+                {rp.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
+              </span>
+              <h3 class="mt-5 flex-1 font-display text-[1.35rem] font-semibold leading-snug text-neutral-ink transition-colors group-hover:text-brand-mid">{rp.data.title}</h3>
+              <p class="mt-4 line-clamp-3 text-sm leading-relaxed text-neutral-ink-muted">{rp.data.description}</p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-neutral-ink">
+                Ler artigo
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
+              </span>
+            </a>
+          ))}
         </div>
       </div>
     </section>
@@ -153,3 +197,20 @@ const whatsappUrl = `https://wa.me/${SITE_CONFIG.company.whatsapp}?text=${encode
 
   <Fragment slot="footer"><Footer /></Fragment>
 </Layout>
+
+<script is:inline>
+  (function () {
+    var bar = document.getElementById('read-progress');
+    var body = document.getElementById('post-body');
+    if (!bar || !body) return;
+    function update() {
+      var r = body.getBoundingClientRect();
+      var total = r.height - window.innerHeight * 0.6;
+      var p = Math.min(1, Math.max(0, -r.top / (total > 0 ? total : 1)));
+      bar.style.width = (p * 100).toFixed(2) + '%';
+    }
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  })();
+</script>

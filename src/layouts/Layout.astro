@@ -1,6 +1,8 @@
 ---
-import '@fontsource-variable/playfair-display';
-import '@fontsource-variable/dm-sans';
+import '@fontsource-variable/fraunces/full.css';
+import '@fontsource-variable/fraunces/full-italic.css';
+import '@fontsource-variable/jetbrains-mono';
+import '@fontsource-variable/plus-jakarta-sans';
 import '../styles/global.css';
 import SEO from '../components/SEO.astro';
 import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
@@ -32,7 +34,7 @@ const pathname = Astro.url.pathname;
 const breadcrumbNames: Record<string, string> = {
   blog: 'Blog',
   servicos: 'Serviços',
-  sobre: 'Sobre',
+  sobre: 'Quem Somos',
   contato: 'Contato',
   faq: 'FAQ',
   privacidade: 'Privacidade',
@@ -59,8 +61,10 @@ if (pathname !== '/' && pathname !== '') {
 ---
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
+  <script is:inline>document.documentElement.classList.remove('no-js');</script>
+  <meta name="theme-color" content="#0a3326" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX7M0R0M31"></script>
   <script>
@@ -103,7 +107,7 @@ if (pathname !== '/' && pathname !== '') {
       image={props.image ? (props.image.startsWith('http') ? props.image : `${SITE_CONFIG.site}${props.image}`) : undefined}
     />
   ) : (
-    <SchemaLocalBusiness ratingValue={5} reviewCount={3} bestRating={5} />
+    <SchemaLocalBusiness ratingValue={SITE_CONFIG.google.rating} reviewCount={SITE_CONFIG.google.reviewCount} bestRating={5} />
   )}
   {breadcrumbItems.length > 0 && (
     <SchemaBreadcrumb items={breadcrumbItems} />

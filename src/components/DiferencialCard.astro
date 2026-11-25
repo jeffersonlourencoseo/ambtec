@@ -3,18 +3,28 @@ interface Props {
   title: string;
   description: string;
   icon: string;
+  index?: number;
+  tone?: 'light' | 'dark';
 }
 
-const { title, description, icon } = Astro.props;
+const { title, description, icon, index, tone = 'light' } = Astro.props;
+const dark = tone === 'dark';
 ---
 
-<div class="group relative text-center">
-  <div class="inline-flex items-center justify-center w-20 h-20 mb-8 rounded-full bg-gradient-to-br from-brand-deep to-brand-mid text-accent-gold shadow-dramatic group-hover:shadow-glow group-hover:scale-110 transition-all duration-500">
-    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
-    </svg>
+<div class:list={[
+  'group relative flex h-full flex-col rounded-3xl p-7 transition-all duration-500 ease-out-expo hover:-translate-y-1',
+  dark ? 'border border-white/10 bg-white/[0.05] backdrop-blur-sm hover:border-accent-gold/30 hover:bg-white/[0.08]' : 'border border-neutral-line bg-white shadow-soft hover:shadow-lift',
+]}>
+  <div class="flex items-center justify-between">
+    <span class={dark ? 'icon-tile-dark' : 'icon-tile'}>
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
+      </svg>
+    </span>
+    {typeof index === 'number' && (
+      <span class:list={['text-sm font-semibold', dark ? 'text-white/30' : 'text-neutral-ink-muted']}>{String(index).padStart(2, '0')}</span>
+    )}
   </div>
-
-  <h3 class="text-xl font-display font-bold text-neutral-ink mb-4 tracking-tight">{title}</h3>
-  <p class="text-neutral-ink-muted leading-relaxed max-w-xs mx-auto">{description}</p>
+  <h3 class:list={['mt-10 text-[1.3rem] font-bold leading-tight tracking-[-0.03em]', dark ? 'text-white' : 'text-neutral-ink']}>{title}</h3>
+  <p class:list={['mt-3 leading-relaxed', dark ? 'text-white/55' : 'text-neutral-ink-muted']}>{description}</p>
 </div>

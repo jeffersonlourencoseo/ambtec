@@ -3,9 +3,9 @@ title: "CAR: Guia Completo do Cadastro Ambiental Rural"
 description: "Saiba o que é o CAR, como fazer o cadastro, quem é obrigado e como regularizar sua propriedade rural no Rio de Janeiro com gestão ambiental especializada."
 pubDate: 2026-06-05
 draft: true
-author: "Eng. Paula Ribeiro"
-authorRole: "Fundadora e Diretora Técnica"
-authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+author: "Roberto Lourenço"
+authorRole: "Sócio e Responsável Técnico"
+authorCredentials: "Biólogo, CRBio-02 42542-02D, pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental (UFRJ)"
 ---
 
 O **Cadastro Ambiental Rural (CAR)** é um registro público eletrônico, obrigatório para todos os imóveis do Brasil que possuam **reserva legal** ou **Área de Preservação Permanente (APP)**.

@@ -3,9 +3,9 @@ title: "EIA/RIMA: Guia do Estudo de Impacto Ambiental no RJ"
 description: "Entenda o que é o EIA/RIMA, quando é obrigatório, como é elaborado e por que ele é indispensável para o licenciamento ambiental no Rio de Janeiro."
 pubDate: 2026-06-08
 draft: false
-author: "Eng. Paula Ribeiro"
-authorRole: "Fundadora e Diretora Técnica"
-authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+author: "Roberto Lourenço"
+authorRole: "Sócio e Responsável Técnico"
+authorCredentials: "Biólogo, CRBio-02 42542-02D, pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental (UFRJ)"
 updatedDate: 2026-06-08
 ---
 

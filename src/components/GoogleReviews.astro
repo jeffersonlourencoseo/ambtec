@@ -1,0 +1,78 @@
+---
+import { SITE_CONFIG } from '../data/config.ts';
+
+interface Props {
+  class?: string;
+}
+const { class: cls = '' } = Astro.props;
+const { rating, reviewCount, reviews } = SITE_CONFIG.google;
+const ratingTxt = rating.toFixed(1).replace('.', ',');
+const iniciais = (n: string) => n.split(' ').filter((p) => p.length > 2).slice(0, 2).map((p) => p[0]).join('').toUpperCase();
+const tons = ['bg-brand-deep text-accent-gold', 'bg-accent-gold text-brand-night', 'bg-brand-light text-brand-deep'];
+---
+
+<section class={`section-luxury ${cls}`} id="avaliacoes">
+  <div class="section-inner">
+    <div class="grid gap-6 lg:grid-cols-12">
+      <!-- Nota -->
+      <div class="reveal lg:col-span-4">
+        <div class="relative overflow-hidden rounded-[1.75rem] bg-brand-deep p-8 text-white lg:sticky lg:top-28 md:p-10">
+          <div class="topo text-white/[0.06]"></div>
+          <div class="glow -right-16 -top-16 h-56 w-56 bg-accent-gold/20"></div>
+          <div class="relative">
+            <span class="eyebrow eyebrow-light">Avaliações no Google</span>
+            <h2 class="mt-6 text-display-md font-bold text-white">O que dizem <em class="text-accent-gold">nossos clientes</em></h2>
+
+            <div class="mt-10 flex items-end gap-4">
+              <span class="text-[4.5rem] font-bold leading-[0.8] tracking-[-0.06em]">{ratingTxt}</span>
+              <div class="pb-1">
+                <div class="flex gap-0.5 text-accent-gold" aria-label={`Nota ${ratingTxt} de 5`}>
+                  {Array.from({ length: 5 }).map(() => (
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.07 3.29a1 1 0 0 0 .95.69h3.46c.97 0 1.37 1.24.59 1.81l-2.8 2.03a1 1 0 0 0-.36 1.12l1.07 3.29c.3.92-.76 1.69-1.54 1.12l-2.8-2.03a1 1 0 0 0-1.18 0l-2.8 2.03c-.78.57-1.84-.2-1.54-1.12l1.07-3.29a1 1 0 0 0-.36-1.12L2.98 8.72c-.78-.57-.38-1.81.59-1.81h3.46a1 1 0 0 0 .95-.69l1.07-3.29Z" /></svg>
+                  ))}
+                </div>
+                <p class="mt-1.5 text-sm font-medium text-white/60">{reviewCount} avaliações no Google</p>
+              </div>
+            </div>
+
+            <a href={SITE_CONFIG.company.mapsUrl} target="_blank" rel="noopener noreferrer" class="btn-luxury-gold mt-10 w-full">
+              <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1Z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.84 14.1A6.6 6.6 0 0 1 5.5 12c0-.73.13-1.44.34-2.1V7.06H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.94l3.66-2.84Z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38Z"/></svg>
+              Ver avaliações no Google
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Depoimentos -->
+      <ul class="grid gap-4 sm:grid-cols-2 lg:col-span-8">
+        {reviews.map((r, i) => (
+          <li class={`reveal reveal-delay-${(i % 4) + 1} card card-hover flex flex-col p-7`}>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-0.5 text-[#f5b400]" aria-label="5 estrelas">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.07 3.29a1 1 0 0 0 .95.69h3.46c.97 0 1.37 1.24.59 1.81l-2.8 2.03a1 1 0 0 0-.36 1.12l1.07 3.29c.3.92-.76 1.69-1.54 1.12l-2.8-2.03a1 1 0 0 0-1.18 0l-2.8 2.03c-.78.57-1.84-.2-1.54-1.12l1.07-3.29a1 1 0 0 0-.36-1.12L2.98 8.72c-.78-.57-.38-1.81.59-1.81h3.46a1 1 0 0 0 .95-.69l1.07-3.29Z" /></svg>
+                ))}
+              </div>
+              <svg class="h-5 w-5" viewBox="0 0 24 24" aria-label="Google"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1Z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.84 14.1A6.6 6.6 0 0 1 5.5 12c0-.73.13-1.44.34-2.1V7.06H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.94l3.66-2.84Z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38Z"/></svg>
+            </div>
+            <blockquote class="mt-6 flex-1 text-[1.2rem] font-semibold leading-snug tracking-[-0.02em] text-neutral-ink">“{r.texto}”</blockquote>
+            <div class="mt-8 flex items-center gap-3 border-t border-neutral-line pt-5">
+              <span class={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold ${tons[i % tons.length]}`}>{iniciais(r.nome)}</span>
+              <div>
+                <p class="text-[0.95rem] font-bold text-neutral-ink">{r.nome}</p>
+                <p class="text-xs font-medium text-neutral-ink-muted">Cliente · avaliação no Google</p>
+              </div>
+            </div>
+          </li>
+        ))}
+        <li class="reveal flex flex-col justify-between rounded-3xl bg-accent-gold p-7 text-brand-night">
+          <p class="text-[1.2rem] font-bold leading-snug tracking-[-0.02em]">Já é cliente da Ambtec? Sua avaliação ajuda outras empresas a nos encontrar.</p>
+          <a href={SITE_CONFIG.company.mapsUrl} target="_blank" rel="noopener noreferrer" class="btn-base mt-8 self-start bg-brand-night text-white hover:-translate-y-0.5">
+            Avaliar no Google
+            <svg class="arr h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

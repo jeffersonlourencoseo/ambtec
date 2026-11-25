@@ -15,10 +15,9 @@ faq:
     a: "O INEA licencia as atividades de competência estadual. As Secretarias Municipais de Meio Ambiente licenciam atividades de impacto local, e o IBAMA atua nos casos de competência federal. O pedido é feito pelo empreendedor, geralmente com apoio de uma consultoria ambiental."
   - q: "O que acontece se minha licença vencer?"
     a: "Operar com licença vencida é infração. O pedido de renovação deve ser feito com antecedência, com laudos de monitoramento e comprovação de cumprimento das condicionantes."
----
-author: "Eng. Paula Ribeiro"
-authorRole: "Fundadora e Diretora Técnica"
-authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+author: "Roberto Lourenço"
+authorRole: "Sócio e Responsável Técnico"
+authorCredentials: "Biólogo, CRBio-02 42542-02D, pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental (UFRJ)"
 updatedDate: 2026-11-16
 ---
 

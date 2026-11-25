@@ -3,9 +3,9 @@ title: "Regularização Ambiental de Empresas no RJ: Passo a Passo"
 description: "Guia prático de gestão ambiental para empresas de todos os portes no RJ. Como regularizar o licenciamento ambiental, evitar multas e operar dentro da conformidade legal."
 pubDate: 2026-06-10
 draft: false
-author: "Eng. Paula Ribeiro"
-authorRole: "Fundadora e Diretora Técnica"
-authorCredentials: "Engenheira Ambiental, CREA-RJ, 15 anos de experiência em licenciamento"
+author: "Roberto Lourenço"
+authorRole: "Sócio e Responsável Técnico"
+authorCredentials: "Biólogo, CRBio-02 42542-02D, pós-graduado em Gestão de Recursos Hídricos e Auditoria Ambiental (UFRJ)"
 updatedDate: 2026-06-10
 ---
 

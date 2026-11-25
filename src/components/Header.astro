@@ -1,122 +1,135 @@
 ---
+import Logo from './Logo.astro';
+import { SITE_CONFIG } from '../data/config.ts';
+
 const navLinks = [
   { label: 'Início', href: '/' },
-  { label: 'Sobre', href: '/sobre' },
+  { label: 'Quem Somos', href: '/sobre' },
   { label: 'Serviços', href: '/servicos' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contato', href: '/contato' },
 ];
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => (href === '/' ? path === '/' : path === href || path.startsWith(href + '/'));
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="main-header">
-  <div class="absolute inset-0 bg-brand-deep/95 backdrop-blur-xl border-b border-white/5 transition-opacity duration-500 opacity-100" id="header-bg"></div>
+<header class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-5" id="main-header">
+  <div
+    id="header-pill"
+    class="mx-auto flex h-[64px] max-w-site items-center justify-between gap-4 rounded-full border border-neutral-ink/[0.06] bg-white/85 pl-5 pr-2 shadow-[0_8px_30px_-12px_rgba(12,29,22,0.25)] backdrop-blur-xl transition-all duration-500 sm:pl-6"
+  >
+    <a href="/" aria-label="Ambtec — página inicial" class="shrink-0 transition-opacity hover:opacity-80">
+      <Logo tone="dark" />
+    </a>
 
-  <div class="container mx-auto px-6 lg:px-12 relative">
-    <div class="flex items-center justify-between h-20 lg:h-24">
-      <!-- Logo -->
-      <a
-        href="/"
-        class="text-2xl lg:text-3xl font-display font-bold text-white tracking-tight hover:scale-105 active:scale-95 transition-transform duration-300"
-      >
-        <span class="text-accent-gold">AMB</span>TEC
-      </a>
-
-      <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-10">
-        {navLinks.map((link) => (
-          <a
-            href={link.href}
-            class="text-sm font-medium text-white/70 hover:text-white tracking-wide uppercase transition-colors duration-300 relative group focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
-          >
-            {link.label}
-            <span class="absolute -bottom-1 left-0 w-0 h-px bg-accent-gold group-hover:w-full transition-all duration-300"></span>
-          </a>
-        ))}
-        <a
-          href="/contato"
-          class="ml-4 inline-flex items-center justify-center px-6 py-2.5 bg-accent-gold/90 text-brand-deep text-sm font-bold uppercase tracking-wider rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all duration-300 shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
-        >
-          Orçamento
-        </a>
-      </nav>
-
-      <!-- Mobile Toggle -->
-      <button
-        id="mobile-menu-toggle"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        class="lg:hidden inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-white hover:bg-white/20 hover:scale-105 active:scale-95 transition-all backdrop-blur-sm border border-white/10"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Mobile Drawer -->
-<div
-  id="mobile-drawer"
-  class="fixed inset-0 z-[9999] hidden"
-  aria-hidden="true"
->
-  <div id="mobile-backdrop" class="absolute inset-0 bg-brand-deep"></div>
-
-  <div class="relative z-10 flex flex-col items-center justify-center h-full px-8">
-    <button
-      id="mobile-menu-close"
-      aria-label="Fechar menu"
-      class="absolute top-6 right-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all border border-white/10"
-    >
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-
-    <nav class="flex flex-col items-center gap-8">
+    <nav class="hidden items-center gap-1 rounded-full bg-neutral-cream/70 p-1 lg:flex" aria-label="Principal">
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="text-2xl font-display font-medium text-white/80 hover:text-accent-gold transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-accent-gold focus-visible:outline-offset-4 rounded-sm"
+          aria-current={isActive(link.href) ? 'page' : undefined}
+          class:list={[
+            'rounded-full px-4 py-2 text-[0.9rem] font-semibold transition-all duration-300',
+            isActive(link.href) ? 'bg-white text-neutral-ink shadow-[0_1px_3px_rgba(12,29,22,0.12)]' : 'text-neutral-ink-muted hover:text-neutral-ink',
+          ]}
         >
           {link.label}
         </a>
       ))}
-      <a
-        href="/contato"
-        class="mt-4 inline-flex items-center justify-center px-8 py-3 bg-accent-gold text-brand-deep font-bold rounded-full hover:bg-accent-gold hover:scale-105 active:scale-95 transition-all shadow-glow focus-visible:outline-2 focus-visible:outline-neutral-paper focus-visible:outline-offset-3"
-      >
-        Solicitar Orçamento
-      </a>
     </nav>
+
+    <div class="hidden items-center gap-3 lg:flex">
+      <a href={`tel:${SITE_CONFIG.company.phone}`} class="hidden text-[0.88rem] font-semibold text-neutral-ink-muted transition-colors hover:text-neutral-ink xl:inline">
+        {SITE_CONFIG.company.phoneFormatted}
+      </a>
+      <a href="/contato" class="btn-luxury !py-3 !pl-5 !pr-2 text-[0.88rem]">
+        Solicitar diagnóstico
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-accent-gold text-brand-night">
+          <svg class="arr h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9" /></svg>
+        </span>
+      </a>
+    </div>
+
+    <button
+      id="mobile-menu-toggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="mobile-drawer"
+      class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-deep text-white transition-colors hover:bg-brand-forest lg:hidden"
+    >
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path stroke-linecap="round" d="M4 9h16M4 15h10" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<div id="mobile-drawer" class="fixed inset-0 z-[9999] hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="absolute inset-0 overflow-hidden bg-brand-night">
+    <div class="topo text-white/[0.06]"></div>
+    <div class="glow -right-24 top-10 h-72 w-72 bg-accent-gold/20"></div>
+  </div>
+
+  <div class="relative z-10 flex h-full flex-col">
+    <div class="flex items-center justify-between px-6 pt-6">
+      <Logo />
+      <button
+        id="mobile-menu-close"
+        aria-label="Fechar menu"
+        class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+      >
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mt-10 flex flex-1 flex-col px-6" aria-label="Menu mobile">
+      {navLinks.map((link) => (
+        <a href={link.href} class="group flex items-center justify-between border-b border-white/10 py-5 text-white">
+          <span class="font-display text-[2rem] font-semibold tracking-tight transition-colors group-hover:text-accent-gold">{link.label}</span>
+          <svg class="h-5 w-5 text-white/40 transition-transform group-hover:translate-x-1 group-hover:text-accent-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
+        </a>
+      ))}
+    </nav>
+
+    <div class="px-6 pb-10 pt-8">
+      <a href="/contato" class="btn-luxury-gold w-full">Solicitar diagnóstico</a>
+      <a href={`tel:${SITE_CONFIG.company.phone}`} class="mt-5 block text-center text-sm font-semibold text-white/60">{SITE_CONFIG.company.phoneFormatted}</a>
+    </div>
   </div>
 </div>
 
 <script is:inline>
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const drawer = document.getElementById('mobile-drawer');
-  const closeBtn = document.getElementById('mobile-menu-close');
-  const backdrop = document.getElementById('mobile-backdrop');
+  (function () {
+    var pill = document.getElementById('header-pill');
+    function onScroll() {
+      var s = window.scrollY > 24;
+      pill.style.background = s ? 'rgba(255,255,255,0.95)' : '';
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-  function openMenu() {
-    drawer.classList.remove('hidden');
-    drawer.setAttribute('aria-hidden', 'false');
-    toggle.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    drawer.classList.add('hidden');
-    drawer.setAttribute('aria-hidden', 'true');
-    toggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  toggle?.addEventListener('click', openMenu);
-  closeBtn?.addEventListener('click', closeMenu);
-  backdrop?.addEventListener('click', closeMenu);
-  document.querySelectorAll('#mobile-drawer a').forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
+    var toggle = document.getElementById('mobile-menu-toggle');
+    var drawer = document.getElementById('mobile-drawer');
+    var closeBtn = document.getElementById('mobile-menu-close');
+    function openMenu() {
+      drawer.classList.remove('hidden');
+      drawer.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+    function closeMenu() {
+      drawer.classList.add('hidden');
+      drawer.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    toggle && toggle.addEventListener('click', openMenu);
+    closeBtn && closeBtn.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+    drawer.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+  })();
 </script>
