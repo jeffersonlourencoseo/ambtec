@@ -26,7 +26,7 @@ Legenda de intenção: **C** comercial/transacional (fecha contrato), **I** info
 | Quanto custa licenciamento ambiental no RJ (INEA) | SERP sem nenhum resultado do RJ; intenção comercial forte. Volume baixo no Semrush (40/mês): não esperar tráfego alto |
 | Decreto 50.473/2026: o que muda no licenciamento do RJ (SELCA, LAI) | Tema novo de set/2026, SERP só com gov e escritório de advocacia |
 | Poda e remoção de árvore no RJ: quando precisa de autorização | Brecha: só jardinagem e gov; alimenta o serviço de podas |
-| Supressão vegetal no RJ: ASV, INEA e passo a passo | Alimenta o serviço (SERP onde já aparecemos) |
+| Supressão vegetal no RJ: ASV, INEA e passo a passo | **Publicado em 26/11/2026**: /blog/autorizacao-de-supressao-de-vegetacao-rj-asv |
 
 Backlinks para artigos novos só entram no cronograma DEPOIS que o artigo estiver no ar (marcados com ⏳).
 
@@ -52,7 +52,7 @@ Status: ☐ a fazer · ☑ feito. Atualizar ao criar cada um no 8links (e em `pr
 | Sem | Início | Backlink A (destino · âncora) | Backlink B (destino · âncora) | Tipo |
 |---|---|---|---|---|
 | 1 ☑ | 16/11 | /servicos/licenciamento-ambiental/ · "empresa de licenciamento ambiental no Rio de Janeiro" (parceiro dingbatcobogo.com.br) | Home · "Ambtec Consultoria Ambiental" (parceiro sibic.com.br) | C + marca |
-| 2 | 23/11 | /servicos/podas-e-supressao-vegetal/ · "supressão vegetal no Rio de Janeiro" | /blog/licenciamento-com-sem-consultoria/ · "vale a pena contratar uma consultoria ambiental" | C + I |
+| 2 (criados em 26/11, falta publicar) | 23/11 | /servicos/podas-e-supressao-vegetal/ · "supressão vegetal no Rio de Janeiro" | /blog/licenciamento-com-sem-consultoria/ · "vale a pena contratar uma consultoria ambiental" | C + I |
 | 3 | 30/11 | Home · "consultoria ambiental no Rio de Janeiro" | /servicos/inventario-florestal-e-fauna/ · "inventário florestal para licenciamento" | C |
 | 4 | 07/12 | /servicos/licenciamento-ambiental/ · "consultoria em licenciamento ambiental" | /blog/licenca-previa-vs-instalacao-vs-operacao/ · "diferença entre licença prévia, de instalação e de operação" | C + I |
 | 5 | 14/12 | /servicos/compensacao-ambiental/ · "compensação ambiental" | /blog/regularizacao-ambiental-empresas-rj/ · "regularização ambiental de empresas no RJ" | C + I |

@@ -37,9 +37,17 @@
 - [x] Posições do site novo em 18/11: 1º em "quanto custa licenciamento ambiental", 2º em "supressão vegetal rio de janeiro" (domínio antigo em 4º) e 3º em "empresa de licenciamento ambiental rio de janeiro".
 - [x] FAQs ampliados com os PAA reais (consultoria, inventário, supressão, poda, reflorestamento).
 
+## 26/11/2026: site novo, artigo de ASV e backlinks da semana 2
+- [x] Redesign publicado; em /sobre, o espaço da foto do responsável virou ficha técnica (registro, formação, atuação).
+- [x] Artigo novo: /blog/autorizacao-de-supressao-de-vegetacao-rj-asv (alvo "autorização de supressão de vegetação"), com links no serviço de supressão e no artigo de poda; sitemap atualizado.
+- [ ] 8links, semana 2: 2 backlinks criados (na fila). **Jefferson publica quando a 8links liberar.**
+- [ ] Pendente: pedir indexação do artigo novo no Search Console.
+
 ## Registro de backlinks (preencher)
 | Data | Destino | Âncora | Site parceiro | Status |
 |---|---|---|---|---|
+| 26/11/2026 (sem 2) | /servicos/podas-e-supressao-vegetal/ | supressão vegetal no Rio de Janeiro | abracebrumadinho.com.br (Sustentabilidade, DA 26) | criado, aguardando publicar |
+| 26/11/2026 (sem 2) | /blog/licenciamento-com-sem-consultoria/ | vale a pena contratar uma consultoria ambiental | 3255coworking.com.br (Negócios, DA 26) | criado, aguardando publicar |
 | 16/11/2026 (sem 1) | /servicos/licenciamento-ambiental/ | empresa de licenciamento ambiental no Rio de Janeiro | dingbatcobogo.com.br (Construção, DA 28) | publicado: dingbatcobogo.com.br/como-obter-licenciamento-ambiental-para-construcao |
 | 16/11/2026 (sem 1) | Home | Ambtec Consultoria Ambiental | sibic.com.br (Educação, DA 32) | publicado: sibic.com.br/como-escolher-curso-tecnico-em-meio-ambiente-em-2026 |
 | 26/06 a 14/07/2026 | (8 backlinks antigos, âncora "licenciamento ambiental" e variações) | | cideb, traineeflat, npcast, octooc, atelierh2o, decorandocomclasseshop, mobiliintelligenti, prefeituradecampogrande | publicados |
