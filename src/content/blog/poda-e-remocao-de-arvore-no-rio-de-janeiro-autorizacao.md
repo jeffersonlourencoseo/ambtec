@@ -27,7 +27,7 @@ Em regra, poda, corte e remoção de árvores dependem de autorização, tanto e
 
 - **Árvore na rua, calçada ou praça:** normalmente é competência do município. Pedidos costumam seguir pelos canais da prefeitura.
 - **Árvore em terreno particular:** também costuma exigir autorização da Secretaria Municipal de Meio Ambiente, mesmo em quintal ou condomínio.
-- **Vegetação em área maior, em obra ou em área protegida:** pode envolver o INEA e a [supressão vegetal](/servicos/podas-e-supressao-vegetal), com laudo, inventário e compensação.
+- **Vegetação em área maior, em obra ou em área protegida:** pode envolver o INEA e a [supressão vegetal](/servicos/podas-e-supressao-vegetal), com laudo, inventário e compensação. Em obras, veja como funciona a [autorização de supressão de vegetação (ASV)](/blog/autorizacao-de-supressao-de-vegetacao-rj-asv).
 
 As regras e os procedimentos mudam e variam por município. Confirme a norma vigente do seu município antes de qualquer intervenção.
 

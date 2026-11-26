@@ -56,4 +56,4 @@ O serviço deve ser feito por profissionais legalmente habilitados (engenheiro f
 
 ## Integrado ao licenciamento
 
-Na Ambtec, supressão e poda não são um serviço isolado: fazem parte do [licenciamento ambiental](/servicos/licenciamento-ambiental) do seu empreendimento. Quando a supressão é condicionante da licença, a equipe que conhece o projeto aprovado garante que autorização, corte e compensação estejam alinhados. Veja também nosso guia sobre [poda e remoção de árvore no Rio de Janeiro](/blog/poda-e-remocao-de-arvore-no-rio-de-janeiro-autorizacao).
+Na Ambtec, supressão e poda não são um serviço isolado: fazem parte do [licenciamento ambiental](/servicos/licenciamento-ambiental) do seu empreendimento. Quando a supressão é condicionante da licença, a equipe que conhece o projeto aprovado garante que autorização, corte e compensação estejam alinhados. Para obras, leia o guia da [autorização de supressão de vegetação (ASV) no RJ](/blog/autorizacao-de-supressao-de-vegetacao-rj-asv). Veja também nosso guia sobre [poda e remoção de árvore no Rio de Janeiro](/blog/poda-e-remocao-de-arvore-no-rio-de-janeiro-autorizacao).
